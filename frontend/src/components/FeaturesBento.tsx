@@ -211,17 +211,35 @@ export default function FeaturesBento({ onOpenCompare, onOpenChat }: FeaturesBen
             </p>
           </div>
 
+          {/* Real responsive device mockup of ClauseCite */}
           <div className="relative pt-2 flex items-center justify-center">
-            <img
-              alt="Multi-platform interface on web"
-              className="w-full max-w-[280px] rounded-lg shadow-sm transform hover:scale-105 transition-transform duration-300"
-              src="/assets/aistudio/image_41aa24fc.png"
-            />
-            <img
-              alt="Mobile interface"
-              className="w-20 absolute -bottom-2 right-4 shadow-xl rounded-xl border-2 border-white transform hover:scale-110 transition-transform duration-300"
-              src="/assets/aistudio/image_a0bc4085.png"
-            />
+            {/* Desktop Mockup */}
+            <div className="w-full max-w-[280px] bg-[#111315] text-white rounded-xl p-3 border border-gray-200 shadow-md transform hover:scale-[1.02] transition-transform">
+              <div className="flex items-center gap-1.5 pb-2 mb-2 border-b border-white/10">
+                <span className="w-2 h-2 rounded-full bg-red-500"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span className="text-[9px] font-bold text-gray-400 ml-1">clausecite.ai</span>
+              </div>
+              <div className="space-y-1.5 text-[9px]">
+                <div className="flex items-center justify-between text-blue-400 font-bold">
+                  <span>Loan Agreement v2.4</span>
+                  <span className="text-emerald-400">Ready</span>
+                </div>
+                <div className="bg-white/5 p-1.5 rounded text-gray-300 font-mono text-[8px] leading-tight">
+                  TN Money Lenders Act 1957 · Principal ₹5,00,000
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Device overlapping */}
+            <div className="w-24 absolute -bottom-2 right-2 bg-black text-white p-2 rounded-xl border-2 border-white shadow-xl transform hover:scale-110 transition-transform">
+              <div className="w-4 h-1 bg-gray-700 rounded-full mx-auto mb-1"></div>
+              <div className="bg-[#181B20] p-1.5 rounded-lg text-[8px] space-y-1">
+                <span className="text-blue-400 font-bold block">Ask AI</span>
+                <p className="text-gray-300 leading-none">Section 27: Void ab initio</p>
+              </div>
+            </div>
           </div>
         </motion.div>
 

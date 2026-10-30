@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import { Check } from 'lucide-react';
+import RealAppPreview from './common/RealAppPreview.tsx';
 
 interface HeroProps {
   onOpenAuth: (mode: 'signin' | 'signup') => void;
@@ -160,14 +161,10 @@ export default function Hero({
               rotateY,
               transformStyle: 'preserve-3d',
             }}
-            className="relative w-full max-w-[620px] rounded-3xl overflow-hidden shadow-2xl border border-gray-200/70 bg-white group"
+            className="relative w-full max-w-[660px] rounded-3xl overflow-hidden shadow-2xl border border-gray-200/70 group"
             data-cursor="Explore"
           >
-            <img
-              alt="ClauseCite web and mobile dashboard interface on devices"
-              className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700 ease-out"
-              src="/assets/aistudio/image_92bc8b8b.png"
-            />
+            <RealAppPreview interactive={true} initialTab="generator" />
 
             {/* Floating Live Citation Verification Badge */}
             <motion.div
@@ -177,14 +174,14 @@ export default function Hero({
                 y: { repeat: Infinity, duration: 4, ease: 'easeInOut' },
                 opacity: { duration: 0.6, delay: 0.4 },
               }}
-              className="absolute top-5 right-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-xl border border-gray-200/80 flex items-center gap-2.5"
+              className="absolute -bottom-3 -right-3 sm:bottom-4 sm:right-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-xl border border-gray-200/80 flex items-center gap-2.5 z-20"
             >
               <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold">
                 <Check className="w-3.5 h-3.5" />
               </div>
               <div>
-                <p className="text-[11px] font-extrabold text-gray-900 leading-none">12+ Citations Verified</p>
-                <p className="text-[9px] text-gray-500 mt-0.5">50 States + Federal Court</p>
+                <p className="text-[11px] font-extrabold text-gray-900 leading-none">295+ Templates Active</p>
+                <p className="text-[9px] text-gray-500 mt-0.5">Tamil Nadu & Central Acts</p>
               </div>
             </motion.div>
           </motion.div>
