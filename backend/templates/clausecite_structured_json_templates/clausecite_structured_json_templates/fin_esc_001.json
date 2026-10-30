@@ -1,0 +1,579 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-ESC-001",
+  "name": "Escrow Agreement",
+  "category": "Escrow",
+  "intended_use": "Appointment of an escrow agent to hold funds or specified assets pending objective release conditions.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "escrow agent",
+    "deposit",
+    "conditions",
+    "release"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "allocation",
+      "source_placeholder": "ALLOCATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount_and_payer",
+      "source_placeholder": "AMOUNT_AND_PAYER",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitral_seat",
+      "source_placeholder": "ARBITRAL_SEAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitration_rules",
+      "source_placeholder": "ARBITRATION_RULES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_venue",
+      "source_placeholder": "COURT_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "date",
+      "source_placeholder": "DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "date_and_result",
+      "source_placeholder": "DATE_AND_RESULT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "delivery_acknowledgement_other_agreed_event",
+      "source_placeholder": "DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "deposit_date",
+      "source_placeholder": "DEPOSIT_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "description",
+      "source_placeholder": "DESCRIPTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "escrow_agent_legal_name",
+      "source_placeholder": "ESCROW_AGENT_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "escrow_property_description",
+      "source_placeholder": "ESCROW_PROPERTY_DESCRIPTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusive_non_exclusive",
+      "source_placeholder": "EXCLUSIVE/NON-EXCLUSIVE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "frequency",
+      "source_placeholder": "FREQUENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "language",
+      "source_placeholder": "LANGUAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "list",
+      "source_placeholder": "LIST",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_period",
+      "source_placeholder": "NOTICE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "objective_conditions",
+      "source_placeholder": "OBJECTIVE CONDITIONS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party",
+      "source_placeholder": "PARTY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_assignments",
+      "source_placeholder": "PERMITTED_ASSIGNMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "reasonable_care_other_lawful_standard",
+      "source_placeholder": "REASONABLE CARE / OTHER LAWFUL STANDARD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "required_signatories_format",
+      "source_placeholder": "REQUIRED SIGNATORIES / FORMAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retention_period",
+      "source_placeholder": "RETENTION_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "value",
+      "source_placeholder": "VALUE",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-ESC-001\nCategory | Escrow agreements\nIntended use | Appointment of an escrow agent to hold funds or specified assets pending objective release conditions."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This ESCROW AGREEMENT (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. APPOINTMENT AND ACCEPTANCE",
+      "content": [
+        "The Parties appoint {{ESCROW_AGENT_LEGAL_NAME}} (the “Escrow Agent”) to hold the Escrow Property described in Schedule A in accordance with this Agreement. Escrow Agent accepts the appointment and shall act only on the instructions and conditions expressly stated here."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. DEPOSIT",
+      "content": [
+        "Depositor shall deliver {{ESCROW_PROPERTY_DESCRIPTION}} with an agreed value of {{CURRENCY}} {{VALUE}} to the Escrow Agent by {{DEPOSIT_DATE}}. Escrow Agent shall acknowledge receipt and identify the account or custody location in Schedule A."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. RELEASE CONDITIONS",
+      "content": [
+        "Escrow Agent shall release the Escrow Property only upon receipt of the documents or joint written instruction specified in Schedule B. Escrow Agent is not required to determine disputed facts or interpret the commercial merits of the transaction."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. DISPUTED INSTRUCTIONS",
+      "content": [
+        "If Escrow Agent receives conflicting instructions, a written dispute notice or a court order affecting the Escrow Property, it shall suspend release of the affected property, notify the Parties and hold it pending joint written instructions or a final binding order. Escrow Agent may seek directions from a competent court where appropriate."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. STANDARD OF CARE AND RELIANCE",
+      "content": [
+        "Escrow Agent shall exercise {{REASONABLE CARE / OTHER LAWFUL STANDARD}} and may rely on documents appearing regular on their face, unless it has actual knowledge of material fraud or error. It shall not be liable for acts or omissions except to the extent caused by its fraud, wilful misconduct, gross negligence or other non-excludable liability."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. FEES AND EXPENSES",
+      "content": [
+        "The Parties shall pay Escrow Agent fees and approved expenses as set out in Schedule C. The Escrow Agent may not deduct disputed fees from Escrow Property unless expressly authorised and lawful."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. INTEREST AND INVESTMENT",
+      "content": [
+        "Any interest earned on cash escrow shall be allocated to {{PARTY}} or handled as stated in Schedule C. Escrow Agent shall not invest or transfer cash into a risk-bearing product without written instructions and legal authority."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "8. RESIGNATION AND REPLACEMENT",
+      "content": [
+        "Escrow Agent may resign on {{NOTICE_PERIOD}} written notice. The Parties shall appoint a replacement and transfer the Escrow Property and records securely. If no replacement is appointed, Escrow Agent may seek court directions."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "9. TERMINATION AND FINAL ACCOUNTING",
+      "content": [
+        "After release or return of all Escrow Property and payment of fees, Escrow Agent’s appointment terminates. Escrow Agent shall provide a final accounting and retain records for {{RETENTION_PERIOD}}, subject to law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". GOVERNING LAW AND DISPUTE RESOLUTION",
+      "content": [
+        "This Agreement and any non-contractual obligations arising from it are governed by the laws of {{GOVERNING_JURISDICTION}}, excluding conflict-of-law rules to the extent permitted. The courts at {{COURT_VENUE}} shall have {{EXCLUSIVE/NON-EXCLUSIVE}} jurisdiction. [Alternative: disputes shall be finally resolved by arbitration seated at {{ARBITRAL_SEAT}}, under {{ARBITRATION_RULES}}, in {{LANGUAGE}}.] Select one dispute-resolution route and ensure it is legally available."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". NOTICES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Notices must be in writing and delivered by hand, recognised courier or email to the addresses specified above (or updated by notice). An email notice is effective only upon {{DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT}}.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": ". GENERAL",
+      "content": [
+        "This Agreement constitutes the entire agreement on its subject matter and supersedes prior discussions. Any amendment must be in writing and signed by both Parties. Neither Party may assign this Agreement without the other Party’s prior written consent, except {{PERMITTED_ASSIGNMENTS}}. If any provision is invalid, the remaining provisions continue in effect. A failure to enforce a right is not a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "DEPOSITOR |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nBENEFICIARY |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nESCROW AGENT |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — ESCROW PROPERTY",
+      "content": [
+        {
+          "type": "table",
+          "content": "Property / funds | {{DESCRIPTION}}\nValue / currency | {{VALUE}}\nDeposit deadline | {{DATE}}\nCustody account / location | {{DETAILS}}\nInterest treatment | {{DETAILS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE B — RELEASE CONDITIONS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Release to beneficiary on | {{OBJECTIVE CONDITIONS}}\nDocuments required | {{LIST}}\nRelease to depositor if | {{OBJECTIVE CONDITIONS}}\nJoint instruction form | {{REQUIRED SIGNATORIES / FORMAT}}\nLong-stop date | {{DATE_AND_RESULT}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE C — FEES AND ADMINISTRATION",
+      "content": [
+        {
+          "type": "table",
+          "content": "Escrow fee | {{AMOUNT_AND_PAYER}}\nBank / transfer costs | {{ALLOCATION}}\nPermitted expenses | {{LIST}}\nReporting | {{FREQUENCY}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Verify escrow agent licensing / trust or custody requirements and permitted account structure.",
+        "Check client-money, insolvency segregation, interest, AML/KYC, tax and data protection rules.",
+        "Verify stamp duty and enforceability of liability limitations / indemnities.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

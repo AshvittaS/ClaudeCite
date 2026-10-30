@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clausecite.example/schemas/poa-template-input.schema.json",
+  "title": "ClauseCite Power of Attorney Template Input",
+  "description": "Reusable base schema for Indian POA drafting automation. Template-specific rules must be layered on top; not an execution-validity validator.",
+  "type": "object",
+  "required": [
+    "template_id",
+    "principal",
+    "agent",
+    "jurisdiction",
+    "authority",
+    "duration",
+    "execution"
+  ],
+  "properties": {
+    "template_id": {
+      "type": "string",
+      "enum": [
+        "limited_special_poa",
+        "general_poa",
+        "durable_continuing_financial_poa",
+        "banking_financial_poa",
+        "property_poa",
+        "tax_representation_poa",
+        "medical_healthcare_authorisation",
+        "disposition_remains_agent",
+        "vehicle_business_poa",
+        "revocation_poa"
+      ]
+    },
+    "principal": {
+      "type": "object",
+      "required": [
+        "full_name",
+        "address",
+        "capacity_statement"
+      ],
+      "properties": {
+        "full_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_or_spouse_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "age_or_date_of_birth": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "address": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_reference": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Minimise personal data; use masked references where possible."
+        },
+        "capacity_statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language_or_interpreter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "agent": {
+      "type": "object",
+      "required": [
+        "full_name",
+        "address"
+      ],
+      "properties": {
+        "full_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "address": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relationship": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "jurisdiction": {
+      "type": "object",
+      "required": [
+        "country",
+        "state",
+        "place_of_execution"
+      ],
+      "properties": {
+        "country": {
+          "const": "India"
+        },
+        "state": {
+          "type": "string",
+          "default": "Tamil Nadu"
+        },
+        "place_of_execution": {
+          "type": "string"
+        },
+        "place_of_use": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "property_location": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recipient_institution": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "required": [
+        "permitted_acts",
+        "express_exclusions"
+      ],
+      "properties": {
+        "permitted_acts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "express_exclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assets_or_subject_matter": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "monetary_limit": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "subdelegation_allowed": {
+          "type": "boolean",
+          "default": false
+        },
+        "self_dealing_allowed": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "duration": {
+      "type": "object",
+      "required": [
+        "start_date",
+        "termination_rule"
+      ],
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "end_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "termination_rule": {
+          "type": "string"
+        },
+        "incapacity_continuity_clause": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Must be legally reviewed; do not assume US-style durability applies."
+        }
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schedules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "content"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "array",
+            "items": {}
+          }
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "required": [
+        "date",
+        "place",
+        "witnesses"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "place": {
+          "type": "string"
+        },
+        "witnesses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "full_name",
+              "address"
+            ],
+            "properties": {
+              "full_name": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "signature": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "notary_or_registration": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "principal_signature": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "agent_signature_or_acceptance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "review_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generation_metadata": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reviewed_by_advocate": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

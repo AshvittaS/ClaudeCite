@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-SHARE-001",
+  "name": "Revenue, Grant And Profit-Sharing Agreement",
+  "category": "Revenue / grant / profit sharing",
+  "intended_use": "Commercial arrangement allocating receipts, project proceeds, grant funds or defined profits.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "contribution",
+    "permitted use",
+    "revenue share",
+    "reporting"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount",
+      "source_placeholder": "AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount_or_formula",
+      "source_placeholder": "AMOUNT_OR_FORMULA",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "approved_purpose",
+      "source_placeholder": "APPROVED_PURPOSE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitral_seat",
+      "source_placeholder": "ARBITRAL_SEAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitration_rules",
+      "source_placeholder": "ARBITRATION_RULES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "cash_assets_services",
+      "source_placeholder": "CASH / ASSETS / SERVICES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_venue",
+      "source_placeholder": "COURT_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "cure_period",
+      "source_placeholder": "CURE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "days",
+      "source_placeholder": "DAYS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "defined_receipts",
+      "source_placeholder": "DEFINED_RECEIPTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "delivery_acknowledgement_other_agreed_event",
+      "source_placeholder": "DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details_and_value",
+      "source_placeholder": "DETAILS_AND_VALUE",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "end_date_or_completion",
+      "source_placeholder": "END_DATE_OR_COMPLETION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusions",
+      "source_placeholder": "EXCLUSIONS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusive_non_exclusive",
+      "source_placeholder": "EXCLUSIVE/NON-EXCLUSIVE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "formula",
+      "source_placeholder": "FORMULA",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "frequency",
+      "source_placeholder": "FREQUENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "itemised_list",
+      "source_placeholder": "ITEMISED_LIST",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "language",
+      "source_placeholder": "LANGUAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "list",
+      "source_placeholder": "LIST",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "managing_party",
+      "source_placeholder": "MANAGING_PARTY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "monthly_quarterly_other",
+      "source_placeholder": "MONTHLY/QUARTERLY/OTHER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "name",
+      "source_placeholder": "NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_period",
+      "source_placeholder": "NOTICE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "ownership_and_licence_terms",
+      "source_placeholder": "OWNERSHIP_AND_LICENCE_TERMS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "percentage",
+      "source_placeholder": "PERCENTAGE",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "period_and_deadline",
+      "source_placeholder": "PERIOD_AND_DEADLINE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_assignments",
+      "source_placeholder": "PERMITTED_ASSIGNMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "project_or_business",
+      "source_placeholder": "PROJECT_OR_BUSINESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "purpose",
+      "source_placeholder": "PURPOSE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retention_period",
+      "source_placeholder": "RETENTION_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "start_date",
+      "source_placeholder": "START_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "terms",
+      "source_placeholder": "TERMS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-SHARE-001\nCategory | Revenue, grant & profit sharing agreements\nIntended use | Commercial arrangement allocating receipts, project proceeds, grant funds or defined profits."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This REVENUE, GRANT AND PROFIT-SHARING AGREEMENT (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. ARRANGEMENT AND CONTRIBUTION",
+      "content": [
+        "The Parties shall collaborate on {{PROJECT_OR_BUSINESS}}. Party A shall contribute {{CASH / ASSETS / SERVICES}} described in Schedule A. Party B shall contribute {{CASH / ASSETS / SERVICES}} described in Schedule A."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. DEFINITIONS AND ACCOUNTING BASIS",
+      "content": [
+        "“Gross Receipts” means {{DEFINED_RECEIPTS}} actually received, excluding {{EXCLUSIONS}}. “Permitted Costs” means only the costs listed in Schedule B, supported by records. “Distributable Profit” means Gross Receipts less Permitted Costs, taxes and reserves expressly approved under this Agreement. No unlisted deduction may be made."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. SHARING PERCENTAGE AND CALCULATION",
+      "content": [
+        "The Parties’ shares are: Party A {{PERCENTAGE}}%; Party B {{PERCENTAGE}}%. Shares shall be calculated {{MONTHLY/QUARTERLY/OTHER}} within {{DAYS}} days after each accounting period and paid within {{DAYS}} days after a statement is delivered."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. GRANT FUNDS — RESTRICTED USE",
+      "content": [
+        "[APPLIES ONLY TO GRANT FUNDS: Grant funds of {{AMOUNT}} shall be used solely for {{APPROVED_PURPOSE}} and in accordance with the grantor’s conditions in Schedule C. The recipient shall maintain separate records, obtain required approvals before budget changes, and return unspent or misapplied funds as required by the grant terms and law.]"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. RECORDS, STATEMENTS AND AUDIT",
+      "content": [
+        "The managing Party shall maintain complete books, invoices, receipts and supporting records for at least {{RETENTION_PERIOD}}. It shall provide periodic statements. The other Party may, on {{NOTICE_PERIOD}} notice and no more than {{FREQUENCY}} (unless a discrepancy is found), inspect relevant records through an independent professional bound by confidentiality."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. MANAGEMENT AND APPROVALS",
+      "content": [
+        "The project shall be managed by {{MANAGING_PARTY}}. The following matters require prior written approval of both Parties: material budget changes, related-party transactions, borrowing, disposal of key assets, changes to project scope and settlement of material claims."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. INTELLECTUAL PROPERTY AND DELIVERABLES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Background intellectual property remains with its owner. Ownership and permitted use of project deliverables shall be {{OWNERSHIP_AND_LICENCE_TERMS}}. No Party may use the other Party’s name, marks or confidential materials except as authorised.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "8. COMPLIANCE AND CONFLICTS",
+      "content": [
+        "Each Party shall comply with applicable laws, grant conditions, anti-bribery rules, sanctions and tax obligations. Each shall disclose any actual conflict of interest relevant to the project."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "9. TERM, TERMINATION AND WIND-DOWN",
+      "content": [
+        "This Agreement begins on {{START_DATE}} and ends on {{END_DATE_OR_COMPLETION}} unless extended. A Party may terminate for material breach not cured within {{CURE_PERIOD}} days after notice, insolvency where legally permitted, or by mutual written agreement. On termination, the Parties shall reconcile accounts, protect project assets and distribute or return funds according to Schedule D and mandatory grant conditions."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "10. NO PARTNERSHIP OR AGENCY UNLESS INTENDED",
+      "content": [
+        "Nothing creates a partnership, joint venture, fiduciary relationship, employment or agency unless the Parties expressly state in Schedule A that such relationship is intended and obtain advice on its consequences."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". GOVERNING LAW AND DISPUTE RESOLUTION",
+      "content": [
+        "This Agreement and any non-contractual obligations arising from it are governed by the laws of {{GOVERNING_JURISDICTION}}, excluding conflict-of-law rules to the extent permitted. The courts at {{COURT_VENUE}} shall have {{EXCLUSIVE/NON-EXCLUSIVE}} jurisdiction. [Alternative: disputes shall be finally resolved by arbitration seated at {{ARBITRAL_SEAT}}, under {{ARBITRATION_RULES}}, in {{LANGUAGE}}.] Select one dispute-resolution route and ensure it is legally available."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". NOTICES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Notices must be in writing and delivered by hand, recognised courier or email to the addresses specified above (or updated by notice). An email notice is effective only upon {{DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT}}.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": ". GENERAL",
+      "content": [
+        "This Agreement constitutes the entire agreement on its subject matter and supersedes prior discussions. Any amendment must be in writing and signed by both Parties. Neither Party may assign this Agreement without the other Party’s prior written consent, except {{PERMITTED_ASSIGNMENTS}}. If any provision is invalid, the remaining provisions continue in effect. A failure to enforce a right is not a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "PARTY A |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nPARTY B |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — CONTRIBUTIONS AND SHARES",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A contribution | {{DETAILS_AND_VALUE}}\nParty B contribution | {{DETAILS_AND_VALUE}}\nParty A share | {{PERCENTAGE}}%\nParty B share | {{PERCENTAGE}}%\nManaging Party | {{NAME}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE B — PERMITTED COSTS / REPORTING",
+      "content": [
+        {
+          "type": "table",
+          "content": "Permitted cost categories | {{ITEMISED_LIST}}\nExcluded costs | {{LIST}}\nReporting period / due date | {{PERIOD_AND_DEADLINE}}\nReserve policy | {{AMOUNT_OR_FORMULA}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE C — GRANT CONDITIONS (IF APPLICABLE)",
+      "content": [
+        {
+          "type": "table",
+          "content": "Grantor / reference | {{DETAILS}}\nApproved purpose | {{PURPOSE}}\nBudget and milestones | {{DETAILS}}\nReporting / audit duties | {{DETAILS}}\nReturn of unused funds | {{TERMS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE D — TERMINATION RECONCILIATION",
+      "content": [
+        {
+          "type": "table",
+          "content": "Outstanding receipts | {{DETAILS}}\nApproved unpaid costs | {{DETAILS}}\nAssets / deliverables disposition | {{DETAILS}}\nFinal distribution / refund | {{FORMULA}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Check partnership, joint venture, agency and profit-sharing characterisation under selected law.",
+        "For grants, retrieve grantor terms and applicable public-funding, procurement, audit and recovery rules.",
+        "For investment-like returns, check securities, collective investment and financial promotion regulation.",
+        "Verify tax, withholding, GST/VAT and accounting treatment.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

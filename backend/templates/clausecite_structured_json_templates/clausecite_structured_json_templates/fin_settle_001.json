@@ -1,0 +1,554 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-SETTLE-001",
+  "name": "Debt Settlement Agreement",
+  "category": "Debt settlement",
+  "intended_use": "Compromise and discharge of a specified disputed or outstanding debt upon agreed settlement performance.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "claimed debt",
+    "settlement sum",
+    "release",
+    "payment"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "account_details",
+      "source_placeholder": "ACCOUNT_DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount",
+      "source_placeholder": "AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitral_seat",
+      "source_placeholder": "ARBITRAL_SEAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitration_rules",
+      "source_placeholder": "ARBITRATION_RULES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "claimed_amount",
+      "source_placeholder": "CLAIMED_AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_venue",
+      "source_placeholder": "COURT_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "cure_period",
+      "source_placeholder": "CURE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "days",
+      "source_placeholder": "DAYS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "define_balance_and_credit_for_sums_received",
+      "source_placeholder": "DEFINE BALANCE AND CREDIT FOR SUMS RECEIVED",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "delivery_acknowledgement_other_agreed_event",
+      "source_placeholder": "DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusive_non_exclusive",
+      "source_placeholder": "EXCLUSIVE/NON-EXCLUSIVE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "language",
+      "source_placeholder": "LANGUAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "lapse_be_terminated",
+      "source_placeholder": "LAPSE / BE TERMINATED",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "list_or_none",
+      "source_placeholder": "LIST_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "pause_collection_not_transfer_claim_other",
+      "source_placeholder": "PAUSE COLLECTION / NOT TRANSFER CLAIM / OTHER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "payment_date",
+      "source_placeholder": "PAYMENT_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "payment_method",
+      "source_placeholder": "PAYMENT_METHOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_assignments",
+      "source_placeholder": "PERMITTED_ASSIGNMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "precise_description",
+      "source_placeholder": "PRECISE DESCRIPTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "process",
+      "source_placeholder": "PROCESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "reference",
+      "source_placeholder": "REFERENCE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "settlement_amount",
+      "source_placeholder": "SETTLEMENT_AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "underlying_transaction",
+      "source_placeholder": "UNDERLYING_TRANSACTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-SETTLE-001\nCategory | Debt settlement & credit agreements\nIntended use | Compromise and discharge of a specified disputed or outstanding debt upon agreed settlement performance."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This DEBT SETTLEMENT AGREEMENT (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. BACKGROUND AND DEBT AMOUNT",
+      "content": [
+        "Creditor asserts that Debtor owes {{CURRENCY}} {{CLAIMED_AMOUNT}} arising from {{UNDERLYING_TRANSACTION}}. Without admission of liability beyond the express terms of this Agreement, the Parties wish to settle the matter on the terms below."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. SETTLEMENT SUM",
+      "content": [
+        "Subject to timely and complete performance, Creditor agrees to accept {{CURRENCY}} {{SETTLEMENT_AMOUNT}} (the “Settlement Sum”) in full and final settlement of the Settled Debt described in Schedule A."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. PAYMENT MECHANICS",
+      "content": [
+        "Debtor shall pay the Settlement Sum by {{PAYMENT_METHOD}} to {{ACCOUNT_DETAILS}} on or before {{PAYMENT_DATE}}, or in instalments set out in Schedule B. Payment is complete only when cleared funds are received."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. RELEASE EFFECTIVE UPON PERFORMANCE",
+      "content": [
+        "Upon receipt of the Settlement Sum in full and cleared funds, Creditor releases Debtor from claims for the Settled Debt, including principal, interest and charges identified in Schedule A, except obligations expressly stated to survive. The release does not extend to unrelated debts or fraud that cannot lawfully be released."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. FAILURE TO PAY",
+      "content": [
+        "If Debtor fails to pay and does not cure within {{CURE_PERIOD}} days after written notice, the settlement accommodation may {{LAPSE / BE TERMINATED}} and Creditor may pursue the unpaid balance of {{DEFINE BALANCE AND CREDIT FOR SUMS RECEIVED}}, subject to mandatory law. Avoid automatic revival of waived amounts unless expressly reviewed for enforceability."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. NO ADMISSION",
+      "content": [
+        "This Agreement is a compromise of a disputed or asserted claim and is not an admission of liability by either Party, except for the payment obligations expressly assumed here."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. NO FURTHER COLLECTION / CREDIT REPORTING",
+      "content": [
+        "While Debtor is performing the agreed payment schedule, Creditor shall {{PAUSE COLLECTION / NOT TRANSFER CLAIM / OTHER}}. After full settlement, Creditor shall update any relevant account or credit reporting record as required by applicable law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "8. AUTHORITY AND ADVICE",
+      "content": [
+        "Each Party confirms it has authority to enter this Agreement and has had the opportunity to obtain independent legal and financial advice."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". GOVERNING LAW AND DISPUTE RESOLUTION",
+      "content": [
+        "This Agreement and any non-contractual obligations arising from it are governed by the laws of {{GOVERNING_JURISDICTION}}, excluding conflict-of-law rules to the extent permitted. The courts at {{COURT_VENUE}} shall have {{EXCLUSIVE/NON-EXCLUSIVE}} jurisdiction. [Alternative: disputes shall be finally resolved by arbitration seated at {{ARBITRAL_SEAT}}, under {{ARBITRATION_RULES}}, in {{LANGUAGE}}.] Select one dispute-resolution route and ensure it is legally available."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". NOTICES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Notices must be in writing and delivered by hand, recognised courier or email to the addresses specified above (or updated by notice). An email notice is effective only upon {{DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT}}.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": ". GENERAL",
+      "content": [
+        "This Agreement constitutes the entire agreement on its subject matter and supersedes prior discussions. Any amendment must be in writing and signed by both Parties. Neither Party may assign this Agreement without the other Party’s prior written consent, except {{PERMITTED_ASSIGNMENTS}}. If any provision is invalid, the remaining provisions continue in effect. A failure to enforce a right is not a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "CREDITOR |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nDEBTOR |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — SETTLED DEBT",
+      "content": [
+        {
+          "type": "table",
+          "content": "Underlying account / contract | {{REFERENCE}}\nClaimed principal | {{AMOUNT}}\nClaimed interest / charges | {{AMOUNT}}\nCredits / prior payments | {{AMOUNT}}\nSettled Debt scope | {{PRECISE DESCRIPTION}}\nExcluded obligations | {{LIST_OR_NONE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE B — SETTLEMENT PAYMENTS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Settlement Sum | {{AMOUNT}}\nPayment dates and amounts | {{DETAILS}}\nCure period | {{DAYS}}\nCreditor receipt / confirmation | {{PROCESS}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Verify debt compromise, release, accord and satisfaction / settlement rules under selected law.",
+        "Check debt collection, insolvency, consumer credit and credit bureau reporting requirements.",
+        "Confirm stamp duty, limitation and enforceability of any revival / default provision.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

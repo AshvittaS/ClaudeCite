@@ -1,0 +1,85 @@
+# Environment variables & secrets (CRUCIAL)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+**/.env.*
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+!.env.example
+!**/.env.example
+
+# Database files (CRUCIAL - never push user records, tokens, or local databases)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+clausecite.db
+**/clausecite.db
+**/*.db
+**/*.sqlite3
+
+# Vector DB & Embeddings (CRUCIAL)
+chroma_db/
+**/chroma_db/
+
+# Uploaded user documents & confidential client files (CRUCIAL)
+uploads/
+**/uploads/
+private_uploads/
+**/private_uploads/
+
+# Python Virtual Environments & Bytecode
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend Build Artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+.npm
+*.tsbuildinfo
+.vite/
+**/.vite/
+
+# System and IDE files
+.DS_Store
+Thumbs.db
+*.log
+logs/
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Sensitive certificates and keys
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12

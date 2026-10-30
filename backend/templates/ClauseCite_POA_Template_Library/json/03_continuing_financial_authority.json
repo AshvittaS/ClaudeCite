@@ -1,0 +1,157 @@
+{
+  "template_id": "durable_continuing_financial_poa",
+  "template_name": "Continuing Financial Authority (India-Law Review Required)",
+  "version": "1.0.0",
+  "jurisdiction_defaults": {
+    "country": "India",
+    "state": "Tamil Nadu",
+    "law_review_required": true
+  },
+  "purpose": "Provide a carefully limited financial-management agency and document continuity intentions without assuming US-style durable-POA rules apply.",
+  "required_fields": [
+    {
+      "path": "principal.full_name",
+      "label": "Principal's full legal name",
+      "required": true
+    },
+    {
+      "path": "principal.parent_or_spouse_name",
+      "label": "Parent/spouse name, if required",
+      "required": false
+    },
+    {
+      "path": "principal.age_or_date_of_birth",
+      "label": "Age/date of birth, where required",
+      "required": false
+    },
+    {
+      "path": "principal.address",
+      "label": "Full residential address",
+      "required": true
+    },
+    {
+      "path": "principal.identity_reference",
+      "label": "Identity document type and masked/reference details; avoid storing unnecessary ID data",
+      "required": true
+    },
+    {
+      "path": "principal.capacity_statement",
+      "label": "Statement that principal understands and voluntarily executes the instrument",
+      "required": true
+    },
+    {
+      "path": "agent.full_name",
+      "label": "Agent/attorney's full legal name",
+      "required": true
+    },
+    {
+      "path": "agent.address",
+      "label": "Agent's full address",
+      "required": true
+    },
+    {
+      "path": "agent.contact",
+      "label": "Agent's phone/email",
+      "required": true
+    },
+    {
+      "path": "agent.relationship",
+      "label": "Relationship to principal, if relevant",
+      "required": false
+    },
+    {
+      "path": "jurisdiction.state",
+      "label": "State: Tamil Nadu by default",
+      "required": true
+    },
+    {
+      "path": "jurisdiction.place_of_execution",
+      "label": "Place of execution",
+      "required": true
+    },
+    {
+      "path": "execution.date",
+      "label": "Date of execution",
+      "required": true
+    },
+    {
+      "path": "execution.witnesses",
+      "label": "Witness names, addresses, signatures and dates, if required/advisable",
+      "required": true
+    },
+    {
+      "path": "execution.notary_or_registration",
+      "label": "Notarisation/registration/adjudication details, if applicable",
+      "required": false
+    },
+    {
+      "path": "limits.express_exclusions",
+      "label": "Express exclusions and reserved powers",
+      "required": true
+    },
+    {
+      "path": "duration.start_date",
+      "label": "Effective date",
+      "required": true
+    },
+    {
+      "path": "duration.end_date_or_event",
+      "label": "Expiry date/event or termination condition",
+      "required": true
+    },
+    {
+      "path": "revocation.method",
+      "label": "Revocation/notice process and recipients",
+      "required": true
+    }
+  ],
+  "clause_library": {
+    "opening": "I, {{principal.full_name}}, of {{principal.address}} (the “Principal”), appoint {{agent.full_name}}, of {{agent.address}} (the “Agent”), solely on the terms and within the limits stated in this instrument.",
+    "capacity_and_voluntariness": "The Principal states that the Principal understands the nature and effect of this instrument, is acting voluntarily, and has had the opportunity to obtain independent advice. This statement does not replace a legal capacity assessment where required.",
+    "grant_of_authority": "The Principal authorises the Agent only to perform the following acts: {{authority.permitted_acts}}.",
+    "limits": "The Agent has no authority beyond the express grant. Express exclusions: {{authority.express_exclusions}}. Monetary limit, if any: {{authority.monetary_limit}}. Sub-delegation: {{authority.subdelegation_allowed}}.",
+    "duration": "This instrument takes effect on {{duration.start_date}} and ends according to: {{duration.termination_rule}}. Any continuity or incapacity language must be reviewed for the applicable Indian law and facts.",
+    "records_and_accounting": "The Agent must keep reasonable records of actions taken, money received or spent, documents submitted and communications made, and provide them to the Principal or lawful representative on request, subject to law.",
+    "conflicts": "The Agent must disclose any actual or potential conflict of interest and must not use the authority for personal benefit except as expressly permitted in a legally reviewed clause.",
+    "governing_law": "This instrument is intended for use in India, with Tamil Nadu as the default jurisdiction. Applicable mandatory law, court jurisdiction and recipient-specific rules prevail.",
+    "legal_review_notice": "IMPORTANT LEGAL REVIEW NOTICE: This is a drafting and automation template, not legal advice and not a guarantee of validity, enforceability, acceptance, or registration. Indian law, Tamil Nadu stamp duty, registration practice, the nature of the transaction, the principal's capacity, and the receiving institution's rules may affect execution. Before signing or use, obtain review by an Indian advocate and confirm current requirements with the relevant Sub-Registrar, department, bank, tax authority, hospital, insurer, transport authority, or other recipient. Do not rely on a POA to transfer title to immovable property; a sale/conveyance instrument and registration may be required."
+  },
+  "template_specific": {
+    "powers": [
+      "Pay ordinary expenses and listed liabilities from designated funds.",
+      "Maintain records, collect income and communicate with listed institutions where accepted.",
+      "Manage only the accounts/assets identified in the schedules."
+    ],
+    "limits": [
+      "Do not state that authority automatically survives incapacity unless an Indian advocate confirms the effect for the specific facts and instrument.",
+      "No assumption that a US-style durable power, springing authority or conservatorship framework applies in India.",
+      "Banks and other institutions may require their own mandate, forms, capacity evidence or may decline the instrument.",
+      "No self-dealing, gifts, loans to agent, beneficiary changes or transfer to agent unless separately reviewed and expressly permitted."
+    ],
+    "schedules": [
+      "Schedule A: accounts/assets and permitted transactions/limits.",
+      "Schedule B: continuity intention, incapacity evidence process (if legally appropriate), review contacts and safeguards.",
+      "Schedule C: accounting frequency and emergency contact protocol."
+    ],
+    "legal_checks": [
+      "Indian agency law and applicable mental-capacity, guardianship, banking and sector-specific rules must be considered.",
+      "The effect of death, incapacity, revocation and third-party notice must be assessed under applicable Indian law; do not import US law."
+    ],
+    "execution_checks": [
+      "Confirm principal identity, legal capacity, free consent and exact intended scope.",
+      "Confirm stamp duty and any adjudication requirement under current Tamil Nadu law; do not hardcode rates.",
+      "Confirm whether notarisation, authentication, registration, witnesses, photographs, identity proofs or personal appearance are required for this use.",
+      "Check recipient-specific prescribed forms and acceptance requirements.",
+      "Keep executed original/certified copies safely; record who receives copies.",
+      "Obtain Indian advocate review before execution and use."
+    ],
+    "advocate_review_note": "Mandatory advocate review. Label as a continuing financial agency arrangement, not a guaranteed durable POA. Obtain written acceptance from each institution."
+  },
+  "generation_rules": [
+    "Render only clauses supported by the user's answers; never silently infer high-risk authority.",
+    "Require explicit affirmative inputs for sale, mortgage, borrowing, gifts, litigation settlement, delegation, or access to sensitive data.",
+    "If an input is missing, unresolved, contradictory or legally high-risk, flag for human review rather than auto-completing.",
+    "Do not auto-insert stamp-duty rates, registration fees, or claims of validity; retrieve current official requirements and confirm with an advocate.",
+    "Keep identity data minimised and avoid embedding full ID numbers in generated drafts unless legally necessary."
+  ]
+}

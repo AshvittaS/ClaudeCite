@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clausecite.local/schemas/nda-template.schema.json",
+  "title": "ClauseCite NDA Clause Template",
+  "type": "object",
+  "required": [
+    "template_id",
+    "slug",
+    "name",
+    "library",
+    "version",
+    "jurisdiction",
+    "agreement_type",
+    "party_roles",
+    "fields",
+    "clauses",
+    "schedules",
+    "signature_blocks",
+    "legal_review_flags",
+    "generation_rules",
+    "status"
+  ],
+  "properties": {
+    "template_id": {
+      "type": "string",
+      "pattern": "^TN-NDA-[0-9]{3}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "library": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "object",
+      "required": [
+        "country",
+        "state"
+      ],
+      "properties": {
+        "country": {
+          "const": "India"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state_is_default_not_exclusive": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "agreement_type": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "party_roles": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "purpose_default": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "label",
+          "type",
+          "required"
+        ],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "default": {},
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "clauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "clause_id",
+          "title",
+          "type",
+          "required",
+          "enabled_by_default",
+          "advocate_review_required",
+          "text"
+        ],
+        "properties": {
+          "clause_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "standard",
+              "template_specific"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "enabled_by_default": {
+            "type": "boolean"
+          },
+          "advocate_review_required": {
+            "type": "boolean"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "schedules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "schedule_id",
+          "title",
+          "required",
+          "fields"
+        ],
+        "properties": {
+          "schedule_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "signature_blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "party_role",
+          "fields"
+        ],
+        "properties": {
+          "party_role": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "legal_review_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "flag",
+          "severity",
+          "review_required",
+          "message"
+        ],
+        "properties": {
+          "flag": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "review_required": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "generation_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

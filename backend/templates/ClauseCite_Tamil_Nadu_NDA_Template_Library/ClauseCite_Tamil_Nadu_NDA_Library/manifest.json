@@ -1,0 +1,151 @@
+{
+  "library_name": "ClauseCite Tamil Nadu NDA Template Library",
+  "library_version": "1.0.0",
+  "generated_date": "2026-10-30",
+  "jurisdiction_default": {
+    "country": "India",
+    "state": "Tamil Nadu"
+  },
+  "template_count": 10,
+  "document_format": "DOCX",
+  "clause_template_format": "JSON",
+  "templates": [
+    {
+      "template_id": "TN-NDA-001",
+      "slug": "unilateral-nda",
+      "name": "Unilateral Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-001_unilateral-nda.docx",
+      "json_path": "json/TN-NDA-001_unilateral-nda.json",
+      "agreement_type": "unilateral",
+      "party_roles": [
+        "Disclosing Party",
+        "Receiving Party"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-002",
+      "slug": "mutual-nda",
+      "name": "Mutual Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-002_mutual-nda.docx",
+      "json_path": "json/TN-NDA-002_mutual-nda.json",
+      "agreement_type": "mutual",
+      "party_roles": [
+        "Party A (Disclosing / Receiving)",
+        "Party B (Disclosing / Receiving)"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-003",
+      "slug": "employee-nda",
+      "name": "Employee Confidentiality and Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-003_employee-nda.docx",
+      "json_path": "json/TN-NDA-003_employee-nda.json",
+      "agreement_type": "employment",
+      "party_roles": [
+        "Employer",
+        "Employee"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-004",
+      "slug": "consultant-nda",
+      "name": "Consultant Confidentiality and Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-004_consultant-nda.docx",
+      "json_path": "json/TN-NDA-004_consultant-nda.json",
+      "agreement_type": "professional_services",
+      "party_roles": [
+        "Client",
+        "Consultant"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-005",
+      "slug": "vendor-nda",
+      "name": "Vendor and Supplier Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-005_vendor-nda.docx",
+      "json_path": "json/TN-NDA-005_vendor-nda.json",
+      "agreement_type": "vendor",
+      "party_roles": [
+        "Customer / Disclosing Party",
+        "Vendor / Receiving Party"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-006",
+      "slug": "customer-nda",
+      "name": "Customer Confidentiality and Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-006_customer-nda.docx",
+      "json_path": "json/TN-NDA-006_customer-nda.json",
+      "agreement_type": "customer",
+      "party_roles": [
+        "Service Provider",
+        "Customer"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-007",
+      "slug": "investor-nda",
+      "name": "Investor and Fundraising Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-007_investor-nda.docx",
+      "json_path": "json/TN-NDA-007_investor-nda.json",
+      "agreement_type": "investor",
+      "party_roles": [
+        "Company / Founder",
+        "Prospective Investor"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-008",
+      "slug": "ma-due-diligence-nda",
+      "name": "M&A Due Diligence Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-008_ma-due-diligence-nda.docx",
+      "json_path": "json/TN-NDA-008_ma-due-diligence-nda.json",
+      "agreement_type": "ma_due_diligence",
+      "party_roles": [
+        "Target / Seller",
+        "Potential Acquirer / Investor"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-009",
+      "slug": "data-sharing-nda",
+      "name": "Data Sharing and Confidentiality Agreement",
+      "docx_path": "docx/TN-NDA-009_data-sharing-nda.docx",
+      "json_path": "json/TN-NDA-009_data-sharing-nda.json",
+      "agreement_type": "data_sharing",
+      "party_roles": [
+        "Data Provider",
+        "Data Recipient"
+      ],
+      "advocate_review_required": true
+    },
+    {
+      "template_id": "TN-NDA-010",
+      "slug": "ip-technology-nda",
+      "name": "Intellectual Property and Technology Non-Disclosure Agreement",
+      "docx_path": "docx/TN-NDA-010_ip-technology-nda.docx",
+      "json_path": "json/TN-NDA-010_ip-technology-nda.json",
+      "agreement_type": "ip_technology",
+      "party_roles": [
+        "Technology Owner / Discloser",
+        "Recipient / Evaluator"
+      ],
+      "advocate_review_required": true
+    }
+  ],
+  "shared_assets": {
+    "schema_path": "schemas/nda-template.schema.json",
+    "readme_path": "README.md",
+    "legal_notes_path": "docs/INDIA_TAMIL_NADU_LEGAL_NOTES.md"
+  },
+  "stamp_duty_policy": "No stamp-duty rates are embedded. Resolve current duty and instrument classification at execution from authoritative Tamil Nadu sources or adjudication where appropriate.",
+  "release_status": "starter_library_for_legal_review_not_execution_ready"
+}

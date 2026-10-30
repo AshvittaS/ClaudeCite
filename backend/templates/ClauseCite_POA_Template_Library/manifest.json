@@ -1,0 +1,107 @@
+{
+  "library_name": "ClauseCite Power of Attorney Generator Template Library",
+  "version": "1.0.0",
+  "created_date": "2026-10-30",
+  "default_jurisdiction": {
+    "country": "India",
+    "state": "Tamil Nadu"
+  },
+  "disclaimer": "IMPORTANT LEGAL REVIEW NOTICE: This is a drafting and automation template, not legal advice and not a guarantee of validity, enforceability, acceptance, or registration. Indian law, Tamil Nadu stamp duty, registration practice, the nature of the transaction, the principal's capacity, and the receiving institution's rules may affect execution. Before signing or use, obtain review by an Indian advocate and confirm current requirements with the relevant Sub-Registrar, department, bank, tax authority, hospital, insurer, transport authority, or other recipient. Do not rely on a POA to transfer title to immovable property; a sale/conveyance instrument and registration may be required.",
+  "files": {
+    "schema": "schemas/poa-template-input.schema.json",
+    "readme": "README.md",
+    "legal_reference": "reference/legal_review_checklist.md"
+  },
+  "templates": [
+    {
+      "id": "limited_special_poa",
+      "title": "Limited / Special Power of Attorney",
+      "docx": "docx/01_limited_special_poa.docx",
+      "json": "json/01_limited_special_poa.json",
+      "purpose": "Authorise an agent to perform a specifically described task or transaction, with narrow powers and a defined end point.",
+      "review_required": true,
+      "high_risk_review": false
+    },
+    {
+      "id": "general_poa",
+      "title": "General Power of Attorney",
+      "docx": "docx/02_general_poa.docx",
+      "json": "json/02_general_poa.json",
+      "purpose": "Set out broader agency authority across specified personal, administrative, financial or property matters, while keeping each grant explicit.",
+      "review_required": true,
+      "high_risk_review": false
+    },
+    {
+      "id": "durable_continuing_financial_poa",
+      "title": "Continuing Financial Authority (India-Law Review Required)",
+      "docx": "docx/03_continuing_financial_authority.docx",
+      "json": "json/03_continuing_financial_authority.json",
+      "purpose": "Provide a carefully limited financial-management agency and document continuity intentions without assuming US-style durable-POA rules apply.",
+      "review_required": true,
+      "high_risk_review": true
+    },
+    {
+      "id": "banking_financial_poa",
+      "title": "Banking and Financial Power of Attorney",
+      "docx": "docx/04_banking_financial_poa.docx",
+      "json": "json/04_banking_financial_poa.json",
+      "purpose": "Authorise defined operations for identified bank accounts and financial assets, subject to the institution's mandate and law.",
+      "review_required": true,
+      "high_risk_review": false
+    },
+    {
+      "id": "property_poa",
+      "title": "Property Power of Attorney",
+      "docx": "docx/05_property_poa.docx",
+      "json": "json/05_property_poa.json",
+      "purpose": "Authorise specified management, leasing or sale-related acts for identified immovable property, subject to Indian property and registration law.",
+      "review_required": true,
+      "high_risk_review": true
+    },
+    {
+      "id": "tax_representation_poa",
+      "title": "Tax Representation Power of Attorney / Authorisation",
+      "docx": "docx/06_tax_representation_poa.docx",
+      "json": "json/06_tax_representation_poa.json",
+      "purpose": "Authorise representation for specified Indian tax matters only to the extent permitted by tax statutes, portal rules and prescribed forms.",
+      "review_required": true,
+      "high_risk_review": false
+    },
+    {
+      "id": "medical_healthcare_authorisation",
+      "title": "Medical Information Access and Healthcare Authorisation",
+      "docx": "docx/07_medical_healthcare_authorisation.docx",
+      "json": "json/07_medical_healthcare_authorisation.json",
+      "purpose": "Record contacts, information-sharing permissions and the principal's stated preferences for healthcare interactions, without assuming a US-style healthcare proxy is automatically recognised.",
+      "review_required": true,
+      "high_risk_review": true
+    },
+    {
+      "id": "disposition_remains_agent",
+      "title": "Appointment of Agent for Control of Disposition of Remains",
+      "docx": "docx/08_disposition_remains_agent.docx",
+      "json": "json/08_disposition_remains_agent.json",
+      "purpose": "Record preferences and nominate a contact/agent for funeral, cremation, burial and related arrangements to the extent recognised by applicable law and accepted by authorities/providers.",
+      "review_required": true,
+      "high_risk_review": false
+    },
+    {
+      "id": "vehicle_business_poa",
+      "title": "Vehicle and Business Power of Attorney",
+      "docx": "docx/09_vehicle_business_poa.docx",
+      "json": "json/09_vehicle_business_poa.json",
+      "purpose": "Authorise specified vehicle-related transactions and/or defined business administration, separating each authority and identifying relevant assets/entities.",
+      "review_required": true,
+      "high_risk_review": false
+    },
+    {
+      "id": "revocation_poa",
+      "title": "Revocation of Power of Attorney",
+      "docx": "docx/10_revocation_poa.docx",
+      "json": "json/10_revocation_poa.json",
+      "purpose": "Revoke or terminate a previously granted authority, subject to applicable law, the original instrument, agency principles and third-party notice requirements.",
+      "review_required": true,
+      "high_risk_review": true
+    }
+  ]
+}

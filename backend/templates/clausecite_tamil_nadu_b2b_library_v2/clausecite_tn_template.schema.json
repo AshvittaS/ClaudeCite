@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClauseCite Tamil Nadu B2B Template v2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "template_id",
+    "template_name",
+    "jurisdiction",
+    "inputs",
+    "clauses",
+    "tamil_nadu_execution",
+    "generation_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "template_id": {
+      "type": "string"
+    },
+    "template_name": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "object",
+      "required": [
+        "country",
+        "default_state"
+      ]
+    },
+    "inputs": {
+      "type": "array"
+    },
+    "clauses": {
+      "type": "array"
+    },
+    "schedules": {
+      "type": "array"
+    },
+    "tamil_nadu_execution": {
+      "type": "object"
+    },
+    "generation_policy": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

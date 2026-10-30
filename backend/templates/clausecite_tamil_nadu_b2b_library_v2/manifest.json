@@ -1,0 +1,518 @@
+{
+  "library": "ClauseCite Tamil Nadu B2B Legal Document Template Library",
+  "version": "2.0.0",
+  "created_on": "2026-10-30",
+  "default_state": "Tamil Nadu, India",
+  "template_count": 60,
+  "categories": [
+    {
+      "category_id": "CAT-01",
+      "category_name": "Service & Consulting Agreements",
+      "templates": [
+        {
+          "template_id": "SVC-001",
+          "template_name": "Master Services Agreement",
+          "purpose": "Framework for recurring services.",
+          "docx": "docx/svc_001_master_services_agreement.docx",
+          "json": "json/svc_001.json"
+        },
+        {
+          "template_id": "SVC-002",
+          "template_name": "Professional Consulting Agreement",
+          "purpose": "Advisory and consulting services.",
+          "docx": "docx/svc_002_professional_consulting_agreement.docx",
+          "json": "json/svc_002.json"
+        },
+        {
+          "template_id": "SVC-003",
+          "template_name": "IT & Software Development Services Agreement",
+          "purpose": "Software development, implementation and support.",
+          "docx": "docx/svc_003_it_software_development_services_agreement.docx",
+          "json": "json/svc_003.json"
+        },
+        {
+          "template_id": "SVC-004",
+          "template_name": "Outsourcing & BPO Services Agreement",
+          "purpose": "Outsourced business operations.",
+          "docx": "docx/svc_004_outsourcing_bpo_services_agreement.docx",
+          "json": "json/svc_004.json"
+        },
+        {
+          "template_id": "SVC-005",
+          "template_name": "Service Level Agreement",
+          "purpose": "Service performance and support metrics.",
+          "docx": "docx/svc_005_service_level_agreement.docx",
+          "json": "json/svc_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-02",
+      "category_name": "Supply, Logistics & Manufacturing Agreements",
+      "templates": [
+        {
+          "template_id": "SUP-001",
+          "template_name": "Goods Supply Agreement",
+          "purpose": "Supply of goods, orders, delivery and acceptance.",
+          "docx": "docx/sup_001_goods_supply_agreement.docx",
+          "json": "json/sup_001.json"
+        },
+        {
+          "template_id": "SUP-002",
+          "template_name": "Raw Material Procurement Agreement",
+          "purpose": "Raw material procurement and quality controls.",
+          "docx": "docx/sup_002_raw_material_procurement_agreement.docx",
+          "json": "json/sup_002.json"
+        },
+        {
+          "template_id": "SUP-003",
+          "template_name": "Manufacturing & Job Work Agreement",
+          "purpose": "Manufacturing, processing and job work.",
+          "docx": "docx/sup_003_manufacturing_job_work_agreement.docx",
+          "json": "json/sup_003.json"
+        },
+        {
+          "template_id": "SUP-004",
+          "template_name": "Warehousing & Storage Agreement",
+          "purpose": "Storage, inventory, handling and release.",
+          "docx": "docx/sup_004_warehousing_storage_agreement.docx",
+          "json": "json/sup_004.json"
+        },
+        {
+          "template_id": "SUP-005",
+          "template_name": "Transportation & Logistics Services Agreement",
+          "purpose": "Transport, freight and delivery services.",
+          "docx": "docx/sup_005_transportation_logistics_services_agreement.docx",
+          "json": "json/sup_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-03",
+      "category_name": "Marketing, Sponsorship & Influencer Agreements",
+      "templates": [
+        {
+          "template_id": "MKT-001",
+          "template_name": "Marketing Services Agreement",
+          "purpose": "Campaign planning, media and creative services.",
+          "docx": "docx/mkt_001_marketing_services_agreement.docx",
+          "json": "json/mkt_001.json"
+        },
+        {
+          "template_id": "MKT-002",
+          "template_name": "Influencer & Creator Agreement",
+          "purpose": "Creator deliverables, disclosures and usage rights.",
+          "docx": "docx/mkt_002_influencer_creator_agreement.docx",
+          "json": "json/mkt_002.json"
+        },
+        {
+          "template_id": "MKT-003",
+          "template_name": "Brand Ambassador Agreement",
+          "purpose": "Promotional representation and appearances.",
+          "docx": "docx/mkt_003_brand_ambassador_agreement.docx",
+          "json": "json/mkt_003.json"
+        },
+        {
+          "template_id": "MKT-004",
+          "template_name": "Sponsorship Agreement",
+          "purpose": "Sponsorship benefits and brand placements.",
+          "docx": "docx/mkt_004_sponsorship_agreement.docx",
+          "json": "json/mkt_004.json"
+        },
+        {
+          "template_id": "MKT-005",
+          "template_name": "Affiliate & Referral Marketing Agreement",
+          "purpose": "Referrals, attribution and commissions.",
+          "docx": "docx/mkt_005_affiliate_referral_marketing_agreement.docx",
+          "json": "json/mkt_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-04",
+      "category_name": "Distribution, Reseller & Franchise Agreements",
+      "templates": [
+        {
+          "template_id": "DST-001",
+          "template_name": "Distribution Agreement",
+          "purpose": "Distributor appointment and resale obligations.",
+          "docx": "docx/dst_001_distribution_agreement.docx",
+          "json": "json/dst_001.json"
+        },
+        {
+          "template_id": "DST-002",
+          "template_name": "Non-Exclusive Reseller Agreement",
+          "purpose": "Non-exclusive resale rights.",
+          "docx": "docx/dst_002_non_exclusive_reseller_agreement.docx",
+          "json": "json/dst_002.json"
+        },
+        {
+          "template_id": "DST-003",
+          "template_name": "Authorised Dealer Agreement",
+          "purpose": "Dealer appointment and after-sales support.",
+          "docx": "docx/dst_003_authorised_dealer_agreement.docx",
+          "json": "json/dst_003.json"
+        },
+        {
+          "template_id": "DST-004",
+          "template_name": "Franchise Agreement",
+          "purpose": "Business format, brand licence and operating standards.",
+          "docx": "docx/dst_004_franchise_agreement.docx",
+          "json": "json/dst_004.json"
+        },
+        {
+          "template_id": "DST-005",
+          "template_name": "Channel Partner Agreement",
+          "purpose": "Partner referrals and channel governance.",
+          "docx": "docx/dst_005_channel_partner_agreement.docx",
+          "json": "json/dst_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-05",
+      "category_name": "Statements of Work & Project Pricing Documents",
+      "templates": [
+        {
+          "template_id": "SOW-001",
+          "template_name": "Statement of Work",
+          "purpose": "Scope, deliverables, milestones and acceptance.",
+          "docx": "docx/sow_001_statement_of_work.docx",
+          "json": "json/sow_001.json"
+        },
+        {
+          "template_id": "SOW-002",
+          "template_name": "Project Proposal & Commercial Offer",
+          "purpose": "Solution, scope and commercial offer.",
+          "docx": "docx/sow_002_project_proposal_commercial_offer.docx",
+          "json": "json/sow_002.json"
+        },
+        {
+          "template_id": "SOW-003",
+          "template_name": "Fixed-Fee Project Agreement",
+          "purpose": "Fixed price and milestone payments.",
+          "docx": "docx/sow_003_fixed_fee_project_agreement.docx",
+          "json": "json/sow_003.json"
+        },
+        {
+          "template_id": "SOW-004",
+          "template_name": "Time & Materials Agreement",
+          "purpose": "Rates, timesheets and expense approvals.",
+          "docx": "docx/sow_004_time_materials_agreement.docx",
+          "json": "json/sow_004.json"
+        },
+        {
+          "template_id": "SOW-005",
+          "template_name": "Change Request & Variation Order",
+          "purpose": "Changes to scope, price or schedule.",
+          "docx": "docx/sow_005_change_request_variation_order.docx",
+          "json": "json/sow_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-06",
+      "category_name": "Contractor & Field Service Agreements",
+      "templates": [
+        {
+          "template_id": "CTR-001",
+          "template_name": "Independent Contractor Agreement",
+          "purpose": "Independent professional engagement.",
+          "docx": "docx/ctr_001_independent_contractor_agreement.docx",
+          "json": "json/ctr_001.json"
+        },
+        {
+          "template_id": "CTR-002",
+          "template_name": "Field Service Agreement",
+          "purpose": "On-site installation, inspection and repair.",
+          "docx": "docx/ctr_002_field_service_agreement.docx",
+          "json": "json/ctr_002.json"
+        },
+        {
+          "template_id": "CTR-003",
+          "template_name": "Maintenance & Repair Agreement",
+          "purpose": "Preventive and corrective maintenance.",
+          "docx": "docx/ctr_003_maintenance_repair_agreement.docx",
+          "json": "json/ctr_003.json"
+        },
+        {
+          "template_id": "CTR-004",
+          "template_name": "Manpower Supply Agreement",
+          "purpose": "Personnel deployment and statutory compliance.",
+          "docx": "docx/ctr_004_manpower_supply_agreement.docx",
+          "json": "json/ctr_004.json"
+        },
+        {
+          "template_id": "CTR-005",
+          "template_name": "Technical Support & AMC Agreement",
+          "purpose": "Annual maintenance and technical support.",
+          "docx": "docx/ctr_005_technical_support_amc_agreement.docx",
+          "json": "json/ctr_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-07",
+      "category_name": "Partnership, Founder & Governance Documents",
+      "templates": [
+        {
+          "template_id": "GOV-001",
+          "template_name": "Business Partnership Agreement",
+          "purpose": "Partnership contributions, management and dissolution.",
+          "docx": "docx/gov_001_business_partnership_agreement.docx",
+          "json": "json/gov_001.json"
+        },
+        {
+          "template_id": "GOV-002",
+          "template_name": "Founders’ Agreement",
+          "purpose": "Founder roles, vesting, IP and exits.",
+          "docx": "docx/gov_002_founders_agreement.docx",
+          "json": "json/gov_002.json"
+        },
+        {
+          "template_id": "GOV-003",
+          "template_name": "Shareholders’ Agreement",
+          "purpose": "Shareholder rights, transfers and governance.",
+          "docx": "docx/gov_003_shareholders_agreement.docx",
+          "json": "json/gov_003.json"
+        },
+        {
+          "template_id": "GOV-004",
+          "template_name": "Joint Venture Agreement",
+          "purpose": "JV contributions and governance.",
+          "docx": "docx/gov_004_joint_venture_agreement.docx",
+          "json": "json/gov_004.json"
+        },
+        {
+          "template_id": "GOV-005",
+          "template_name": "Board & Governance Charter",
+          "purpose": "Board mandate, committees and reporting.",
+          "docx": "docx/gov_005_board_governance_charter.docx",
+          "json": "json/gov_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-08",
+      "category_name": "M&A & Business Transfer Documents",
+      "templates": [
+        {
+          "template_id": "MA-001",
+          "template_name": "Business Transfer Agreement",
+          "purpose": "Transfer of an undertaking or business.",
+          "docx": "docx/ma_001_business_transfer_agreement.docx",
+          "json": "json/ma_001.json"
+        },
+        {
+          "template_id": "MA-002",
+          "template_name": "Asset Purchase Agreement",
+          "purpose": "Purchase of identified assets.",
+          "docx": "docx/ma_002_asset_purchase_agreement.docx",
+          "json": "json/ma_002.json"
+        },
+        {
+          "template_id": "MA-003",
+          "template_name": "Share Purchase Agreement",
+          "purpose": "Sale and purchase of shares.",
+          "docx": "docx/ma_003_share_purchase_agreement.docx",
+          "json": "json/ma_003.json"
+        },
+        {
+          "template_id": "MA-004",
+          "template_name": "Due Diligence & Confidentiality Agreement",
+          "purpose": "Confidentiality and diligence access.",
+          "docx": "docx/ma_004_due_diligence_confidentiality_agreement.docx",
+          "json": "json/ma_004.json"
+        },
+        {
+          "template_id": "MA-005",
+          "template_name": "Business Sale & Transition Services Agreement",
+          "purpose": "Post-completion transition services.",
+          "docx": "docx/ma_005_business_sale_transition_services_agreement.docx",
+          "json": "json/ma_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-09",
+      "category_name": "IP & Licensing Agreements",
+      "templates": [
+        {
+          "template_id": "IP-001",
+          "template_name": "Intellectual Property Assignment Agreement",
+          "purpose": "Assignment of identified IP rights.",
+          "docx": "docx/ip_001_intellectual_property_assignment_agreement.docx",
+          "json": "json/ip_001.json"
+        },
+        {
+          "template_id": "IP-002",
+          "template_name": "Software Licence Agreement",
+          "purpose": "Software licensing and restrictions.",
+          "docx": "docx/ip_002_software_licence_agreement.docx",
+          "json": "json/ip_002.json"
+        },
+        {
+          "template_id": "IP-003",
+          "template_name": "Trademark Licence Agreement",
+          "purpose": "Trademark licensing and quality control.",
+          "docx": "docx/ip_003_trademark_licence_agreement.docx",
+          "json": "json/ip_003.json"
+        },
+        {
+          "template_id": "IP-004",
+          "template_name": "Technology Transfer Agreement",
+          "purpose": "Know-how and technical documentation transfer.",
+          "docx": "docx/ip_004_technology_transfer_agreement.docx",
+          "json": "json/ip_004.json"
+        },
+        {
+          "template_id": "IP-005",
+          "template_name": "Content & Copyright Licence Agreement",
+          "purpose": "Content use and media rights.",
+          "docx": "docx/ip_005_content_copyright_licence_agreement.docx",
+          "json": "json/ip_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-10",
+      "category_name": "Event, Media & Creative Production Agreements",
+      "templates": [
+        {
+          "template_id": "EVT-001",
+          "template_name": "Event Management Agreement",
+          "purpose": "Event planning, vendors and production.",
+          "docx": "docx/evt_001_event_management_agreement.docx",
+          "json": "json/evt_001.json"
+        },
+        {
+          "template_id": "EVT-002",
+          "template_name": "Venue Hire & Event Services Agreement",
+          "purpose": "Venue access and event services.",
+          "docx": "docx/evt_002_venue_hire_event_services_agreement.docx",
+          "json": "json/evt_002.json"
+        },
+        {
+          "template_id": "EVT-003",
+          "template_name": "Creative Services Agreement",
+          "purpose": "Design, copywriting and creative deliverables.",
+          "docx": "docx/evt_003_creative_services_agreement.docx",
+          "json": "json/evt_003.json"
+        },
+        {
+          "template_id": "EVT-004",
+          "template_name": "Video & Photography Production Agreement",
+          "purpose": "Production, edits and usage rights.",
+          "docx": "docx/evt_004_video_photography_production_agreement.docx",
+          "json": "json/evt_004.json"
+        },
+        {
+          "template_id": "EVT-005",
+          "template_name": "Media Buying & Placement Agreement",
+          "purpose": "Media inventory and placements.",
+          "docx": "docx/evt_005_media_buying_placement_agreement.docx",
+          "json": "json/evt_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-11",
+      "category_name": "Termination, Assignment & Indemnity Agreements",
+      "templates": [
+        {
+          "template_id": "TAX-001",
+          "template_name": "Mutual Termination Agreement",
+          "purpose": "Agreed termination and handover.",
+          "docx": "docx/tax_001_mutual_termination_agreement.docx",
+          "json": "json/tax_001.json"
+        },
+        {
+          "template_id": "TAX-002",
+          "template_name": "Contract Assignment & Novation Agreement",
+          "purpose": "Transfer or novation of contract.",
+          "docx": "docx/tax_002_contract_assignment_novation_agreement.docx",
+          "json": "json/tax_002.json"
+        },
+        {
+          "template_id": "TAX-003",
+          "template_name": "Deed of Indemnity",
+          "purpose": "Indemnity risks and claim procedure.",
+          "docx": "docx/tax_003_deed_of_indemnity.docx",
+          "json": "json/tax_003.json"
+        },
+        {
+          "template_id": "TAX-004",
+          "template_name": "Release & Waiver Agreement",
+          "purpose": "Release of specified claims.",
+          "docx": "docx/tax_004_release_waiver_agreement.docx",
+          "json": "json/tax_004.json"
+        },
+        {
+          "template_id": "TAX-005",
+          "template_name": "Contract Amendment & Restatement Agreement",
+          "purpose": "Amendment and restatement.",
+          "docx": "docx/tax_005_contract_amendment_restatement_agreement.docx",
+          "json": "json/tax_005.json"
+        }
+      ]
+    },
+    {
+      "category_id": "CAT-12",
+      "category_name": "Dispute, Settlement & Legal Service Documents",
+      "templates": [
+        {
+          "template_id": "DSP-001",
+          "template_name": "Dispute Resolution Agreement",
+          "purpose": "Escalation and dispute resolution.",
+          "docx": "docx/dsp_001_dispute_resolution_agreement.docx",
+          "json": "json/dsp_001.json"
+        },
+        {
+          "template_id": "DSP-002",
+          "template_name": "Commercial Settlement Agreement",
+          "purpose": "Settlement, payment and releases.",
+          "docx": "docx/dsp_002_commercial_settlement_agreement.docx",
+          "json": "json/dsp_002.json"
+        },
+        {
+          "template_id": "DSP-003",
+          "template_name": "Arbitration Submission Agreement",
+          "purpose": "Submission of dispute to arbitration.",
+          "docx": "docx/dsp_003_arbitration_submission_agreement.docx",
+          "json": "json/dsp_003.json"
+        },
+        {
+          "template_id": "DSP-004",
+          "template_name": "Legal Retainer Agreement",
+          "purpose": "Legal service scope and fees.",
+          "docx": "docx/dsp_004_legal_retainer_agreement.docx",
+          "json": "json/dsp_004.json"
+        },
+        {
+          "template_id": "DSP-005",
+          "template_name": "Legal Notice & Demand Template",
+          "purpose": "Breach notice and demand.",
+          "docx": "docx/dsp_005_legal_notice_demand_template.docx",
+          "json": "json/dsp_005.json"
+        }
+      ]
+    }
+  ],
+  "legal_status": "Drafting forms requiring transaction-specific Indian advocate review; not certified execution-ready legal forms.",
+  "state_execution_guidance": {
+    "default_state": "Tamil Nadu",
+    "stamp_duty": "Determine the correct instrument classification and duty under the Indian Stamp Act, 1899 as applicable in Tamil Nadu, including Tamil Nadu amendments and current Schedule I rates. Do not apply a single flat rate to all agreements.",
+    "registration": "Check the Registration Act, 1908 and Tamil Nadu amendments/rules. Registration is compulsory for specified instruments and transactions; an ordinary services agreement is not automatically registrable merely because it is signed in Tamil Nadu.",
+    "adjudication": "Where classification or duty is uncertain, obtain stamp-duty adjudication/impounding advice from the competent Tamil Nadu authority before execution or reliance.",
+    "execution": "Confirm e-stamping/franking/non-judicial stamp paper availability and the currently accepted execution process with the relevant Tamil Nadu authority or counsel before signing.",
+    "property_documents": "If the instrument creates, declares, assigns, limits or extinguishes rights in immovable property, obtain separate property-law review for stamp duty, compulsory registration, description, schedules and local formalities.",
+    "electronic_execution": "Check the Information Technology Act, 2000 and document-specific exclusions/formalities; electronic signing does not remove stamp duty or registration obligations.",
+    "local_review": "State-specific rates and procedures must be verified on the execution date; this library intentionally does not hardcode stamp amounts."
+  },
+  "important_limitations": [
+    "No stamp duty rate is hardcoded; determine instrument classification and current Tamil Nadu Schedule I rate on execution date.",
+    "Registration is document- and transaction-specific; property instruments require separate review.",
+    "GST/TDS, labour, sector-specific and regulatory obligations depend on facts and current law.",
+    "This v2 package expands drafting structure and schedules but is not a substitute for an advocate's review."
+  ]
+}

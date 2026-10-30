@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "library": "ClauseCite Financial Agreement Template Library",
+  "template_count": 12,
+  "templates": [
+    {
+      "template_id": "FIN-LOAN-001",
+      "file": "fin_loan_001.json",
+      "name": "Loan And Lending Agreement"
+    },
+    {
+      "template_id": "FIN-PN-001",
+      "file": "fin_pn_001.json",
+      "name": "Promissory Note"
+    },
+    {
+      "template_id": "FIN-IOU-001",
+      "file": "fin_iou_001.json",
+      "name": "Acknowledgement Of Debt (Iou)"
+    },
+    {
+      "template_id": "FIN-PAY-001",
+      "file": "fin_pay_001.json",
+      "name": "Payment Plan And Instalment Agreement"
+    },
+    {
+      "template_id": "FIN-SHARE-001",
+      "file": "fin_share_001.json",
+      "name": "Revenue, Grant And Profit-Sharing Agreement"
+    },
+    {
+      "template_id": "FIN-SETTLE-001",
+      "file": "fin_settle_001.json",
+      "name": "Debt Settlement Agreement"
+    },
+    {
+      "template_id": "FIN-CREDIT-001",
+      "file": "fin_credit_001.json",
+      "name": "Credit Facility Agreement"
+    },
+    {
+      "template_id": "FIN-GUAR-001",
+      "file": "fin_guar_001.json",
+      "name": "Guarantee And Guarantor Agreement"
+    },
+    {
+      "template_id": "FIN-ACH-001",
+      "file": "fin_ach_001.json",
+      "name": "Bank Debit / Ach Payment Authorisation"
+    },
+    {
+      "template_id": "FIN-ESC-001",
+      "file": "fin_esc_001.json",
+      "name": "Escrow Agreement"
+    },
+    {
+      "template_id": "FIN-SEC-001",
+      "file": "fin_sec_001.json",
+      "name": "Security And Collateral Agreement"
+    },
+    {
+      "template_id": "FIN-EQ-001",
+      "file": "fin_eq_001.json",
+      "name": "Investment And Equity Subscription Agreement"
+    }
+  ],
+  "note": "The source index says 11 standalone templates, but enumerates 12 template IDs; all 12 are included here."
+}

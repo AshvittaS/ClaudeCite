@@ -1,0 +1,731 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-EQ-001",
+  "name": "Investment And Equity Subscription Agreement",
+  "category": "Investment / equity",
+  "intended_use": "Subscription for newly issued equity securities; adapt for secondary transfers, convertible instruments or regulated offerings.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "shares",
+    "price",
+    "closing",
+    "representations",
+    "rights"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount",
+      "source_placeholder": "AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount",
+      "source_placeholder": "AMOUNT / %",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amounts_and_basis",
+      "source_placeholder": "AMOUNTS_AND_BASIS",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitral_seat",
+      "source_placeholder": "ARBITRAL_SEAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitration_rules",
+      "source_placeholder": "ARBITRATION_RULES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "assumptions",
+      "source_placeholder": "ASSUMPTIONS",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "board_shareholder_approvals",
+      "source_placeholder": "BOARD / SHAREHOLDER APPROVALS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "class",
+      "source_placeholder": "CLASS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "closing_date",
+      "source_placeholder": "CLOSING_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "company_account",
+      "source_placeholder": "COMPANY_ACCOUNT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_venue",
+      "source_placeholder": "COURT_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "delivery_acknowledgement_other_agreed_event",
+      "source_placeholder": "DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details_or_none",
+      "source_placeholder": "DETAILS_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "disclosure",
+      "source_placeholder": "DISCLOSURE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "documents",
+      "source_placeholder": "DOCUMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusive_non_exclusive",
+      "source_placeholder": "EXCLUSIVE/NON-EXCLUSIVE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "investment_purpose",
+      "source_placeholder": "INVESTMENT_PURPOSE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "language",
+      "source_placeholder": "LANGUAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "list_or_none",
+      "source_placeholder": "LIST_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "name",
+      "source_placeholder": "NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "number",
+      "source_placeholder": "NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "number_class",
+      "source_placeholder": "NUMBER / CLASS / %",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "period_or_none",
+      "source_placeholder": "PERIOD_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_assignments",
+      "source_placeholder": "PERMITTED_ASSIGNMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "placeholder",
+      "source_placeholder": "PLACEHOLDER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "price_per_security",
+      "source_placeholder": "PRICE_PER_SECURITY",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "process",
+      "source_placeholder": "PROCESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "process_or_none",
+      "source_placeholder": "PROCESS_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "reports_and_frequency",
+      "source_placeholder": "REPORTS_AND_FREQUENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "total_subscription_amount",
+      "source_placeholder": "TOTAL_SUBSCRIPTION_AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "use_of_proceeds",
+      "source_placeholder": "USE_OF_PROCEEDS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "valuation",
+      "source_placeholder": "VALUATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "voting_dividend_liquidation_conversion_etc",
+      "source_placeholder": "VOTING, DIVIDEND, LIQUIDATION, CONVERSION, ETC.",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-EQ-001\nCategory | Investment & equity documents\nIntended use | Subscription for newly issued equity securities; adapt for secondary transfers, convertible instruments or regulated offerings."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This INVESTMENT AND EQUITY SUBSCRIPTION AGREEMENT (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. SUBSCRIPTION",
+      "content": [
+        "Subject to the conditions in this Agreement, Investor agrees to subscribe for, and Company agrees to issue and allot, {{NUMBER}} {{CLASS}} shares / securities at a subscription price of {{CURRENCY}} {{PRICE_PER_SECURITY}} each, for an aggregate subscription amount of {{CURRENCY}} {{TOTAL_SUBSCRIPTION_AMOUNT}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. CAPITALISATION AND RIGHTS",
+      "content": [
+        "The securities shall carry the rights set out in the Company’s constitutional documents and the rights schedule in Schedule A. The agreed pre-money valuation is {{VALUATION}} and post-money valuation is {{VALUATION}}, calculated on the basis set out in Schedule A. The fully diluted capitalisation table is attached as Schedule B."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. CLOSING AND PAYMENT",
+      "content": [
+        "Closing shall occur on {{CLOSING_DATE}} or another date agreed in writing, subject to satisfaction or waiver of the conditions in Schedule C. Investor shall pay the subscription amount to {{COMPANY_ACCOUNT}}. Company shall issue the securities, update its statutory registers and deliver evidence of allotment in accordance with applicable law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. COMPANY REPRESENTATIONS",
+      "content": [
+        "Company represents that it is duly formed and in good standing where applicable; has authority to enter this Agreement; has disclosed its capitalisation and material encumbrances; and has not knowingly supplied materially misleading information. Detailed representations and any disclosure exceptions are in Schedule D."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. INVESTOR REPRESENTATIONS",
+      "content": [
+        "Investor represents that it has authority and capacity to invest, has made its own assessment, understands the risk of loss and illiquidity, and is acquiring the securities for {{INVESTMENT_PURPOSE}} and not in violation of applicable securities laws."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. USE OF PROCEEDS",
+      "content": [
+        "Company shall use the subscription proceeds for {{USE_OF_PROCEEDS}}. Any restricted use or milestone-based release is stated in Schedule E."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. INFORMATION AND GOVERNANCE RIGHTS",
+      "content": [
+        "Investor shall receive {{REPORTS_AND_FREQUENCY}}. Board appointment, observer, consent or veto rights apply only if expressly set out in Schedule F and validly reflected in the Company’s constitutional documents and required approvals."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "8. TRANSFER RESTRICTIONS",
+      "content": [
+        "Any transfer is subject to applicable securities law, the Company’s constitutional documents, rights of first refusal / co-sale / lock-up provisions in Schedule G and required approvals. No transfer restriction shall be enforced beyond what applicable law permits."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "9. FURTHER ASSURANCES AND FILINGS",
+      "content": [
+        "Each Party shall execute documents and take actions reasonably necessary to complete the subscription. Company shall make required corporate, securities, beneficial ownership, foreign investment and regulatory filings within applicable deadlines."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "10. CONFIDENTIALITY AND ANNOUNCEMENTS",
+      "content": [
+        "No Party shall make a public announcement identifying another Party or disclosing transaction terms without prior written consent, except for legally required disclosures."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "11. RISK ACKNOWLEDGEMENT",
+      "content": [
+        "Investor acknowledges that equity is exposed to business, dilution, liquidity and total-loss risks; no return, dividend, exit or valuation is guaranteed unless expressly and lawfully stated."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". GOVERNING LAW AND DISPUTE RESOLUTION",
+      "content": [
+        "This Agreement and any non-contractual obligations arising from it are governed by the laws of {{GOVERNING_JURISDICTION}}, excluding conflict-of-law rules to the extent permitted. The courts at {{COURT_VENUE}} shall have {{EXCLUSIVE/NON-EXCLUSIVE}} jurisdiction. [Alternative: disputes shall be finally resolved by arbitration seated at {{ARBITRAL_SEAT}}, under {{ARBITRATION_RULES}}, in {{LANGUAGE}}.] Select one dispute-resolution route and ensure it is legally available."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". NOTICES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Notices must be in writing and delivered by hand, recognised courier or email to the addresses specified above (or updated by notice). An email notice is effective only upon {{DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT}}.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": ". GENERAL",
+      "content": [
+        "This Agreement constitutes the entire agreement on its subject matter and supersedes prior discussions. Any amendment must be in writing and signed by both Parties. Neither Party may assign this Agreement without the other Party’s prior written consent, except {{PERMITTED_ASSIGNMENTS}}. If any provision is invalid, the remaining provisions continue in effect. A failure to enforce a right is not a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "COMPANY |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nINVESTOR |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — SUBSCRIPTION AND SECURITY RIGHTS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Security class / type | {{DETAILS}}\nNumber of securities | {{NUMBER}}\nPrice per security | {{AMOUNT}}\nAggregate subscription | {{AMOUNT}}\nPre-money / post-money valuation | {{AMOUNTS_AND_BASIS}}\nRights | {{VOTING, DIVIDEND, LIQUIDATION, CONVERSION, ETC.}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE B — CAPITALISATION TABLE",
+      "content": [
+        {
+          "type": "table",
+          "content": "Holder | {{NAME}}\nPre-closing holding | {{NUMBER / CLASS / %}}\nNew issuance | {{NUMBER / CLASS / %}}\nPost-closing holding | {{NUMBER / CLASS / %}}\nFully diluted basis | {{ASSUMPTIONS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE C — CLOSING CONDITIONS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Corporate approvals | {{BOARD / SHAREHOLDER APPROVALS}}\nRegulatory approvals | {{LIST_OR_NONE}}\nKYC / beneficial ownership | {{DOCUMENTS}}\nPayment evidence | {{DETAILS}}\nConstitutional / shareholder documents | {{DOCUMENTS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE D — DISCLOSURES / EXCEPTIONS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Material contracts / disputes | {{DISCLOSURE}}\nExisting securities / options | {{DISCLOSURE}}\nEncumbrances | {{DISCLOSURE}}\nTax / regulatory matters | {{DISCLOSURE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE E — USE OF PROCEEDS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Use category 1 | {{AMOUNT / %}}\nUse category 2 | {{AMOUNT / %}}\nRestrictions / milestones | {{DETAILS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE F — GOVERNANCE AND INFORMATION RIGHTS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Board / observer rights | {{DETAILS_OR_NONE}}\nReserved matters | {{DETAILS_OR_NONE}}\nInformation rights | {{DETAILS}}\nInspection rights | {{DETAILS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE G — TRANSFER TERMS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Lock-up | {{PERIOD_OR_NONE}}\nROFR / pre-emption | {{PROCESS}}\nTag / drag rights | {{PROCESS_OR_NONE}}\nPermitted transfers | {{DETAILS}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Verify company law requirements for issue/allotment, pre-emption, valuation, corporate approvals, registers and filings.",
+        "Check securities offering / private placement, investor eligibility, disclosures and transfer restrictions.",
+        "For cross-border investment, verify foreign investment / exchange control, sectoral caps, pricing, reporting and repatriation rules.",
+        "Review tax, beneficial ownership, competition and data room confidentiality requirements.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        },
+        "CLAUSECITE — PRE-GENERATION AND PRE-SIGNATURE CHECKLIST",
+        "☐  Correct template selected for the legal and commercial substance of the transaction.",
+        "☐  All party legal names, entity types, registration details, addresses and authority documents verified.",
+        "☐  Currency, principal, rate, calculation basis, dates, payment schedule and bank details confirmed by the user.",
+        "☐  All {{PLACEHOLDER}} and [SELECT] fields resolved; no drafting instructions remain in the execution copy.",
+        "☐  Governing law, forum, arbitration seat, language and service-of-notice details confirmed.",
+        "☐  Applicable statutes and regulations retrieved from the selected jurisdiction’s authoritative corpus and checked for current status.",
+        "☐  Every legal citation has a verified instrument title, section/rule, jurisdiction, version/effective date and source reference.",
+        "☐  Mandatory disclosures, licensing, KYC/AML, consumer rules, securities rules, tax, stamp duty, registration and payment network requirements assessed.",
+        "☐  Schedules, annexures, security documents, board approvals and third-party consents attached where needed.",
+        "☐  Interest, default interest, fees, penalties, indemnities and liability caps checked against mandatory law.",
+        "☐  Execution formalities, witnesses, notarisation, e-signature, stamping and registration checked for this document type.",
+        "☐  Independent legal review completed before execution where appropriate.",
+        "Recommended ClauseCite template object fields",
+        "For ingestion, associate each template with metadata rather than relying only on the document title:",
+        "template_id, template_name, category, jurisdiction_scope, version, status",
+        "party_roles, required_fields, optional_fields, conditional_clauses",
+        "clause_ids, clause_titles, clause_text, clause_dependencies",
+        "statutory_queries, citation_required, citation_validation_status",
+        "execution_requirements, schedules, risk_flags, reviewer_notes",
+        {
+          "type": "table",
+          "content": "Important: A retrieved statutory citation should support the particular clause and transaction facts. A citation match alone does not prove that the whole agreement is valid or enforceable."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

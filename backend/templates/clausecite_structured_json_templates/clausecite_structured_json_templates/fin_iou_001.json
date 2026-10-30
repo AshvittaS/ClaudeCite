@@ -1,0 +1,440 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-IOU-001",
+  "name": "Acknowledgement Of Debt (Iou)",
+  "category": "IOUs",
+  "intended_use": "Evidence of an existing debt; use a promissory note where a formal payment promise or negotiable instrument is intended.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "amount",
+    "debt basis",
+    "due date",
+    "payment method"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "acknowledgement_date",
+      "source_placeholder": "ACKNOWLEDGEMENT_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "admitted_in_full_subject_to_the_reconciliation_in_schedule_a",
+      "source_placeholder": "ADMITTED_IN_FULL / SUBJECT_TO_THE_RECONCILIATION_IN_SCHEDULE_A",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount",
+      "source_placeholder": "AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "basis_of_debt",
+      "source_placeholder": "BASIS_OF_DEBT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "bear_not_bear",
+      "source_placeholder": "BEAR / NOT BEAR",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_or_arbitration_venue",
+      "source_placeholder": "COURT_OR_ARBITRATION_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "date_or_schedule",
+      "source_placeholder": "DATE_OR_SCHEDULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "days",
+      "source_placeholder": "DAYS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "debt_amount",
+      "source_placeholder": "DEBT_AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details_or_none",
+      "source_placeholder": "DETAILS_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "due_date",
+      "source_placeholder": "DUE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "payment_method",
+      "source_placeholder": "PAYMENT_METHOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "rate",
+      "source_placeholder": "RATE",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "start_date",
+      "source_placeholder": "START_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-IOU-001\nCategory | Promissory notes & IOUs\nIntended use | Evidence of an existing debt; use a promissory note where a formal payment promise or negotiable instrument is intended."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This ACKNOWLEDGEMENT OF DEBT (IOU) (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. ACKNOWLEDGEMENT",
+      "content": [
+        "The Debtor acknowledges that, as of {{ACKNOWLEDGEMENT_DATE}}, the Debtor owes the Creditor {{CURRENCY}} {{DEBT_AMOUNT}} (the “Debt”) arising from {{BASIS_OF_DEBT}}. The Debtor confirms that the amount stated is {{ADMITTED_IN_FULL / SUBJECT_TO_THE_RECONCILIATION_IN_SCHEDULE_A}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. PAYMENT OBLIGATION",
+      "content": [
+        "The Debtor shall pay the Debt to the Creditor by {{PAYMENT_METHOD}} no later than {{DUE_DATE}}, or in the instalments set out in Schedule A."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. INTEREST",
+      "content": [
+        "The Debt shall {{BEAR / NOT BEAR}} interest. If interest applies, the rate is {{RATE}} per annum from {{START_DATE}}, subject to applicable law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. NO NOVATION UNLESS STATED",
+      "content": [
+        "This acknowledgement records the Debt and does not, by itself, release, replace or novate any underlying obligation or security unless the Parties expressly state otherwise in writing."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. DISPUTED AMOUNTS",
+      "content": [
+        "Any dispute concerning the calculation or basis of the Debt must be notified in writing within {{DAYS}} days with reasonable particulars. Undisputed amounts remain payable when due, subject to mandatory law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. RECORDS AND RECEIPTS",
+      "content": [
+        "Creditor shall provide a receipt for each payment and, after full settlement, written confirmation that the Debt recorded in this IOU has been paid in full."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. GOVERNING LAW",
+      "content": [
+        "This IOU is governed by {{GOVERNING_JURISDICTION}} and subject to the dispute forum stated in {{COURT_OR_ARBITRATION_VENUE}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "DEBTOR |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nCREDITOR |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — DEBT RECONCILIATION / PAYMENT PLAN",
+      "content": [
+        {
+          "type": "table",
+          "content": "Original amount | {{AMOUNT}}\nPayments / credits already made | {{DETAILS}}\nAdjustments / disputed items | {{DETAILS_OR_NONE}}\nAcknowledged balance | {{AMOUNT}}\nDue date(s) | {{DATE_OR_SCHEDULE}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Verify whether the document is merely an acknowledgement of debt or is intended to operate as a promissory note / negotiable instrument.",
+        "Check applicable stamp duty, limitation, evidence and interest rules.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clausecite.local/schemas/financial-template.schema.json",
+  "title": "ClauseCite Financial Agreement Template",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "template_id",
+    "name",
+    "source",
+    "inputs",
+    "document_structure",
+    "statutory_verification",
+    "generation_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "template_id": {
+      "type": "string",
+      "pattern": "^FIN-[A-Z]+-\\d{3}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "intended_use": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "document",
+        "source_format",
+        "extraction_mode"
+      ],
+      "properties": {
+        "document": {
+          "type": "string"
+        },
+        "source_format": {
+          "const": "docx"
+        },
+        "extraction_mode": {
+          "type": "string"
+        },
+        "fidelity_note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "key_variables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "source_placeholder",
+          "type",
+          "required",
+          "description",
+          "value"
+        ],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "source_placeholder": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "required": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "value": {}
+        },
+        "additionalProperties": false
+      }
+    },
+    "document_structure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "section",
+              "text",
+              "table"
+            ]
+          },
+          "heading": {
+            "type": "string"
+          },
+          "content": {
+            "type": [
+              "array",
+              "string"
+            ],
+            "items": {
+              "type": [
+                "string",
+                "object"
+              ]
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "statutory_verification": {
+      "type": "array"
+    },
+    "generation_policy": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

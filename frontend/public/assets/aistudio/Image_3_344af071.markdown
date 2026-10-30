@@ -1,0 +1,234 @@
+---
+name: Luminous Carbon Agency
+colors:
+  surface: '#131315'
+  surface-dim: '#131315'
+  surface-bright: '#39393b'
+  surface-container-lowest: '#0e0e10'
+  surface-container-low: '#1c1b1d'
+  surface-container: '#201f21'
+  surface-container-high: '#2a2a2c'
+  surface-container-highest: '#353437'
+  on-surface: '#e5e1e4'
+  on-surface-variant: '#e4beb4'
+  inverse-surface: '#e5e1e4'
+  inverse-on-surface: '#313032'
+  outline: '#ab8980'
+  outline-variant: '#5b4039'
+  surface-tint: '#ffb5a0'
+  primary: '#ffb5a0'
+  on-primary: '#5f1500'
+  primary-container: '#ff5723'
+  on-primary-container: '#541100'
+  inverse-primary: '#b02e00'
+  secondary: '#c6c6c7'
+  on-secondary: '#2f3131'
+  secondary-container: '#454747'
+  on-secondary-container: '#b4b5b5'
+  tertiary: '#ffb59d'
+  on-tertiary: '#5d1800'
+  tertiary-container: '#e46e46'
+  on-tertiary-container: '#521400'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffdbd1'
+  primary-fixed-dim: '#ffb5a0'
+  on-primary-fixed: '#3b0900'
+  on-primary-fixed-variant: '#872100'
+  secondary-fixed: '#e2e2e2'
+  secondary-fixed-dim: '#c6c6c7'
+  on-secondary-fixed: '#1a1c1c'
+  on-secondary-fixed-variant: '#454747'
+  tertiary-fixed: '#ffdbd0'
+  tertiary-fixed-dim: '#ffb59d'
+  on-tertiary-fixed: '#390b00'
+  on-tertiary-fixed-variant: '#822703'
+  background: '#131315'
+  on-background: '#e5e1e4'
+  surface-variant: '#353437'
+  carbon-surface: '#121216'
+  carbon-elevated: '#19191f'
+  glass-border: rgba(255, 255, 255, 0.08)
+  glass-border-glow: rgba(255, 85, 32, 0.35)
+  text-muted: '#8e8e99'
+typography:
+  display:
+    fontFamily: Space Grotesk
+    fontSize: 72px
+    fontWeight: '700'
+    lineHeight: 80px
+    letterSpacing: -0.04em
+  display-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 46px
+    letterSpacing: -0.03em
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 48px
+    fontWeight: '600'
+    lineHeight: 56px
+    letterSpacing: -0.03em
+  headline-lg-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 38px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Space Grotesk
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: Space Grotesk
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: Space Grotesk
+    fontSize: 10px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.5rem
+  DEFAULT: 1rem
+  md: 1.5rem
+  lg: 2rem
+  xl: 3rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  gutter-lg: 2rem
+  margin: 1.5rem
+  margin-md: 3rem
+  margin-lg: 5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system channels an avant-garde digital agency aesthetic—combining ultra-dark minimalism with electric hyper-contrast. Targeted at tech visionaries, high-growth founders, and design-led enterprises, the interface conveys elite technical precision, creative confidence, and fluid sophistication.
+
+The design movement bridges dark-mode minimalism, refined glassmorphism, and high-impact kinetic typography:
+- **Atmosphere:** Pitch-black canvases layered over matte carbon structures create infinite depth without visual clutter.
+- **Electric Accent:** Vibrant neon orange punctures the void, serving as a dynamic beacon for focal interactions, status anchors, and decisive calls-to-action.
+- **Glass & Light:** Translucent dark membranes, soft glowing edge highlights, and subtle linear gradient strokes deliver an ethereal, tactile depth without heavy skeuomorphic physics.
+- **Kinetic Precision:** Elements favor sleek, rounded silhouettes and pill containers, radiating an aerodynamic, polished product feel.
+
+## Colors
+
+The palette is tuned specifically for deep OLED immersion, anchored by pitch black (`#0a0a0c`) and carbon neutrals (`#121216`, `#19191f`), against which vibrant chromatic light and crisp whites take center stage.
+
+- **Primary (`#ff5520`):** Kinetic neon orange used for primary CTAs, active states, active cursor blooms, and glowing ambient halos.
+- **Secondary (`#ffffff`):** Pure optical white reserved for high-impact headlines, primary body content, and high-contrast badges.
+- **Tertiary (`#ff8359`):** A lighter, luminous solar orange used for hover accents, gradient endpoints, and secondary focal highlights.
+- **Neutral (`#0a0a0c`):** An uncompromising, pitch-black canvas establishing pure contrast and low-light visual tranquility.
+- **Surface Tiers & Glow Accents:** `carbon-surface` (`#121216`) provides flat container differentiation, while `glass-border` (`rgba(255, 255, 255, 0.08)`) and `glass-border-glow` (`rgba(255, 85, 32, 0.35)`) deliver microscopic razor-thin structural definition.
+
+## Typography
+
+The typographic strategy pairs the geometric, forward-leaning character of **Space Grotesk** with the balanced, ultra-legible ergonomics of **Plus Jakarta Sans**.
+
+- **Display & Headlines:** Set in Space Grotesk with snug, negative tracking (-0.02em to -0.04em) to produce an authoritative, agency-grade editorial voice. Titles demand attention through tight line heights and high-contrast optical weights.
+- **Body & Continuous Reading:** Handled by Plus Jakarta Sans. Its rounded geometry complements the display typography while keeping dense technical text, case studies, and descriptive agency copy effortless to scan.
+- **Labels & Interactive Elements:** Rendered in Space Grotesk uppercase or medium weight with expanded tracking to maintain crisp edge contrast against dark glass surfaces and pill buttons.
+
+## Layout & Spacing
+
+The layout embraces a fluid, responsive 12-column grid system with generous vertical breathing room, framing interactive showcase modules like cinematic plates.
+
+- **Breakpoints & Grids:**
+  - **Desktop (≥ 1200px):** 12 columns, 5rem outer margins (`margin-lg`), and 2rem gutters (`gutter-lg`). Max content boundary capped at 1440px for ultra-wide setups.
+  - **Tablet (768px – 1199px):** 8 columns, 3rem outer margins (`margin-md`), and 1.5rem gutters (`gutter`).
+  - **Mobile (< 768px):** 4 columns, 1.5rem outer margins (`margin`), and 1rem gutters (`gutter-sm`).
+- **Vertical Rhythm:** Sections deploy generous vertical paddings (4rem to 8rem) to create rhythmic pauses, focusing visual energy on featured interactive portfolios and agency artifacts.
+- **Gap & Stacking Rules:** Nested component elements maintain a baseline 8px spatial modularity (`space-sm` for compact relationships, `space-md` for standard item groups, and `space-xl` between major modular zones).
+
+## Elevation & Depth
+
+Visual hierarchy does not use murky drop shadows; instead, it utilizes translucent glassmorphism, carbon surface tiers, and razor-sharp glowing perimeter highlights.
+
+- **Tonal Layers:**
+  - **Base Canvas:** Deep pitch black (`#0a0a0c`), zero elevation.
+  - **Level 1 (Panels & Groupings):** Solid carbon surface (`#121216`) with an ultra-fine border: `1px solid rgba(255, 255, 255, 0.05)`.
+  - **Level 2 (Interactive Glass Surfaces):** Semi-transparent carbon (`rgba(18, 18, 22, 0.72)`) with `backdrop-filter: blur(20px)` and perimeter stroke `1px solid rgba(255, 255, 255, 0.08)`.
+  - **Level 3 (Modals & Overlays):** Translucent backdrop blur with deep ambient carbon tint (`rgba(25, 25, 31, 0.85)`).
+- **The Outcrowd Glow:**
+  - Interactive cards and floating panels feature directional gradient borders that highlight under cursor movement.
+  - Hover states initiate a neon bloom: `box-shadow: 0 0 30px -5px rgba(255, 85, 32, 0.25), inset 0 1px 1px 0 rgba(255, 255, 255, 0.2)`.
+
+## Shapes
+
+The interface embraces a futuristic, aerodynamic shape language characterized by pill-shaped interactive anchors and rounded glass surfaces:
+
+- **Buttons & Tags:** Strictly pill-shaped (`border-radius: 9999px` or level 3). They read instantly as tactile capsules floating effortlessly over the dark background.
+- **Cards & Visual Containers:** Styled with generous corner rounding (`rounded-xl` / 24px - 32px), creating smooth pebble contours that soften dense technical layouts and media assets.
+- **Input Fields & Segmented Controls:** Maintain the full pill aesthetic (`rounded-full`), reinforcing consistent touchpoints across forms and dynamic agency filters.
+
+## Components
+
+### Buttons
+- **Primary:** Full pill capsule (`border-radius: 9999px`), neon orange background (`#ff5520`), white typography (`label-lg`), with zero border. On hover, triggers a scale transform (1.02) and an ambient orange halo bloom (`box-shadow: 0 0 24px rgba(255, 85, 32, 0.45)`).
+- **Secondary Glass:** Pill capsule, translucent carbon fill (`rgba(255, 255, 255, 0.04)`), `1px solid rgba(255, 255, 255, 0.12)`, white text. On hover, border shifts to neon orange (`#ff5520`) with text color retained in pure white.
+- **Icon / Action Orb:** Perfect circular buttons with micro-arrow glyphs, rotating 45 degrees upon hover.
+
+### Cards & Showcase Panels
+- **Glassmorphic Portfolio Card:** Background `rgba(18, 18, 22, 0.65)`, blurred backdrop (`16px`), rounded with 24px corners. Outlined by `1px solid rgba(255, 255, 255, 0.07)`.
+- **Active / Hover State:** Border transitions into an illuminated orange gradient with a radiant top-right edge highlight. Embedded media transitions with a smooth cinematic zoom (scale 1.04).
+
+### Chips & Badges
+- Pill-shaped tags with `body-sm` or `label-md` typography.
+- Filled with low-opacity carbon (`rgba(255, 255, 255, 0.06)`), subtle border `1px solid rgba(255, 255, 255, 0.08)`.
+- Status indicators feature an 8px circular dot radiating an active neon orange pulse animation.
+
+### Form Inputs
+- Pill container with height 52px, filled with `#121216`, framed by `1px solid rgba(255, 255, 255, 0.1)`.
+- Placeholder text in `text-muted` (`#8e8e99`).
+- **Focus State:** Border transitions dynamically to `#ff5520`, accompanied by a subtle inner glow (`box-shadow: 0 0 0 3px rgba(255, 85, 32, 0.15)`).
+
+### Checkboxes & Radio Controls
+- Radio elements use concentric pill/circle styling: inactive state has a dark `#121216` core with a `1px` subtle outline; active state deploys a radiant `#ff5520` center ring.
+- Checkboxes feature a 6px curved corner box (`#121216`), flipping to full neon orange with an optical white check glyph upon selection.
+
+### Lists & Project Indexes
+- Clean horizontal rows separated by hairline dividers (`1px solid rgba(255, 255, 255, 0.06)`).
+- On row hover, initiates a horizontal reveal of category tags and an animated pill cursor preview with fluid vertical expansion.

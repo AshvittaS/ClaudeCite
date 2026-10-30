@@ -1,0 +1,669 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-CREDIT-001",
+  "name": "Credit Facility Agreement",
+  "category": "Credit agreements",
+  "intended_use": "A revolving or non-revolving credit facility with drawdown and repayment mechanics.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "facility",
+    "drawdown",
+    "utilisation",
+    "repayment",
+    "covenants"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "amount",
+      "source_placeholder": "AMOUNT",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitral_seat",
+      "source_placeholder": "ARBITRAL_SEAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitration_rules",
+      "source_placeholder": "ARBITRATION_RULES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "availability_end_date",
+      "source_placeholder": "AVAILABILITY_END_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "basis_and_dates",
+      "source_placeholder": "BASIS_AND_DATES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "confirmation",
+      "source_placeholder": "CONFIRMATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_venue",
+      "source_placeholder": "COURT_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "cure_period",
+      "source_placeholder": "CURE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "date",
+      "source_placeholder": "DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "delivery_acknowledgement_other_agreed_event",
+      "source_placeholder": "DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "documents_and_frequency",
+      "source_placeholder": "DOCUMENTS_AND_FREQUENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusive_non_exclusive",
+      "source_placeholder": "EXCLUSIVE/NON-EXCLUSIVE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "facility_limit",
+      "source_placeholder": "FACILITY_LIMIT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "fee_or_none",
+      "source_placeholder": "FEE_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "financial_covenants",
+      "source_placeholder": "FINANCIAL_COVENANTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "formulae_and_test_dates",
+      "source_placeholder": "FORMULAE_AND_TEST_DATES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "frequency",
+      "source_placeholder": "FREQUENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "language",
+      "source_placeholder": "LANGUAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "list",
+      "source_placeholder": "LIST",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "list_or_none",
+      "source_placeholder": "LIST_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "maturity_repayment_schedule",
+      "source_placeholder": "MATURITY / REPAYMENT SCHEDULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "name",
+      "source_placeholder": "NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "name_signature",
+      "source_placeholder": "NAME / SIGNATURE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_days",
+      "source_placeholder": "NOTICE_DAYS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_period",
+      "source_placeholder": "NOTICE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_assignments",
+      "source_placeholder": "PERMITTED_ASSIGNMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_purpose",
+      "source_placeholder": "PERMITTED_PURPOSE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "purpose",
+      "source_placeholder": "PURPOSE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "rate_or_benchmark_plus_margin",
+      "source_placeholder": "RATE_OR_BENCHMARK_PLUS_MARGIN",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "revolving_non_revolving",
+      "source_placeholder": "REVOLVING/NON-REVOLVING",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "terms",
+      "source_placeholder": "TERMS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "threshold_and_scope",
+      "source_placeholder": "THRESHOLD_AND_SCOPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-CREDIT-001\nCategory | Debt settlement & credit agreements\nIntended use | A revolving or non-revolving credit facility with drawdown and repayment mechanics."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This CREDIT FACILITY AGREEMENT (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. FACILITY",
+      "content": [
+        "Lender makes available to Borrower a {{REVOLVING/NON-REVOLVING}} credit facility up to {{CURRENCY}} {{FACILITY_LIMIT}} (the “Facility”) during the Availability Period ending {{AVAILABILITY_END_DATE}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. UTILISATION",
+      "content": [
+        "Borrower may request an advance by delivering a utilisation request in the form of Schedule A at least {{NOTICE_DAYS}} Business Days before the proposed drawdown. Each advance is subject to the conditions in this Agreement and shall not cause the outstanding amount to exceed the Facility Limit."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. PURPOSE",
+      "content": [
+        "Borrower shall use each advance for {{PERMITTED_PURPOSE}} and provide reasonable evidence of use if requested."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. INTEREST, FEES AND COMMITMENT",
+      "content": [
+        "Advances bear interest at {{RATE_OR_BENCHMARK_PLUS_MARGIN}}. Commitment fee: {{FEE_OR_NONE}}. Arrangement fee: {{FEE_OR_NONE}}. Interest and fees are calculated and paid {{BASIS_AND_DATES}}, subject to mandatory limits."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. REPAYMENT AND CANCELLATION",
+      "content": [
+        "Borrower shall repay each advance on {{MATURITY / REPAYMENT SCHEDULE}}. A revolving amount may be redrawn only during the Availability Period. Borrower may cancel undrawn commitments on {{NOTICE_PERIOD}} notice. Prepayment terms are {{TERMS}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. CONDITIONS PRECEDENT",
+      "content": [
+        "Before first utilisation, Lender must receive executed finance documents, authority evidence, KYC/AML information lawfully required, required consents and security documents listed in Schedule B."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. REPRESENTATIONS AND INFORMATION",
+      "content": [
+        "Borrower gives the representations in Schedule C on the Effective Date and each utilisation date, and shall promptly correct any materially misleading information previously supplied."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "8. FINANCIAL AND OPERATIONAL COVENANTS",
+      "content": [
+        "Borrower shall maintain {{FINANCIAL_COVENANTS}}, deliver financial statements {{FREQUENCY}}, notify Lender of material litigation or default, maintain material licences and not incur restricted debt or dispose of material assets except as permitted in Schedule D."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "9. EVENTS OF DEFAULT AND REMEDIES",
+      "content": [
+        "Events of Default include non-payment after any applicable grace period, material covenant breach not cured within {{CURE_PERIOD}}, material misrepresentation, cross-default to {{THRESHOLD_AND_SCOPE}}, insolvency and repudiation. Remedies are exercisable subject to notice, cure rights and mandatory law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "10. SET-OFF AND ACCOUNT COMBINATION",
+      "content": [
+        "[OPTIONAL: Lender may set off matured amounts owed by Borrower against matured amounts owed by Lender to Borrower, only to the extent permitted by applicable law and after required notice.]"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "11. CONFIDENTIALITY AND INFORMATION SHARING",
+      "content": [
+        "Lender may process and disclose Borrower information to its professional advisers, service providers, regulators, assignees and credit information agencies only where lawful and subject to applicable confidentiality and data protection obligations."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". GOVERNING LAW AND DISPUTE RESOLUTION",
+      "content": [
+        "This Agreement and any non-contractual obligations arising from it are governed by the laws of {{GOVERNING_JURISDICTION}}, excluding conflict-of-law rules to the extent permitted. The courts at {{COURT_VENUE}} shall have {{EXCLUSIVE/NON-EXCLUSIVE}} jurisdiction. [Alternative: disputes shall be finally resolved by arbitration seated at {{ARBITRAL_SEAT}}, under {{ARBITRATION_RULES}}, in {{LANGUAGE}}.] Select one dispute-resolution route and ensure it is legally available."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". NOTICES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Notices must be in writing and delivered by hand, recognised courier or email to the addresses specified above (or updated by notice). An email notice is effective only upon {{DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT}}.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": ". GENERAL",
+      "content": [
+        "This Agreement constitutes the entire agreement on its subject matter and supersedes prior discussions. Any amendment must be in writing and signed by both Parties. Neither Party may assign this Agreement without the other Party’s prior written consent, except {{PERMITTED_ASSIGNMENTS}}. If any provision is invalid, the remaining provisions continue in effect. A failure to enforce a right is not a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "LENDER |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nBORROWER |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — FORM OF UTILISATION REQUEST",
+      "content": [
+        {
+          "type": "table",
+          "content": "Borrower | {{NAME}}\nRequested amount / currency | {{AMOUNT}}\nProposed drawdown date | {{DATE}}\nBeneficiary account | {{DETAILS}}\nPurpose certification | {{PURPOSE}}\nAuthorised signatory | {{NAME / SIGNATURE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE B — CONDITIONS PRECEDENT",
+      "content": [
+        {
+          "type": "table",
+          "content": "Corporate / identity documents | {{LIST}}\nApprovals / consents | {{LIST}}\nSecurity documents | {{LIST_OR_NONE}}\nOther conditions | {{LIST}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE C — REPRESENTATIONS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Status and power | {{CONFIRMATION}}\nBinding obligations | {{CONFIRMATION}}\nNo default / insolvency | {{CONFIRMATION}}\nInformation accuracy | {{CONFIRMATION}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE D — COVENANTS / RESTRICTED ACTIONS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Financial covenants | {{FORMULAE_AND_TEST_DATES}}\nReporting | {{DOCUMENTS_AND_FREQUENCY}}\nPermitted debt / liens | {{DETAILS}}\nRestricted disposals | {{DETAILS}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Verify lender licensing, facility type classification and financial regulatory obligations.",
+        "Check interest, fees, default charges, disclosure, set-off and recovery rules.",
+        "Verify KYC/AML, sanctions, data-sharing and credit bureau requirements.",
+        "Check stamp duty, security perfection and tax/withholding rules.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

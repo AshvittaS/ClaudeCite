@@ -1,0 +1,6 @@
+{
+  "name": "ClauseCite - Personal Legal AI Assistant",
+  "description": "ClauseCite is your personal legal AI assistant for rapid contract analysis, clause citation, document comparison, and instant legal guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

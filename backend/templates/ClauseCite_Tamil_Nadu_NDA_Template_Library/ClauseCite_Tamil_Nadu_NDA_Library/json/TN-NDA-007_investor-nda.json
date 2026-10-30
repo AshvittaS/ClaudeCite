@@ -1,0 +1,480 @@
+{
+  "template_id": "TN-NDA-007",
+  "slug": "investor-nda",
+  "name": "Investor and Fundraising Non-Disclosure Agreement",
+  "library": "ClauseCite Tamil Nadu NDA Template Library",
+  "version": "1.0.0",
+  "jurisdiction": {
+    "country": "India",
+    "state": "Tamil Nadu",
+    "state_is_default_not_exclusive": true
+  },
+  "agreement_type": "investor",
+  "summary": "Confidentiality for prospective investors reviewing a fundraising opportunity or business.",
+  "party_roles": [
+    "Company / Founder",
+    "Prospective Investor"
+  ],
+  "purpose_default": "evaluate a potential investment, financing or strategic transaction involving the Company",
+  "fields": [
+    {
+      "key": "effective_date",
+      "label": "Effective date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "disclosing_party_legal_name",
+      "label": "Disclosing party legal name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "key": "disclosing_party_entity_type",
+      "label": "Entity type / constitution",
+      "type": "string",
+      "required": false
+    },
+    {
+      "key": "disclosing_party_registered_address",
+      "label": "Registered / principal address",
+      "type": "address",
+      "required": true
+    },
+    {
+      "key": "receiving_party_legal_name",
+      "label": "Receiving party legal name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "key": "receiving_party_entity_type",
+      "label": "Entity type / constitution",
+      "type": "string",
+      "required": false
+    },
+    {
+      "key": "receiving_party_address",
+      "label": "Registered / residential address",
+      "type": "address",
+      "required": true
+    },
+    {
+      "key": "purpose",
+      "label": "Defined Purpose",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "key": "confidentiality_period_years",
+      "label": "Confidentiality period (years)",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "key": "trade_secret_survival",
+      "label": "Trade secret protection survival",
+      "type": "enum",
+      "options": [
+        "while information remains a trade secret under applicable law",
+        "fixed period selected by parties"
+      ],
+      "required": true
+    },
+    {
+      "key": "notice_email_discloser",
+      "label": "Discloser notice email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "key": "notice_email_receiver",
+      "label": "Receiver notice email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "key": "governing_state",
+      "label": "Governing law jurisdiction",
+      "type": "enum",
+      "options": [
+        "India; Tamil Nadu-specific mandatory law applies where relevant"
+      ],
+      "required": true
+    },
+    {
+      "key": "court_city",
+      "label": "Courts having jurisdiction (subject to law)",
+      "type": "string",
+      "required": false
+    },
+    {
+      "key": "arbitration_option",
+      "label": "Dispute resolution option",
+      "type": "enum",
+      "options": [
+        "courts",
+        "arbitration"
+      ],
+      "required": true
+    },
+    {
+      "key": "arbitration_seat",
+      "label": "Arbitration seat (if selected)",
+      "type": "string",
+      "required": false
+    },
+    {
+      "key": "arbitrator_count",
+      "label": "Number of arbitrators",
+      "type": "enum",
+      "options": [
+        "one",
+        "three"
+      ],
+      "required": false
+    },
+    {
+      "key": "language",
+      "label": "Agreement language",
+      "type": "enum",
+      "options": [
+        "English",
+        "Tamil",
+        "Bilingual English-Tamil"
+      ],
+      "required": true
+    },
+    {
+      "key": "agreement_term",
+      "label": "Agreement term",
+      "type": "string",
+      "required": true,
+      "default": "2 years"
+    },
+    {
+      "key": "termination_notice_days",
+      "label": "Termination notice days",
+      "type": "integer",
+      "required": true,
+      "default": 30
+    },
+    {
+      "key": "cure_period_days",
+      "label": "Breach cure period days",
+      "type": "integer",
+      "required": true,
+      "default": 15
+    },
+    {
+      "key": "return_delete_days",
+      "label": "Return/deletion period days",
+      "type": "integer",
+      "required": true,
+      "default": 15
+    },
+    {
+      "key": "negotiation_days",
+      "label": "Senior negotiation period days",
+      "type": "integer",
+      "required": true,
+      "default": 30
+    },
+    {
+      "key": "dispute_mechanism",
+      "label": "Dispute mechanism",
+      "type": "string",
+      "required": true,
+      "default": "courts / arbitration as selected in Schedule 4"
+    }
+  ],
+  "clauses": [
+    {
+      "clause_id": "definitions",
+      "title": "Confidential Information — definition",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "“Confidential Information” means information disclosed or made available, directly or indirectly, by or on behalf of a Disclosing Party to a Receiving Party, its Representatives or permitted recipients, whether before, on or after the Effective Date and whether in oral, visual, written, electronic, machine-readable, sample, demonstration or other form, that is marked confidential or that reasonably should be understood to be confidential from its nature or the circumstances of disclosure. It includes the categories and examples listed in Schedule 1, together with copies, extracts, notes, analyses, compilations and materials derived from it, to the extent they contain or reflect such information. The parties may identify particularly sensitive items in Schedule 1."
+    },
+    {
+      "clause_id": "purpose",
+      "title": "Permitted Purpose and use limitation",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "The Receiving Party shall use Confidential Information solely to evaluate, negotiate, perform or administer the following expressly defined purpose: {{purpose}} (“Purpose”). It shall not use Confidential Information for any competing, commercial, personal, research, benchmarking, reverse-engineering, model-training or other purpose unless that use is expressly authorised in writing by the Disclosing Party and is lawful. No licence or other right is granted except the limited right to use the information for the Purpose."
+    },
+    {
+      "clause_id": "exclusions",
+      "title": "Exclusions from Confidential Information",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "Confidential Information does not include information that the Receiving Party can demonstrate through contemporaneous written records: (a) is or becomes publicly available other than through breach of this Agreement or a duty owed to the Disclosing Party; (b) was lawfully known to it without restriction before disclosure; (c) is received lawfully from a third party without breach of a confidentiality obligation; or (d) is independently developed without use of or reference to Confidential Information. A combination of information is not excluded merely because individual elements are public or known; the combination itself must qualify for an exclusion. The burden of establishing an exclusion rests on the party relying on it."
+    },
+    {
+      "clause_id": "obligations",
+      "title": "Core confidentiality and security obligations",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "The Receiving Party shall: (a) protect Confidential Information using at least the same degree of care it uses for its own similar sensitive information and, in all cases, no less than reasonable care; (b) prevent unauthorised access, use, copying, alteration, loss or disclosure; (c) restrict access on a need-to-know basis to permitted Representatives bound by written or professional duties no less protective than this Agreement; (d) remain responsible for acts and omissions of its Representatives; (e) maintain appropriate administrative, technical and physical safeguards; (f) promptly notify the Disclosing Party of any actual or reasonably suspected unauthorised access, use, loss or disclosure; and (g) reasonably cooperate to contain, investigate and remediate the incident."
+    },
+    {
+      "clause_id": "exceptions",
+      "title": "Legally compelled disclosure",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "If the Receiving Party or a Representative is required by applicable law, court order, regulator or competent governmental authority to disclose Confidential Information, it may disclose only the portion legally required, provided that (to the extent legally permitted) it gives prompt prior written notice, reasonably cooperates with efforts to seek confidential treatment or protective relief, and discloses only after taking reasonable steps to preserve confidentiality. No notice is required where prohibited by law or a binding direction."
+    },
+    {
+      "clause_id": "disclosure",
+      "title": "Permitted disclosure to Representatives",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "Disclosure is permitted only to the Receiving Party’s directors, officers, employees, professional advisers, auditors, insurers, financing sources and contractors who have a genuine need to know for the Purpose (“Representatives”), provided they are informed of the confidential nature and are bound by enforceable confidentiality obligations or professional duties. The Receiving Party shall maintain an appropriate access list and shall not disclose to affiliates, subcontractors, cloud providers or other third parties unless permitted by Schedule 2 or approved in writing. The Receiving Party is responsible for their compliance."
+    },
+    {
+      "clause_id": "term",
+      "title": "Term and survival",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "This Agreement begins on the Effective Date and continues for {{agreement_term}} unless terminated earlier by written agreement or under its terms. The confidentiality and restricted-use obligations apply to each disclosure for {{confidentiality_period_years}} years from the date of disclosure, except that information qualifying as a trade secret shall remain protected for {{trade_secret_survival}}. The parties must select periods that are reasonable for the information, transaction and applicable law; no period should be inserted automatically without review."
+    },
+    {
+      "clause_id": "termination",
+      "title": "Termination",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "Either party may terminate further disclosures and the ongoing evaluation relationship by giving {{termination_notice_days}} days’ written notice, or immediately by written notice if the other party commits a material breach that is incapable of remedy or, if capable of remedy, fails to remedy it within {{cure_period_days}} days after receiving notice. Termination does not affect accrued rights, liabilities, or obligations that expressly or by their nature survive. Termination does not authorise use or disclosure of information already received."
+    },
+    {
+      "clause_id": "return_deletion",
+      "title": "Return or deletion of Confidential Information",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "Within {{return_delete_days}} days after written request or termination, the Receiving Party shall, at the Disclosing Party’s election, return or securely delete/destroy Confidential Information and copies under its control, and certify completion through an authorised representative on request. The Receiving Party may retain one archival copy solely to the extent required by law, regulation, bona fide internal compliance or automatic back-up systems not reasonably accessible in the ordinary course, provided retained material remains protected, is not restored or used except for the permitted retention purpose, and is deleted under ordinary retention cycles. Legal holds and mandatory retention requirements prevail to the extent applicable."
+    },
+    {
+      "clause_id": "remedies",
+      "title": "Remedies and limitation",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "The parties acknowledge that unauthorised use or disclosure may cause harm for which monetary relief may not always be an adequate remedy. Subject to applicable law and the discretion of the competent court or tribunal, the Disclosing Party may seek interim, injunctive or other equitable relief in addition to remedies available at law. Any damages, indemnity, liquidated sum, liability cap or exclusion must be separately and expressly completed in Schedule 3 and reviewed for enforceability, including under sections 73 and 74 of the Indian Contract Act, 1872. Nothing in this Agreement guarantees that an injunction or a particular measure of damages will be granted."
+    },
+    {
+      "clause_id": "governing_law",
+      "title": "Governing law",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "This Agreement and any non-contractual obligations arising from it shall be governed by the laws of India. Mandatory laws applicable in the State of Tamil Nadu shall apply where relevant to the parties, transaction, place of performance, stamping, execution or enforcement. The parties should obtain advice on any conflict-of-laws issue or cross-border disclosure."
+    },
+    {
+      "clause_id": "disputes",
+      "title": "Dispute resolution and jurisdiction",
+      "type": "standard",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "The parties shall first attempt in good faith to resolve a dispute through senior representatives within {{negotiation_days}} days after written notice of dispute. If unresolved, the dispute shall be resolved by {{dispute_mechanism}}. If arbitration is selected, the arbitration agreement must be in writing and shall specify the seat, venue (if different), language, number and appointment mechanism of arbitrator(s), and interim-relief arrangements in Schedule 4; the Arbitration and Conciliation Act, 1996, as amended, shall apply. If court proceedings are selected, the parties shall specify a court having territorial and subject-matter jurisdiction; this clause does not confer jurisdiction on a court that otherwise lacks it. Nothing prevents a party from seeking urgent interim relief from a competent court."
+    },
+    {
+      "clause_id": "notices",
+      "title": "Notices",
+      "type": "standard",
+      "required": false,
+      "enabled_by_default": true,
+      "advocate_review_required": false,
+      "text": "Notices under this Agreement shall be in writing and delivered by hand, recognised courier or email to the addresses stated in the party details and Schedule 4. An email notice is effective only when receipt is acknowledged or otherwise evidenced in a manner agreed by the parties; automated delivery reports alone should not be treated as conclusive unless expressly agreed. Each party shall promptly notify changes to its notice details."
+    },
+    {
+      "clause_id": "no_license",
+      "title": "No licence, no obligation to proceed",
+      "type": "standard",
+      "required": false,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "All Confidential Information remains the property of the Disclosing Party or its relevant owner. No intellectual-property right, licence, assignment, option, partnership, agency, fiduciary relationship or obligation to enter into a further transaction is created by disclosure. Neither party is obliged to proceed with the Purpose or transaction. Information is provided without representation or warranty except as expressly agreed in a definitive written agreement; fraud or liability that cannot lawfully be excluded is not excluded."
+    },
+    {
+      "clause_id": "general",
+      "title": "Entire agreement, amendments, severability and counterparts",
+      "type": "standard",
+      "required": false,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "This Agreement constitutes the entire agreement on confidentiality for the Purpose and supersedes prior discussions on that subject, except any separate written agreement expressly preserved in Schedule 4. Any amendment or waiver must be in writing and signed by authorised representatives. If a provision is invalid or unenforceable, it shall be severed or read down to the minimum extent permitted without affecting the remainder. No failure or delay in exercising a right is a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature where permitted by applicable law; each counterpart forms one instrument."
+    },
+    {
+      "clause_id": "investor_competition",
+      "title": "Investor activities and competing portfolio companies",
+      "type": "template_specific",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "Before signing, the parties must specifically consider whether the Investor is permitted to evaluate competing opportunities, invest in competing businesses, serve other portfolio companies or use information barriers. Any restriction must be narrowly drafted, fact-specific and reviewed for enforceability. Do not use this NDA to impose a broad restraint of trade."
+    },
+    {
+      "clause_id": "investor_no_reliance",
+      "title": "No offer, solicitation or investment commitment",
+      "type": "template_specific",
+      "required": true,
+      "enabled_by_default": true,
+      "advocate_review_required": true,
+      "text": "Disclosure is for evaluation only and is not an offer, invitation, recommendation or commitment to issue securities or accept investment. Any investment may proceed only under definitive transaction documents and applicable securities, company and regulatory requirements."
+    }
+  ],
+  "schedules": [
+    {
+      "schedule_id": "S1",
+      "title": "Purpose, Information Categories and Disclosure Protocol",
+      "required": true,
+      "fields": [
+        "purpose_detail",
+        "information_categories",
+        "excluded_or_sensitive_items",
+        "disclosure_channels",
+        "marking_protocol",
+        "initial_disclosure_date"
+      ]
+    },
+    {
+      "schedule_id": "S2",
+      "title": "Permitted Representatives, Systems and Security Controls",
+      "required": false,
+      "fields": [
+        "permitted_representatives",
+        "approved_affiliates",
+        "approved_subprocessors",
+        "systems_and_locations",
+        "security_controls",
+        "incident_notice_period_hours",
+        "clean_team_protocol_if_applicable"
+      ]
+    },
+    {
+      "schedule_id": "S3",
+      "title": "Commercial and Risk Allocation Options",
+      "required": false,
+      "fields": [
+        "liability_cap",
+        "excluded_losses",
+        "indemnity_option",
+        "liquidated_damages_option",
+        "insurance_requirements",
+        "special_remedies"
+      ]
+    },
+    {
+      "schedule_id": "S4",
+      "title": "Notices, Term, Dispute Resolution and Execution Details",
+      "required": true,
+      "fields": [
+        "agreement_term",
+        "confidentiality_period_years",
+        "termination_notice_days",
+        "cure_period_days",
+        "return_delete_days",
+        "notice_addresses",
+        "dispute_mechanism",
+        "arbitration_seat",
+        "arbitrator_count",
+        "court_city",
+        "execution_method",
+        "counterparts"
+      ]
+    }
+  ],
+  "signature_blocks": [
+    {
+      "party_role": "Company / Founder",
+      "fields": [
+        "legal_name",
+        "authorised_signatory_name",
+        "designation",
+        "signature",
+        "date",
+        "place"
+      ]
+    },
+    {
+      "party_role": "Prospective Investor",
+      "fields": [
+        "legal_name",
+        "authorised_signatory_name",
+        "designation",
+        "signature",
+        "date",
+        "place"
+      ]
+    }
+  ],
+  "legal_review_flags": [
+    {
+      "flag": "tn_stamp_duty_and_execution",
+      "severity": "high",
+      "review_required": true,
+      "message": "Determine proper instrument classification, applicable Tamil Nadu stamp law, duty, timing and execution/registration requirements from current official sources. No stamp rate is embedded."
+    },
+    {
+      "flag": "restraint_of_trade",
+      "severity": "high",
+      "review_required": true,
+      "message": "Review any non-compete, non-solicit, no-hire, standstill or exclusivity clause against section 27 of the Indian Contract Act, 1872 and applicable law."
+    },
+    {
+      "flag": "damages_and_indemnity",
+      "severity": "high",
+      "review_required": true,
+      "message": "Review liquidated damages, indemnity, caps and exclusions under sections 73 and 74 of the Indian Contract Act, 1872."
+    },
+    {
+      "flag": "privacy_and_data",
+      "severity": "high",
+      "review_required": true,
+      "message": "If personal data is involved, verify applicable privacy law, DPDP phased commencement, notices/authority, roles, security, retention and cross-border rules."
+    },
+    {
+      "flag": "arbitration_and_courts",
+      "severity": "high",
+      "review_required": true,
+      "message": "Confirm written arbitration agreement, seat, appointment mechanism, arbitrability, interim relief and court territorial/subject-matter jurisdiction."
+    },
+    {
+      "flag": "ip_ownership",
+      "severity": "medium",
+      "review_required": true,
+      "message": "An NDA does not itself assign IP. Review any separate copyright, patent, software, invention or commissioned-work terms."
+    }
+  ],
+  "generation_rules": [
+    "Resolve every required field before rendering; do not silently insert legal or commercial defaults.",
+    "Keep optional clauses disabled unless the user selects them and the required facts are supplied.",
+    "Render only clauses relevant to the selected transaction and party roles.",
+    "Preserve clause IDs and version metadata in generated output for auditability.",
+    "Never hardcode stamp-duty rates or claim that a document is duly stamped.",
+    "Require advocate review for every item marked advocate_review_required before execution.",
+    "Use a separate data-processing agreement or schedule when the transaction involves processing personal data on behalf of another party.",
+    "Do not imply that confidentiality language creates ownership of IP or a general post-employment restraint."
+  ],
+  "status": "drafting_template_requires_advocate_review"
+}

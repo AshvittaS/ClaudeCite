@@ -1,0 +1,563 @@
+{
+  "schema_version": "2.0.0",
+  "template_id": "MA-003",
+  "template_name": "Share Purchase Agreement",
+  "category_id": "CAT-08",
+  "category_name": "M&A & Business Transfer Documents",
+  "jurisdiction": {
+    "country": "India",
+    "default_state": "Tamil Nadu",
+    "state_override_allowed": true
+  },
+  "document_type": "B2B commercial legal form",
+  "intended_use": "Sale and purchase of shares.",
+  "status": "draft_for_indian_advocate_review",
+  "inputs": [
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    },
+    {
+      "name": "name",
+      "type": "type",
+      "description": "description",
+      "required": "required",
+      "validation": {
+        "trim": true,
+        "block_if_empty": "required"
+      }
+    }
+  ],
+  "clauses": [
+    {
+      "clause_id": "purpose",
+      "heading": "Purpose and transaction",
+      "type": "core",
+      "text": "The purpose of this Agreement is Sale and purchase of shares.. Detailed scope, deliverables and commercial terms are in the Schedules.",
+      "conditional": false
+    },
+    {
+      "clause_id": "definitions_and_interpretation",
+      "heading": "Definitions and interpretation",
+      "type": "core",
+      "text": "In this Agreement, unless the context requires otherwise, defined terms have the meanings assigned to them. Headings are for convenience and do not affect interpretation. References to laws include amendments and re-enactments, subject to applicable commencement.",
+      "conditional": false
+    },
+    {
+      "clause_id": "appointment_and_relationship",
+      "heading": "Appointment and relationship",
+      "type": "core",
+      "text": "Each Party acts as an independent contracting party. Nothing creates a partnership, agency, employment, fiduciary or joint venture relationship unless expressly stated and legally constituted. Neither Party may bind the other without prior written authority.",
+      "conditional": false
+    },
+    {
+      "clause_id": "scope_and_performance",
+      "heading": "Scope and performance",
+      "type": "core",
+      "text": "The scope, specifications, deliverables, exclusions, milestones and service levels are those expressly stated in Schedule 1 and any duly signed work order. No oral statement changes the agreed scope.",
+      "conditional": false
+    },
+    {
+      "clause_id": "responsibilities_and_cooperation",
+      "heading": "Responsibilities and cooperation",
+      "type": "core",
+      "text": "Each Party shall appoint an authorised contact, provide the information and access allocated to it, obtain its own approvals and promptly notify the other of any material dependency, delay or risk.",
+      "conditional": false
+    },
+    {
+      "clause_id": "fees_invoicing_and_taxes",
+      "heading": "Fees, invoicing and taxes",
+      "type": "core",
+      "text": "Fees, currency, invoicing milestones and payment due dates are set out in Schedule 2. Unless expressly stated otherwise, applicable GST is additional and shall be invoiced in accordance with law. Each Party shall provide valid tax details and cooperate on lawful tax documentation. TDS or other withholding may be deducted only as required by applicable law, with certificates furnished within statutory timelines.",
+      "conditional": false
+    },
+    {
+      "clause_id": "change_control",
+      "heading": "Change control",
+      "type": "core",
+      "text": "A change is effective only when recorded in a written change order signed by authorised representatives. The change order shall describe scope, price, taxes, milestones, dependencies and any effect on acceptance criteria.",
+      "conditional": false
+    },
+    {
+      "clause_id": "representations_and_warranties",
+      "heading": "Representations and warranties",
+      "type": "core",
+      "text": "Each Party represents that it is duly organised or validly existing under the law applicable to it, has capacity and authority to enter into this Agreement, and will perform its obligations in accordance with applicable law. Additional product, service or title warranties must be expressly set out in Schedule 3.",
+      "conditional": false
+    },
+    {
+      "clause_id": "confidentiality",
+      "heading": "Confidentiality",
+      "type": "core",
+      "text": "The receiving Party shall use confidential information only to perform or receive the benefit of this Agreement, protect it using reasonable safeguards, and disclose it only to personnel and advisers who need to know and are bound by confidentiality obligations. Standard exclusions apply to information already lawfully known, public without breach, independently developed or lawfully received. Compelled disclosure shall be notified where lawful.",
+      "conditional": false
+    },
+    {
+      "clause_id": "intellectual_property",
+      "heading": "Intellectual property",
+      "type": "core",
+      "text": "Each Party retains its pre-existing intellectual property. Ownership or licence of project deliverables, modifications, source materials and third-party components shall be expressly identified in Schedule 4. No assignment is implied. Any assignment must identify the rights, works, territory, duration and consideration and satisfy applicable statutory formalities.",
+      "conditional": false
+    },
+    {
+      "clause_id": "data_protection_and_security",
+      "heading": "Data protection and security",
+      "type": "core",
+      "text": "Each Party shall comply with data protection and information-security laws applicable to its role and the processing in question. The Parties shall document purpose, data categories, instructions, safeguards, incident escalation, retention, deletion, sub-processing and cross-border access in a data-processing schedule where needed.",
+      "conditional": false
+    },
+    {
+      "clause_id": "compliance_with_laws",
+      "heading": "Compliance with laws",
+      "type": "core",
+      "text": "Each Party shall comply with laws applicable to its own business and performance. Sector-specific licences, labour and social security obligations, workplace safety, competition, advertising, consumer, foreign exchange and tax matters shall be allocated in the schedules where relevant.",
+      "conditional": false
+    },
+    {
+      "clause_id": "indemnity",
+      "heading": "Indemnity",
+      "type": "core",
+      "text": "The indemnifying Party shall indemnify the indemnified Party only for the categories of third-party claims and losses expressly identified in Schedule 5, subject to notice, defence control, cooperation, mitigation, settlement consent and the agreed limitations. No indemnity shall be expanded by implication.",
+      "conditional": false
+    },
+    {
+      "clause_id": "limitation_of_liability",
+      "heading": "Limitation of liability",
+      "type": "core",
+      "text": "The aggregate liability cap, excluded loss categories and negotiated carve-outs are stated in Schedule 5. The Parties shall expressly consider confidentiality, data security, IP infringement, fraud, wilful misconduct, death/personal injury and payment obligations. Any exclusion or cap is subject to applicable law.",
+      "conditional": false
+    },
+    {
+      "clause_id": "term_suspension_and_termination",
+      "heading": "Term, suspension and termination",
+      "type": "core",
+      "text": "This Agreement begins on the Effective Date and continues for the term stated in Schedule 1. Termination rights, cure periods, suspension rights and consequences shall be completed in Schedule 6. Accrued payment obligations and clauses intended to survive shall continue.",
+      "conditional": false
+    },
+    {
+      "clause_id": "force_majeure",
+      "heading": "Force majeure",
+      "type": "core",
+      "text": "A Party is excused from affected performance to the extent prevented by an event beyond its reasonable control, provided it gives prompt notice, mitigates impact and resumes performance. Payment for already delivered goods or services remains due. If the event continues beyond the agreed long-stop period, either Party may exercise the termination right specified in Schedule 6.",
+      "conditional": false
+    },
+    {
+      "clause_id": "dispute_resolution_and_governing_law",
+      "heading": "Dispute resolution and governing law",
+      "type": "core",
+      "text": "This Agreement is governed by the laws of India. The Parties shall first refer a dispute to their nominated senior representatives for good-faith resolution. If unresolved within the period specified in Schedule 7, the Parties shall use the dispute mechanism expressly selected there. If arbitration is selected, specify the juridical seat, venue, language, number and appointment of arbitrators and interim-relief forum. Courts at {{court_jurisdiction}} shall have jurisdiction only to the extent legally competent and consistent with the chosen arbitration seat.",
+      "conditional": false
+    },
+    {
+      "clause_id": "notices_and_general_provisions",
+      "heading": "Notices and general provisions",
+      "type": "core",
+      "text": "Notices shall be sent to the addresses and email contacts in Schedule 1 using the delivery methods specified there. Assignment, subcontracting, waiver, severability, entire agreement, amendment, order of precedence and counterparts are governed by Schedule 8. No amendment is effective unless written and signed by authorised representatives.",
+      "conditional": false
+    },
+    {
+      "clause_id": "execution_and_stamp_compliance",
+      "heading": "Execution and stamp compliance",
+      "type": "core",
+      "text": "The Parties shall execute this instrument using a method and on an instrument bearing stamp duty, if any, determined under the law applicable in Tamil Nadu on the execution date. The Parties shall separately verify whether registration, notarisation, witnesses or other formalities apply. No statement in this template is a determination of stamp duty or registrability.",
+      "conditional": false
+    },
+    {
+      "clause_id": "transaction_1",
+      "heading": "Shares, price and adjustments",
+      "type": "transaction_specific",
+      "text": "The Parties shall complete this transaction-specific provision in Schedule 3. Specify scope, responsible Party, evidence, timelines, acceptance criteria and remedy; otherwise mark Not Applicable.",
+      "conditional": true,
+      "render_rule": "Require explicit completion or N/A confirmation before document generation."
+    },
+    {
+      "clause_id": "transaction_2",
+      "heading": "Warranties and disclosure",
+      "type": "transaction_specific",
+      "text": "The Parties shall complete this transaction-specific provision in Schedule 3. Specify scope, responsible Party, evidence, timelines, acceptance criteria and remedy; otherwise mark Not Applicable.",
+      "conditional": true,
+      "render_rule": "Require explicit completion or N/A confirmation before document generation."
+    },
+    {
+      "clause_id": "transaction_3",
+      "heading": "Conditions precedent and closing",
+      "type": "transaction_specific",
+      "text": "The Parties shall complete this transaction-specific provision in Schedule 3. Specify scope, responsible Party, evidence, timelines, acceptance criteria and remedy; otherwise mark Not Applicable.",
+      "conditional": true,
+      "render_rule": "Require explicit completion or N/A confirmation before document generation."
+    }
+  ],
+  "schedules": [
+    {
+      "id": "S1",
+      "title": "Commercial particulars",
+      "required": true
+    },
+    {
+      "id": "S2",
+      "title": "Fees, taxes and payment",
+      "required": true
+    },
+    {
+      "id": "S3",
+      "title": "Transaction-specific terms",
+      "required": true
+    },
+    {
+      "id": "S4",
+      "title": "Execution and signatures",
+      "required": true
+    }
+  ],
+  "tamil_nadu_execution": {
+    "default_state": "Tamil Nadu",
+    "stamp_duty": "Determine the correct instrument classification and duty under the Indian Stamp Act, 1899 as applicable in Tamil Nadu, including Tamil Nadu amendments and current Schedule I rates. Do not apply a single flat rate to all agreements.",
+    "registration": "Check the Registration Act, 1908 and Tamil Nadu amendments/rules. Registration is compulsory for specified instruments and transactions; an ordinary services agreement is not automatically registrable merely because it is signed in Tamil Nadu.",
+    "adjudication": "Where classification or duty is uncertain, obtain stamp-duty adjudication/impounding advice from the competent Tamil Nadu authority before execution or reliance.",
+    "execution": "Confirm e-stamping/franking/non-judicial stamp paper availability and the currently accepted execution process with the relevant Tamil Nadu authority or counsel before signing.",
+    "property_documents": "If the instrument creates, declares, assigns, limits or extinguishes rights in immovable property, obtain separate property-law review for stamp duty, compulsory registration, description, schedules and local formalities.",
+    "electronic_execution": "Check the Information Technology Act, 2000 and document-specific exclusions/formalities; electronic signing does not remove stamp duty or registration obligations.",
+    "local_review": "State-specific rates and procedures must be verified on the execution date; this library intentionally does not hardcode stamp amounts."
+  },
+  "legal_framework_review_tags": [
+    "Indian Contract Act, 1872",
+    "Indian Stamp Act, 1899 as applicable in Tamil Nadu, including State amendments and current Schedule I",
+    "Registration Act, 1908 and Tamil Nadu amendments/rules where relevant",
+    "Arbitration and Conciliation Act, 1996 if arbitration selected",
+    "Companies Act, 2013 / LLP Act, 2008 / Partnership Act, 1932 as relevant",
+    "GST and income-tax/TDS law as applicable",
+    "DPDP Act, 2023 and Rules/commencement as applicable on signing date",
+    "Applicable IP, labour, sectoral and competition laws"
+  ],
+  "generation_policy": {
+    "preserve_clause_order": true,
+    "unresolved_placeholders_block_finalisation": true,
+    "conditional_clauses_require_explicit_selection": true,
+    "never_invent_missing_commercial_terms": true,
+    "stamp_duty_rate_must_not_be_guessed": true,
+    "registration_check_required": true,
+    "advocate_review_required_before_execution": true
+  },
+  "review_flags": [
+    "Confirm current Tamil Nadu stamp duty classification and amount.",
+    "Confirm registration, notarisation, witness and execution requirements.",
+    "Verify court jurisdiction or arbitration seat and appointment mechanism.",
+    "Confirm tax, labour, privacy, IP and sectoral provisions for transaction facts."
+  ]
+}

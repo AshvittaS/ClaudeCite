@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-SEC-001",
+  "name": "Security And Collateral Agreement",
+  "category": "Security / collateral",
+  "intended_use": "Creation of contractual security over described assets to secure identified obligations; perfection steps require jurisdiction-specific review.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "secured obligations",
+    "collateral",
+    "perfection",
+    "enforcement"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitral_seat",
+      "source_placeholder": "ARBITRAL_SEAT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "arbitration_rules",
+      "source_placeholder": "ARBITRATION_RULES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "assessment_and_payment",
+      "source_placeholder": "ASSESSMENT_AND_PAYMENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "authority_form_deadline",
+      "source_placeholder": "AUTHORITY, FORM, DEADLINE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "court_venue",
+      "source_placeholder": "COURT_VENUE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "coverage",
+      "source_placeholder": "COVERAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "coverage_and_evidence",
+      "source_placeholder": "COVERAGE_AND_EVIDENCE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "cure_period",
+      "source_placeholder": "CURE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "delivery_acknowledgement_other_agreed_event",
+      "source_placeholder": "DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details_or_none",
+      "source_placeholder": "DETAILS_OR_NONE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "documents",
+      "source_placeholder": "DOCUMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "exclusive_non_exclusive",
+      "source_placeholder": "EXCLUSIVE/NON-EXCLUSIVE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "facility_or_underlying_agreement",
+      "source_placeholder": "FACILITY_OR_UNDERLYING_AGREEMENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "governing_jurisdiction",
+      "source_placeholder": "GOVERNING_JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "identifiers_serials_title_details",
+      "source_placeholder": "IDENTIFIERS, SERIALS, TITLE DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "language",
+      "source_placeholder": "LANGUAGE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "movable_immovable_receivable_ip_shares_other",
+      "source_placeholder": "MOVABLE / IMMOVABLE / RECEIVABLE / IP / SHARES / OTHER",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "permitted_assignments",
+      "source_placeholder": "PERMITTED_ASSIGNMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "person_and_form",
+      "source_placeholder": "PERSON_AND_FORM",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "required_document",
+      "source_placeholder": "REQUIRED_DOCUMENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "requirements",
+      "source_placeholder": "REQUIREMENTS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "secured_cap",
+      "source_placeholder": "SECURED_CAP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "secured_obligations",
+      "source_placeholder": "SECURED_OBLIGATIONS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "terms",
+      "source_placeholder": "TERMS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "type_of_security_interest",
+      "source_placeholder": "TYPE_OF_SECURITY_INTEREST",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "value_and_date",
+      "source_placeholder": "VALUE_AND_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-SEC-001\nCategory | Escrow, security & collateral documents\nIntended use | Creation of contractual security over described assets to secure identified obligations; perfection steps require jurisdiction-specific review."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This SECURITY AND COLLATERAL AGREEMENT (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. SECURED OBLIGATIONS",
+      "content": [
+        "Grantor grants security in favour of Secured Party to secure the due payment and performance of {{SECURED_OBLIGATIONS}} owed under {{FACILITY_OR_UNDERLYING_AGREEMENT}} (the “Secured Obligations”), subject to the maximum secured amount of {{CURRENCY}} {{SECURED_CAP}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. GRANT OF SECURITY",
+      "content": [
+        "As continuing security, Grantor grants to Secured Party a {{TYPE_OF_SECURITY_INTEREST}} over the assets specifically described in Schedule A (the “Collateral”), to the extent such interest can validly be created under applicable law. The Parties shall execute any additional instrument required for the asset type and jurisdiction."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. TITLE AND AUTHORITY",
+      "content": [
+        "Grantor represents that it owns or has sufficient rights in the Collateral, has authority to grant the security, has disclosed all existing liens and has obtained required consents. These statements are repeated on each date specified in Schedule B."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. CARE AND PRESERVATION",
+      "content": [
+        "Grantor shall keep the Collateral in good condition, insure it for {{COVERAGE}} with an insurer reasonably acceptable to Secured Party, pay applicable taxes and charges, and not sell, lease, transfer, relocate or further encumber it except as permitted in Schedule B."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. INFORMATION AND INSPECTION",
+      "content": [
+        "On reasonable notice, Grantor shall provide information and permit reasonable inspection of the Collateral, subject to safety, confidentiality and operational restrictions. Secured Party shall minimise disruption."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. PERFECTION AND REGISTRATION",
+      "content": [
+        "The Parties shall complete all legally required notices, filings, registrations, stamping, possession, control or other perfection steps described in Schedule C. No security interest is represented as perfected until the required steps have actually been completed and verified."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. EVENTS OF DEFAULT",
+      "content": [
+        "An Event of Default occurs if a Secured Obligation is unpaid when due after applicable cure; Grantor materially breaches this Agreement and fails to cure within {{CURE_PERIOD}}; a material representation is incorrect; or insolvency or enforcement proceedings arise, to the extent legally relevant."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "8. ENFORCEMENT",
+      "content": [
+        "Following an Event of Default, Secured Party may exercise only those remedies available under applicable law and the relevant security instrument, including taking possession, sale or other realisation where legally permitted and after required notices and process. Any surplus shall be returned and any shortfall treated as provided in the underlying finance documents and law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "9. APPLICATION OF PROCEEDS",
+      "content": [
+        "Net enforcement proceeds shall be applied in the following order, subject to mandatory priorities: reasonable enforcement costs; amounts secured; subordinate claims as legally required; and surplus to the person legally entitled."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "10. RELEASE AND DISCHARGE",
+      "content": [
+        "Upon irrevocable discharge of all Secured Obligations, Secured Party shall promptly execute releases and take reasonable steps to discharge registrations, return possession or control and notify relevant parties, subject to applicable law."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "11. INDEMNITY",
+      "content": [
+        "Grantor shall indemnify Secured Party for reasonable, documented third-party losses directly arising from Grantor’s breach, except to the extent caused by Secured Party’s fraud, wilful misconduct, negligence or other non-excludable liability."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". GOVERNING LAW AND DISPUTE RESOLUTION",
+      "content": [
+        "This Agreement and any non-contractual obligations arising from it are governed by the laws of {{GOVERNING_JURISDICTION}}, excluding conflict-of-law rules to the extent permitted. The courts at {{COURT_VENUE}} shall have {{EXCLUSIVE/NON-EXCLUSIVE}} jurisdiction. [Alternative: disputes shall be finally resolved by arbitration seated at {{ARBITRAL_SEAT}}, under {{ARBITRATION_RULES}}, in {{LANGUAGE}}.] Select one dispute-resolution route and ensure it is legally available."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": ". NOTICES",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": "Notices must be in writing and delivered by hand, recognised courier or email to the addresses specified above (or updated by notice). An email notice is effective only upon {{DELIVERY/ACKNOWLEDGEMENT/OTHER AGREED EVENT}}.",
+      "content": []
+    },
+    {
+      "type": "section",
+      "heading": ". GENERAL",
+      "content": [
+        "This Agreement constitutes the entire agreement on its subject matter and supersedes prior discussions. Any amendment must be in writing and signed by both Parties. Neither Party may assign this Agreement without the other Party’s prior written consent, except {{PERMITTED_ASSIGNMENTS}}. If any provision is invalid, the remaining provisions continue in effect. A failure to enforce a right is not a waiver. This Agreement may be executed in counterparts and by legally recognised electronic signature."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "SECURED PARTY |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nGRANTOR / SECURITY PROVIDER |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — COLLATERAL DESCRIPTION",
+      "content": [
+        {
+          "type": "table",
+          "content": "Asset type | {{MOVABLE / IMMOVABLE / RECEIVABLE / IP / SHARES / OTHER}}\nDetailed description | {{IDENTIFIERS, SERIALS, TITLE DETAILS}}\nOwner / location | {{DETAILS}}\nExisting encumbrances | {{DETAILS_OR_NONE}}\nValuation / date | {{VALUE_AND_DATE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE B — GRANTOR COVENANTS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Insurance | {{COVERAGE_AND_EVIDENCE}}\nMaintenance | {{REQUIREMENTS}}\nPermitted disposals | {{DETAILS_OR_NONE}}\nReporting / inspection | {{TERMS}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE C — PERFECTION CHECKLIST",
+      "content": [
+        {
+          "type": "table",
+          "content": "Instrument / form | {{REQUIRED_DOCUMENT}}\nStamp duty | {{ASSESSMENT_AND_PAYMENT}}\nRegistration / filing | {{AUTHORITY, FORM, DEADLINE}}\nNotice / acknowledgement | {{PERSON_AND_FORM}}\nPossession / control | {{DETAILS}}\nCompletion evidence | {{DOCUMENTS}}"
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Identify the correct security regime for the collateral type and jurisdiction (for example, movable assets, immovable property, receivables, shares or intellectual property).",
+        "Verify creation, attachment, perfection, priority, filing, registration, stamping, possession/control and enforcement requirements.",
+        "Check insolvency avoidance, secured creditor priority, asset-specific restrictions and mandatory enforcement procedure.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

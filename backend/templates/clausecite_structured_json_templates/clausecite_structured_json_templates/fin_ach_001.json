@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "FIN-ACH-001",
+  "name": "Bank Debit / Ach Payment Authorisation",
+  "category": "Payment authorisations",
+  "intended_use": "Customer mandate for recurring or one-time debit; adapt to the actual payment rail and bank/network rules.",
+  "source": {
+    "document": "ClauseCite_Financial_Agreement_Template_Library.docx",
+    "source_format": "docx",
+    "extraction_mode": "ordered_text_and_tables",
+    "fidelity_note": "Clause wording is retained from the supplied source; review extraction and formatting before production use."
+  },
+  "key_variables": [
+    "account",
+    "mandate",
+    "amount/frequency",
+    "revocation"
+  ],
+  "inputs": [
+    {
+      "key": "",
+      "source_placeholder": "...",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "account_holder_name",
+      "source_placeholder": "ACCOUNT_HOLDER_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "act_or_regulation",
+      "source_placeholder": "ACT_OR_REGULATION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "bank_name",
+      "source_placeholder": "BANK_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "currency",
+      "source_placeholder": "CURRENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "dates",
+      "source_placeholder": "DATES",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "details",
+      "source_placeholder": "DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "effective_date",
+      "source_placeholder": "EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "email_address_phone",
+      "source_placeholder": "EMAIL / ADDRESS / PHONE",
+      "type": "email",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "end_date_until_revoked",
+      "source_placeholder": "END_DATE / UNTIL REVOKED",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "entity_type",
+      "source_placeholder": "ENTITY_TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "fixed_amount_variable_amount_formula",
+      "source_placeholder": "FIXED_AMOUNT / VARIABLE_AMOUNT FORMULA",
+      "type": "decimal_or_string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "frequency",
+      "source_placeholder": "FREQUENCY",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "jurisdiction",
+      "source_placeholder": "JURISDICTION",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "masked_account_details",
+      "source_placeholder": "MASKED_ACCOUNT_DETAILS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "merchant_contact",
+      "source_placeholder": "MERCHANT_CONTACT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "merchant_or_creditor_name",
+      "source_placeholder": "MERCHANT_OR_CREDITOR_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "name",
+      "source_placeholder": "NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "new_authorisation_advance_notice_and_consent_process",
+      "source_placeholder": "NEW AUTHORISATION / ADVANCE NOTICE AND CONSENT PROCESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_email",
+      "source_placeholder": "NOTICE_EMAIL",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "notice_period",
+      "source_placeholder": "NOTICE_PERIOD",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "one_time_recurring",
+      "source_placeholder": "ONE-TIME / RECURRING",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_a_legal_name",
+      "source_placeholder": "PARTY_A_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "party_b_legal_name",
+      "source_placeholder": "PARTY_B_LEGAL_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "processor_name",
+      "source_placeholder": "PROCESSOR_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "reference",
+      "source_placeholder": "REFERENCE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registered_address",
+      "source_placeholder": "REGISTERED_ADDRESS",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "registration_number",
+      "source_placeholder": "REGISTRATION_NUMBER",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "relevant_code",
+      "source_placeholder": "RELEVANT_CODE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "retrieval_timestamp",
+      "source_placeholder": "RETRIEVAL_TIMESTAMP",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "section_or_rule",
+      "source_placeholder": "SECTION_OR_RULE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_name",
+      "source_placeholder": "SIGNATORY_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signatory_title",
+      "source_placeholder": "SIGNATORY_TITLE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "signature_date",
+      "source_placeholder": "SIGNATURE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "source_uri",
+      "source_placeholder": "SOURCE_URI",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "start_date",
+      "source_placeholder": "START_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "type",
+      "source_placeholder": "TYPE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "underlying_agreement",
+      "source_placeholder": "UNDERLYING_AGREEMENT",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "version_or_effective_date",
+      "source_placeholder": "VERSION_OR_EFFECTIVE_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_date",
+      "source_placeholder": "WITNESS_DATE",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    },
+    {
+      "key": "witness_name",
+      "source_placeholder": "WITNESS_NAME",
+      "type": "string",
+      "required": null,
+      "description": "Confirm with the user; do not infer or invent.",
+      "value": null
+    }
+  ],
+  "document_structure": [
+    {
+      "type": "table",
+      "content": "Template ID | FIN-ACH-001\nCategory | ACH & payment authorisation forms\nIntended use | Customer mandate for recurring or one-time debit; adapt to the actual payment rail and bank/network rules."
+    },
+    {
+      "type": "table",
+      "content": "DRAFTING PLACEHOLDERS: Replace every {{...}} field, delete unused options, complete all schedules, and resolve all [SELECT]/[OPTIONAL] text before signature. Text in square brackets is an instruction, not an agreed term."
+    },
+    {
+      "type": "text",
+      "content": "This BANK DEBIT / ACH PAYMENT AUTHORISATION (the “Agreement”) is made on {EFFECTIVE_DATE} (the “Effective Date”) by and between {{PARTY_A_LEGAL_NAME}} and {{PARTY_B_LEGAL_NAME}}."
+    },
+    {
+      "type": "text",
+      "content": "Each may be referred to as a “Party” and together as the “Parties”. The legal names, entity types, registration details and notice addresses of the Parties are set out below."
+    },
+    {
+      "type": "section",
+      "heading": "PARTY DETAILS",
+      "content": [
+        {
+          "type": "table",
+          "content": "Party A | {{PARTY_A_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}\nParty B | {{PARTY_B_LEGAL_NAME}}; {{ENTITY_TYPE}}; registration no. {{REGISTRATION_NUMBER}}; address {{REGISTERED_ADDRESS}}; email {{NOTICE_EMAIL}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "BACKGROUND",
+      "content": [
+        "A. The Parties wish to enter into the financial arrangement described in this Agreement.",
+        "B. Each Party confirms that it has authority to enter into and perform this Agreement, subject to the terms below.",
+        "The Parties agree as follows:"
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "1. AUTHORISATION",
+      "content": [
+        "I / We, {{ACCOUNT_HOLDER_NAME}}, authorise {{MERCHANT_OR_CREDITOR_NAME}} and its payment service provider, {{PROCESSOR_NAME}}, to initiate {{ONE-TIME / RECURRING}} debit entries to the account identified in Schedule A for amounts properly due under {{UNDERLYING_AGREEMENT}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "2. AMOUNT AND FREQUENCY",
+      "content": [
+        "The authorised amount is {{FIXED_AMOUNT / VARIABLE_AMOUNT FORMULA}} in {{CURRENCY}}. Debits will occur {{FREQUENCY}} beginning {{START_DATE}} and ending {{END_DATE / UNTIL REVOKED}}. For variable debits, advance notice of amount and date will be given {{NOTICE_PERIOD}} before each debit, unless a lawful exception applies."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "3. SCOPE LIMITATION",
+      "content": [
+        "This authorisation does not permit a debit for an amount not due under the underlying agreement or outside the stated mandate. Any change to the amount, frequency, account or purpose requires {{NEW AUTHORISATION / ADVANCE NOTICE AND CONSENT PROCESS}}."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "4. REVOCATION AND CANCELLATION",
+      "content": [
+        "I / We may revoke this authorisation by giving written notice to {{MERCHANT_CONTACT}} and, where required, the bank or payment provider, at least {{NOTICE_PERIOD}} before the next scheduled debit. Revocation does not cancel any underlying payment obligation already due."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "5. FAILED OR RETURNED PAYMENTS",
+      "content": [
+        "If a debit is returned, the merchant may contact the account holder and request an alternative lawful payment method. Any retry or return fee must be disclosed, authorised and permitted by applicable law and payment-network rules."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "6. DATA HANDLING",
+      "content": [
+        "Bank account information shall be collected, stored, transmitted and used only for payment processing, reconciliation, fraud prevention and legal compliance, with appropriate security and access controls. Do not place full account credentials in an unsecured document."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "7. CONFIRMATION",
+      "content": [
+        "The account holder confirms that they are an account holder or authorised signatory for the account and that the information in Schedule A is accurate."
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SCHEDULE A — ACCOUNT HOLDER AND MANDATE",
+      "content": [
+        {
+          "type": "table",
+          "content": "Account holder | {{NAME}}\nBank / financial institution | {{BANK_NAME}}\nAccount type | {{TYPE}}\nAccount identifier | {{MASKED_ACCOUNT_DETAILS}}\nRouting / sort / IFSC / bank code | {{RELEVANT_CODE}}\nMandate reference | {{REFERENCE}}\nAmount / frequency | {{DETAILS}}\nStart / end date | {{DATES}}\nMerchant contact for revocation | {{EMAIL / ADDRESS / PHONE}}"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "SIGNATURES",
+      "content": [
+        "The Parties have caused this Agreement to be executed by their duly authorised representatives as of the dates set out below.",
+        {
+          "type": "table",
+          "content": "ACCOUNT HOLDER / AUTHORISED SIGNATORY |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}\nMERCHANT (ACKNOWLEDGEMENT) |  | By: ______________________________ | Name: {SIGNATORY_NAME} | Title: {SIGNATORY_TITLE} | Date: {SIGNATURE_DATE} | Witness (if required): __________________ | Name: {{WITNESS_NAME}} | Date: {{WITNESS_DATE}}"
+        },
+        {
+          "type": "table",
+          "content": "Security: For a live payment mandate, use the bank, ACH network, UPI/NACH or payment processor’s approved mandate form and secure enrolment flow. This general form is not a substitute for network-prescribed language or authentication."
+        }
+      ]
+    }
+  ],
+  "statutory_verification": [
+    {
+      "type": "section",
+      "heading": "CLAUSECITE STATUTORY VERIFICATION — INTERNAL DRAFTER NOTES",
+      "content": [
+        "Do not present these prompts as legal citations. Use the selected jurisdiction, transaction facts and current statutory corpus to retrieve and validate the applicable provisions. Insert verified citations into the relevant clauses only after retrieval.",
+        "Identify the actual payment rail and retrieve its current operating rules, mandate format, authentication and revocation requirements.",
+        "For US ACH, verify current Nacha rules and bank requirements; for India, verify the applicable RBI / NPCI / bank mandate framework (including the relevant NACH or other rail). Do not mix regimes.",
+        "Verify electronic signature, data protection, payment authorisation and consumer cancellation rules.",
+        "Citation output fields: {{ACT_OR_REGULATION}} | {{SECTION_OR_RULE}} | {{JURISDICTION}} | {{VERSION_OR_EFFECTIVE_DATE}} | {{SOURCE_URI}} | {{RETRIEVAL_TIMESTAMP}}.",
+        {
+          "type": "table",
+          "content": "Product integration: store this block as template metadata / retrieval guidance, not as operative contract text shown for signature."
+        }
+      ]
+    }
+  ],
+  "generation_policy": {
+    "never_invent_missing_values": true,
+    "unresolved_placeholder_behavior": "Ask the user or leave an explicit drafting issue; never silently fill.",
+    "conditional_text_behavior": "Resolve [OPTIONAL], [SELECT], and [DELETE IF NOT USED] instructions before rendering; retain unresolved items as drafting blockers.",
+    "governing_law_required_before_final": true,
+    "jurisdiction_citations": "Retrieve from the jurisdiction-specific legal corpus; never fabricate statutes, sections, quotations, or citations.",
+    "human_legal_review_required": true
+  }
+}

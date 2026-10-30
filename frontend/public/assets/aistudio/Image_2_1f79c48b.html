@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Lawyer: Personal Legal AI Assistant</title>
+<!-- Tailwind CSS CDN with forms and container-queries plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome for crisp icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans / Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#0066FF',
+              dark: '#111315',
+              cardDark: '#17191C',
+              surface: '#F8F9FB',
+              borderLight: '#ECEEF2',
+              purple: '#7952CC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #FAFAFA;
+      color: #1A1C1E;
+    }
+    .custom-gradient-bg {
+      background: radial-gradient(circle at 50% 0%, #20242D 0%, #111315 100%);
+    }
+    .card-dark-gradient {
+      background: linear-gradient(180deg, #1A1D20 0%, #121316 100%);
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#FAFAFA] text-[#1E2024] antialiased">
+<!-- BEGIN: Navigation -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Left: Logo & Core Nav -->
+<div class="flex items-center gap-10">
+<!-- Logo -->
+<a aria-label="AI Lawyer Home" class="flex items-center gap-2 group" href="#">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 via-indigo-500 to-blue-500 flex items-center justify-center shadow-md">
+<span class="text-white font-black text-lg tracking-tighter">A</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-black transition-colors">ai<span class="text-gray-500 font-medium">lawyer</span></span>
+</a>
+<!-- Desktop Nav Items -->
+<nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-600">
+<a class="hover:text-black transition-colors" href="#templates">Templates</a>
+<a class="hover:text-black transition-colors" href="#features">Tools</a>
+<a class="hover:text-black transition-colors" href="#">Affiliate</a>
+<a class="hover:text-black transition-colors" href="#faq">Contact</a>
+<a class="hover:text-black transition-colors" href="#faq">FAQ</a>
+<a class="hover:text-black transition-colors" href="#blog">Blog</a>
+</nav>
+</div>
+<!-- Right: Action Buttons -->
+<div class="flex items-center gap-4">
+<a class="text-sm font-semibold text-gray-700 hover:text-black px-3 py-2 transition-colors" href="#">Sign in</a>
+<a class="text-sm font-semibold text-white bg-black hover:bg-gray-800 px-5 py-2.5 rounded-full transition-all duration-150 shadow-sm hover:shadow" href="#">
+          Try for free →
+        </a>
+</div>
+</div>
+</header>
+<!-- END: Navigation -->
+<!-- BEGIN: MainContent -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 lg:pt-10 lg:pb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Hero Left Column: Card style -->
+<div class="lg:col-span-5 bg-[#121316] text-white p-8 sm:p-12 rounded-[2.5rem] flex flex-col justify-between shadow-2xl relative overflow-hidden min-h-[580px]">
+<!-- Glow Accent -->
+<div class="absolute -top-24 -left-24 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="space-y-6 relative z-10">
+<!-- Product of the Day badge on mobile/card -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-xs font-semibold text-gray-200 border border-white/10 backdrop-blur-sm">
+<span class="text-amber-400"><i class="fa-solid fa-trophy"></i></span>
+<span>#1 Product of the Day</span>
+</div>
+<h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.15]">
+              AI Lawyer: your personal legal AI assistant
+            </h1>
+<!-- CTA Primary -->
+<div class="pt-2">
+<a class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#0066FF] hover:bg-blue-600 rounded-full transition-all duration-200 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40" href="#">
+                Try for Free
+              </a>
+</div>
+<!-- Audience Toggle Switch -->
+<div class="pt-4 inline-flex items-center bg-[#212429] p-1 rounded-full border border-gray-800">
+<button class="px-5 py-2 text-xs font-bold rounded-full bg-white text-black shadow-sm transition" type="button">For consumers</button>
+<button class="px-5 py-2 text-xs font-medium text-gray-400 hover:text-white transition" type="button">For lawyers</button>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-sm pt-2">
+              Say goodbye to expensive legal consultation, long waits for appointments, and confusing legal texts.
+            </p>
+</div>
+<!-- Partner Badges -->
+<div class="pt-8 border-t border-white/10 mt-8 flex flex-wrap items-center gap-6 text-xs text-gray-400 font-medium">
+<div class="flex items-center gap-2">
+<span class="text-green-400 font-bold text-sm">NVIDIA</span>
+<span>Inception program</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-blue-400 font-bold text-sm">Google</span>
+<span>For Startups</span>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: Mockup Image -->
+<div class="lg:col-span-7 flex justify-center items-center">
+<div class="relative w-full max-w-[620px] rounded-3xl overflow-hidden shadow-xl border border-gray-200/60 bg-white">
+<img alt="AI Lawyer web and mobile dashboard interface on devices" class="w-full h-auto object-cover transform hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UAbuBc7A38gHdfAWxj2zhms5g7wvqew3EOv50MQuODLkpNBd1Zo6R_Fgmzmq3oONCCFyl9kBh1VHAJ6XzzVUl5mjdCVUbbw8uGYtrXp9s2FyVuk8o6oQ7Fu525mOtU1RTtMwUolQU5TQOFp1A4Wfaj58ouRYulD5sJ38TToG71ChWgKYW21eLWs4uL1DcBak4xnmOpkhDUr8aV1AMqE9K_9c7vZp6OasY95Qx3dJGQfUlLZ_LC4EugavGl"/>
+</div>
+</div>
+</div>
+<!-- Social Proof / Press Logos -->
+<div class="pt-16 pb-4 border-b border-gray-200">
+<p class="text-center text-xs font-semibold text-gray-400 tracking-wider uppercase mb-8">As seen in leading global publications</p>
+<div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="font-serif font-black tracking-widest text-lg sm:text-xl text-gray-700">REUTERS</span>
+<span class="font-sans font-black tracking-tight text-base sm:text-lg text-gray-800">BUSINESS INSIDER</span>
+<span class="font-serif font-bold text-xl sm:text-2xl text-gray-800">AP</span>
+<span class="font-sans font-bold text-lg sm:text-xl text-purple-800">yahoo! <span class="font-normal text-xs text-gray-500 uppercase">finance</span></span>
+<span class="font-serif font-bold tracking-tight text-base sm:text-lg text-gray-800">MarketWatch</span>
+<span class="font-sans font-black text-lg sm:text-xl text-gray-900">Bloomberg</span>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FeaturesSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20" id="features">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Features
+        </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+          Features of legal AI
+        </h2>
+<p class="text-base sm:text-lg text-gray-600">
+          Explore features that boost your productivity. From document automation to advanced research, we've got the hard work covered.
+        </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Internet Powered -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Internet-powered</h3>
+<p class="text-sm text-gray-500 mb-8">Rapid web research, completing hours of analysis in seconds.</p>
+</div>
+<!-- Radar graphic visual -->
+<div class="h-44 bg-gray-50 rounded-2xl border border-gray-100 flex items-center justify-center relative overflow-hidden">
+<div class="w-32 h-32 rounded-full border border-gray-200 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white font-bold text-xs shadow-md">
+<i class="fa-solid fa-scale-balanced"></i>
+</div>
+</div>
+</div>
+<div class="absolute right-6 top-8 w-2 h-2 rounded-full bg-blue-500 animate-ping"></div>
+</div>
+</div>
+<!-- Card 2: Ask AI Lawyer (Takes 2 cols on md) -->
+<div class="md:col-span-2 bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Ask AI Lawyer</h3>
+<p class="text-sm text-gray-500 mb-6">Legal research has never been easier. Have a conversation with your virtual assistant and get simple answers to complex questions in real-time.</p>
+</div>
+<!-- Interactive Chat UI Preview -->
+<div class="bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-200/70 space-y-3">
+<div class="bg-white p-3 rounded-xl border border-gray-100 shadow-sm max-w-md">
+<p class="text-xs font-semibold text-gray-800">Hello, Chris! 👋</p>
+<p class="text-xs text-gray-500 mt-1">Select a question from the Prompts library below, or write your own. You can also add context from any of the already existing chat from history.</p>
+</div>
+<div class="flex justify-end">
+<div class="bg-black text-white px-4 py-2 rounded-xl text-xs font-medium max-w-sm shadow-sm">
+                What are my rights as an employer in NYC?
+              </div>
+</div>
+<div class="bg-white px-4 py-2.5 rounded-xl border border-gray-200 text-xs text-gray-400 flex items-center justify-between">
+<span>Respond...</span>
+<i class="fa-solid fa-paper-plane text-gray-400"></i>
+</div>
+</div>
+</div>
+<!-- Card 3: AI document handling -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">AI document handling</h3>
+<p class="text-sm text-gray-500 mb-6">The fastest way to summarize agreements, convert images to text, translate documents, and more.</p>
+</div>
+<!-- Document comparison list -->
+<div class="space-y-2.5 bg-gray-50 p-4 rounded-2xl border border-gray-100">
+<div class="flex items-center justify-between bg-white p-2.5 rounded-xl border border-gray-200 text-xs">
+<div class="flex items-center gap-2.5">
+<i class="fa-regular fa-file-pdf text-red-500 text-base"></i>
+<div>
+<p class="font-semibold text-gray-800">Legal_claim.pdf</p>
+<p class="text-[10px] text-gray-400">1,045 KB</p>
+</div>
+</div>
+<i class="fa-solid fa-check text-green-500 text-xs"></i>
+</div>
+<div class="flex items-center justify-between bg-white p-2.5 rounded-xl border border-gray-200 text-xs">
+<div class="flex items-center gap-2.5">
+<i class="fa-regular fa-file-pdf text-red-500 text-base"></i>
+<div>
+<p class="font-semibold text-gray-800">Legal_claim2.pdf</p>
+<p class="text-[10px] text-gray-400">854 KB</p>
+</div>
+</div>
+<i class="fa-solid fa-check text-green-500 text-xs"></i>
+</div>
+<button class="w-full mt-2 py-2.5 rounded-xl bg-black text-white text-xs font-semibold hover:bg-gray-800 flex items-center justify-center gap-2" type="button">
+<i class="fa-solid fa-code-compare"></i> Compare with AI
+            </button>
+</div>
+</div>
+<!-- Card 4: Multi-platform with Real Assets -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition overflow-hidden">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Multi-platform</h3>
+<p class="text-sm text-gray-500 mb-4">Access our platform with a simple tap — on the web, iOS, or Android.</p>
+</div>
+<div class="relative pt-2 flex items-center justify-center">
+<img alt="Multi-platform interface on web" class="w-full max-w-[280px] rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1US1eW-k-GRcgMVRRETIhoFKYA7bmrJGE5AGvggrkl3owuqqwYRm78iBLbR0ijachmu-hnIq06lTqtComdpJCj4QQfZBFPn55EGmZ2JKlJl7XJa2u4rv_S8X52kdzKx6rqh6aRNmT5zmMrtLW_8Izk1QhCKtLlMSaVXoRwc7mayfyCsawh5gwH4-L4YBzjNzsumvI01RpxIgw7emCu89_79rtRhSCqPm15dz773IRG4LbtgjSp8XiRvgPQ"/>
+<img alt="Mobile interface" class="w-20 absolute -bottom-2 right-4 shadow-xl rounded-xl border-2 border-white" src="https://lh3.googleusercontent.com/aida/AEtjO1Un3RZGb1llCSAHZYgeX-HpIzvJHl_-_VLLXfHpd1y8hmB1px5DdW29JL2oUNkNH2VXmxsO2ht0axRJM-noQVHMlSnLXfFTPKsuJ8qhTi7E5NlsedECdu-XF4DuRTDbLK9YDkHYo2HSE6QfZKReVMJHpPlPTPJK25QPMS3z0xVdOxZqVBv9Qbeg-wwow6K6DjNIzbefOkpkUGck8yT-nYRFWFZLyL8v4uuRHqTIGZ0to-1FCmJrLOupRzei"/>
+</div>
+</div>
+<!-- Card 5: Personalized for you -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Personalized for you</h3>
+<p class="text-sm text-gray-500 mb-6">Customize and educate it to match your unique preferences.</p>
+</div>
+<!-- Pill/avatar cluster -->
+<div class="h-44 bg-gray-50 rounded-2xl border border-gray-100 flex flex-wrap items-center justify-center gap-2.5 p-4">
+<span class="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-700 shadow-sm border border-gray-200"><i class="fa-solid fa-signature mr-1 text-gray-400"></i> Contracts</span>
+<span class="px-3 py-1.5 bg-black text-white rounded-full text-xs font-medium shadow-sm"><i class="fa-solid fa-shield-halved mr-1"></i> Privacy</span>
+<span class="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-700 shadow-sm border border-gray-200"><i class="fa-solid fa-briefcase mr-1 text-gray-400"></i> Corporate</span>
+<span class="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-700 shadow-sm border border-gray-200"><i class="fa-solid fa-language mr-1 text-gray-400"></i> Multi-lingual</span>
+<span class="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-700 shadow-sm border border-gray-200"><i class="fa-solid fa-user-graduate mr-1 text-gray-400"></i> Student</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturesSection -->
+<!-- BEGIN: TargetAudienceSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="bg-[#121316] text-white rounded-[2.5rem] p-8 sm:p-14 lg:p-16 shadow-2xl">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-bold uppercase tracking-wider mb-4 border border-white/10">
+<i class="fa-solid fa-users text-xs"></i> Users
+          </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+            Who is AI Lawyer for?
+          </h2>
+<p class="text-gray-400 text-base sm:text-lg">
+            Whether you're a consumer, a student, a solo lawyer, or a full law firm - AI Lawyer adapts to your legal needs and boosts your productivity.
+          </p>
+</div>
+<!-- 4 Audience Columns -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Item 1 -->
+<div class="bg-[#1B1E23] p-7 rounded-2xl border border-white/5 hover:border-white/20 transition duration-300 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white mb-6">
+<i class="fa-regular fa-user"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">AI for Legal Consumers</h3>
+<p class="text-sm text-gray-400 leading-relaxed">
+                From deciphering complex terms to understanding rights, we've got you covered.
+              </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-[#1B1E23] p-7 rounded-2xl border border-white/5 hover:border-white/20 transition duration-300 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white mb-6">
+<i class="fa-solid fa-gavel"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">AI for Lawyers</h3>
+<p class="text-sm text-gray-400 leading-relaxed">
+                From deciphering complex terms to understanding rights, we've got you covered.
+              </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-[#1B1E23] p-7 rounded-2xl border border-white/5 hover:border-white/20 transition duration-300 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white mb-6">
+<i class="fa-solid fa-building-columns"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">AI for Law Firms</h3>
+<p class="text-sm text-gray-400 leading-relaxed">
+                From deciphering complex terms to understanding rights, we've got you covered.
+              </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-[#1B1E23] p-7 rounded-2xl border border-white/5 hover:border-white/20 transition duration-300 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white mb-6">
+<i class="fa-solid fa-graduation-cap"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">AI for Law Students</h3>
+<p class="text-sm text-gray-400 leading-relaxed">
+                From deciphering complex terms to understanding rights, we've got you covered.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TargetAudienceSection -->
+<!-- BEGIN: AdvantagesSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-solid fa-bolt text-xs"></i> Advantages
+        </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+          Why our AI in law is better?
+        </h2>
+<p class="text-base sm:text-lg text-gray-600">
+          In contrast to others, our LegalTech software is quick, easy, and wallet-friendly.
+        </p>
+</div>
+<!-- Advantages Bento -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Private card (2 cols) -->
+<div class="md:col-span-2 bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2">Private</h3>
+<p class="text-sm text-gray-500 max-w-md">We stand firm on privacy, ensuring that users' conversations remain secure and anonymous.</p>
+</div>
+<!-- Privacy Cloud Visual -->
+<div class="mt-8 bg-gray-50 rounded-2xl p-6 border border-gray-100 flex flex-wrap items-center justify-center gap-3">
+<span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-700 shadow-sm"><i class="fa-regular fa-message mr-2 text-blue-500"></i> Messages</span>
+<span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-700 shadow-sm"><i class="fa-solid fa-terminal mr-2 text-indigo-500"></i> Prompts</span>
+<span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-700 shadow-sm"><i class="fa-regular fa-comments mr-2 text-emerald-500"></i> Chats</span>
+<span class="px-4 py-2 bg-black text-white rounded-full text-xs font-bold shadow-md"><i class="fa-solid fa-lock mr-2"></i> End-to-end encrypted</span>
+<span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-700 shadow-sm"><i class="fa-solid fa-key mr-2 text-amber-500"></i> Passwords</span>
+<span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-700 shadow-sm"><i class="fa-solid fa-location-dot mr-2 text-red-500"></i> Location</span>
+<span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-700 shadow-sm"><i class="fa-solid fa-gear mr-2 text-gray-500"></i> Settings</span>
+</div>
+</div>
+<!-- 75% Time saved -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-bold text-gray-900 mb-1">75% Time saved</h3>
+<p class="text-xs text-gray-500">On routine tasks</p>
+</div>
+<!-- Bar Graph Comparison -->
+<div class="my-6 flex items-end justify-center gap-8 h-40">
+<div class="flex flex-col items-center">
+<span class="text-[11px] font-bold text-gray-600 mb-2">100%</span>
+<div class="w-14 bg-gray-900 rounded-t-xl h-28"></div>
+<span class="text-[10px] text-gray-400 mt-2 text-center">Without<br/>AI Lawyer</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-[11px] font-bold text-emerald-600 mb-2">25%</span>
+<div class="w-14 bg-emerald-500 rounded-t-xl h-10"></div>
+<span class="text-[10px] text-gray-900 font-semibold mt-2 text-center">With<br/>AI Lawyer</span>
+</div>
+</div>
+</div>
+<!-- Fast (5 Seconds) -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Fast</h3>
+<p class="text-xs text-gray-500 mb-4">The fastest online lawyer service, ideal for avoiding expenses and appointments.</p>
+</div>
+<div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 my-4">
+<div class="flex items-center justify-between text-xs text-gray-700 mb-2">
+<span class="font-bold">Legal_claim2.pdf</span>
+<span class="text-gray-400">Remaining 1s</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+<div class="bg-black h-2 rounded-full w-4/5 animate-pulse"></div>
+</div>
+</div>
+<div>
+<p class="text-2xl font-extrabold text-gray-900">5 Seconds</p>
+<p class="text-xs text-gray-400">To summarize any document.</p>
+</div>
+</div>
+<!-- 24/7 Support -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
+<p class="text-xs text-gray-500">Our customer support team is always available to assist you with any questions about the platform.</p>
+</div>
+<div class="my-6 flex items-center justify-center gap-3">
+<div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-sm">ES</div>
+<div class="w-12 h-12 rounded-full bg-purple-100 text-purple-600 border-2 border-white shadow-md flex items-center justify-center font-bold text-sm">JD</div>
+<div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-sm">AL</div>
+</div>
+<p class="text-xs text-center font-medium text-gray-400">Always active &amp; ready to assist</p>
+</div>
+<!-- 90% Cost reduction -->
+<div class="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">90% Cost reduction</h3>
+<p class="text-xs text-gray-500">In legal services compared to traditional lawyer fees.</p>
+</div>
+<div class="my-6 flex items-center justify-center">
+<div class="relative w-28 h-28 rounded-full border-8 border-gray-100 border-t-blue-600 border-r-blue-600 flex items-center justify-center">
+<div class="text-center">
+<span class="text-xl font-extrabold text-gray-900">-90%</span>
+<span class="block text-[9px] text-gray-400 uppercase font-semibold">Saved</span>
+</div>
+</div>
+</div>
+<p class="text-xs text-gray-400 text-center">Save thousands per year</p>
+</div>
+</div>
+</section>
+<!-- END: AdvantagesSection -->
+<!-- BEGIN: VideoSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Left: Text Callout -->
+<div class="lg:col-span-4 bg-[#121316] text-white p-8 sm:p-12 rounded-[2.5rem] flex flex-col justify-center">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-bold uppercase tracking-wider mb-6 w-fit border border-white/10">
+<i class="fa-solid fa-play text-xs"></i> Learn
+          </div>
+<h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+            How to use AI Lawyer
+          </h2>
+<p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+            The tutorial video shows you how good it is to integrate our lawyer online tool into your life.
+          </p>
+</div>
+<!-- Right: Video Player Mockup -->
+<div class="lg:col-span-8 relative rounded-[2.5rem] overflow-hidden bg-black shadow-xl group cursor-pointer border border-gray-800">
+<img alt="AI Lawyer product workflow walkthrough" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1X91lx3oWqFklPmK0DRZ37w2NNp7FsukwcUVTAk9lmy-lVbo7tYKhjJf-ZZRXyyLOAVNMp92w0S8e3OXSJ-yaXLXn270anFccCsJVNAHzvXnjM5sQIFWkBWhdcP4P3fq-YqDg51PpW43De-RIAc-HJFDK6yQwUvS45ACDzaMuDlK6jhHvatUaPh5wKSRM4-2KA0u_LkeElBXLFuAX3KYJ4DOEkiIxUkQcBCvwGVq3WmZ0C2N3n1ii53-OlK"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 text-gray-900 flex items-center justify-center shadow-2xl pl-1 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-xl sm:text-2xl text-black"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: VideoSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-regular fa-comment-dots text-xs"></i> Testimonials
+        </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+          What our users think
+        </h2>
+<p class="text-base sm:text-lg text-gray-600">
+          Find out how our platform has changed the legal services experience for diverse users.
+        </p>
+</div>
+<!-- Testimonial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-white p-7 rounded-3xl border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<p class="text-sm text-gray-700 leading-relaxed mb-6">
+            "The litigation analysis feature is a godsend. It has helped me in identifying trends and preparing better for my cases. The app is a true companion for any modern day lawyer."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+<div class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center text-xs">EM</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900">Elizabeth Martin</h4>
+<p class="text-xs text-gray-400">Litigation Lawyer</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-7 rounded-3xl border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<p class="text-sm text-gray-700 leading-relaxed mb-6">
+            "I'm amazed by the instant help it provides. It's like having a online lawyer, always willing to help with everything from clarifying a clause to writing a letter of termination."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+<div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 font-bold flex items-center justify-center text-xs">BS</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900">Barbara Smith</h4>
+<p class="text-xs text-gray-400">Entrepreneur</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-7 rounded-3xl border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<p class="text-sm text-gray-700 leading-relaxed mb-6">
+            "Navigating through regulatory compliance was a breeze. AI Lawyer came to the rescue by translating convoluted legal terms into plain English and providing templates. It's an indispensable asset."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+<div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xs">SM</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900">Sarah Mitchell</h4>
+<p class="text-xs text-gray-400">Freelancer</p>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-7 rounded-3xl border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<p class="text-sm text-gray-700 leading-relaxed mb-6">
+            "As a small business owner, attorney consultations were a nightmare due to high costs. AI Lawyer has been a game-changer with its cost-effective solutions. Now, I can get the assistance without burning my pocket."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+<div class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-bold flex items-center justify-center text-xs">BL</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900">Brian Lopez</h4>
+<p class="text-xs text-gray-400">Small Business Owner</p>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-7 rounded-3xl border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<p class="text-sm text-gray-700 leading-relaxed mb-6">
+            "Being a law student, I constantly find myself buried under piles of case laws and briefs. AI Lawyer has been a beacon, assisting me with research writing and case briefs, making my academic journey less daunting."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+<div class="w-10 h-10 rounded-full bg-rose-100 text-rose-700 font-bold flex items-center justify-center text-xs">RA</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900">Rebecca Adams</h4>
+<p class="text-xs text-gray-400">Law Student</p>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-7 rounded-3xl border border-gray-200/80 shadow-sm flex flex-col justify-between">
+<p class="text-sm text-gray-700 leading-relaxed mb-6">
+            "The clause generator is an indispensable tool! It has made drafting agreements a snap. Paperwork and contract reviews have never this easy, fast, or reliable."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+<div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-xs">AJ</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900">Alexandre Jolly</h4>
+<p class="text-xs text-gray-400">Contract Manager</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: MobileAppSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="bg-[#121316] text-white rounded-[2.5rem] p-8 sm:p-14 overflow-hidden relative shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Mobile Phone Image Display -->
+<div class="lg:col-span-6 flex justify-center items-center">
+<div class="max-w-[320px] sm:max-w-[380px]">
+<img alt="AI Lawyer mobile application running on iPhone" class="w-full h-auto drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida/AEtjO1Uv6JZD-FR-LUfF_6az8A9xiobnnmwMyB1fh124yDiLSQ2fiebRRx9GHN2EN5zIgGq5Se820D1xtm_S4qT84Y7M-9BAZVWRqhR-lyX7I_T5ItkK_dX3AWFyfG-lymN23oXQi4euJENiAy8S5vLgHVhI3CgtJhz4HVtsPylRAcOmdsUnnSobt_oBQxYVPzuTR-womQnu1nAQohifAHKAOEkvvTBaAxu0iF1VgBV9Za6vk6pv7TcOXmf6TzKM"/>
+</div>
+</div>
+<!-- App details & download buttons -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-bold uppercase tracking-wider border border-white/10">
+<i class="fa-solid fa-mobile-screen text-xs"></i> Mobile app
+            </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+              AI Lawyer mobile app
+            </h2>
+<p class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-md">
+              Stay connected with your guide on iOS and Android. Handle documents, track cases, and receive guidance on the go.
+            </p>
+<!-- Store Badges -->
+<div class="flex flex-wrap gap-4 pt-4">
+<!-- App Store -->
+<a class="inline-flex items-center gap-3 bg-white text-black px-5 py-3 rounded-2xl hover:bg-gray-100 transition shadow-md" href="#">
+<i class="fa-brands fa-apple text-2xl"></i>
+<div class="text-left">
+<span class="block text-[10px] uppercase font-bold tracking-wider text-gray-500">Download on the</span>
+<span class="block text-sm font-extrabold leading-tight">App Store</span>
+</div>
+</a>
+<!-- Google Play -->
+<a class="inline-flex items-center gap-3 bg-white text-black px-5 py-3 rounded-2xl hover:bg-gray-100 transition shadow-md" href="#">
+<i class="fa-brands fa-google-play text-xl"></i>
+<div class="text-left">
+<span class="block text-[10px] uppercase font-bold tracking-wider text-gray-500">GET IT ON</span>
+<span class="block text-sm font-extrabold leading-tight">Google Play</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MobileAppSection -->
+<!-- BEGIN: BlogSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20" id="blog">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-solid fa-newspaper text-xs"></i> Blog
+        </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+          More about Legal AI market
+        </h2>
+<p class="text-base sm:text-lg text-gray-600">
+          Expert advices and news from our blog to stay up-to-date on the latest trends.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Post 1 -->
+<article class="bg-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-lg transition group">
+<div class="h-48 overflow-hidden bg-gray-100">
+<img alt="Child Travel Consent &amp; Minor Travel Authorization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XR41oXOOZ-G0dhhJfzdU4-YoyhnEAT85Y9i9psDU-awq7kSBC34Zn9deS99ZdHC7bfZchTCQMyWF0LaE_2RLDHnxMWKEq65a9YtS020gLvOVDg5mpGahQrzlQA7XvIozkdUnV9jVR1fORV5BeWnG_zGbWA6AQKi1ML86_CSm0dt4hqFHG4RAkgf6ovM-IbljJobtPP8JLHphovatLEWo9g3xjzmlK5oDTFkD-IQx9t_qPL7BH6byA5Inyt"/>
+</div>
+<div class="p-6">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-blue-600 mb-2">
+<i class="fa-solid fa-bolt text-[10px]"></i> Insights
+            </span>
+<h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-3">
+              Child Travel Consent &amp; Minor Travel Authorization: Full Guide
+            </h3>
+<p class="text-xs text-gray-400">Feb 17, 2026 · 21 min read</p>
+</div>
+</article>
+<!-- Post 2 -->
+<article class="bg-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-lg transition group">
+<div class="h-48 overflow-hidden bg-gray-100">
+<img alt="Online Divorce Guide: Forms, Filing Steps &amp; Free Divorce Papers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XdUohnb_HVclqYv02dC9mbyPKWWHuS-jOiJJG5SIFSQyUoBv0CRSbJS4NfZqI7iGC4y0UUB-2DzH2v7hKov4fN3UHWY5iwbvsm895hcUmWPbKclHJHV2fWqac_dXCS62EO7ft8Io85v4DToWfiFNZyxSotFl3sDwflbGtRyuo0sfxaPVlejSoO498XT6AZ27sBXqBEI5FihJ78PExURu057atcp3aC8vtwbkLZFIt3NK1Fg-tvzuNGoiQ"/>
+</div>
+<div class="p-6">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-blue-600 mb-2">
+<i class="fa-solid fa-bolt text-[10px]"></i> Insights
+            </span>
+<h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-3">
+              Online Divorce Guide: Forms, Filing Steps &amp; Free Divorce Papers (2026)
+            </h3>
+<p class="text-xs text-gray-400">Apr 22, 2026 · 18 min read</p>
+</div>
+</article>
+<!-- Post 3 -->
+<article class="bg-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-lg transition group">
+<div class="h-48 overflow-hidden bg-gray-100">
+<img alt="How Much Does a DUI Lawyer Cost in 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1V2kNzKNFu0-rjnEmaMXz64c2pAhTvfxmfeaC4EOy5zewSG6CfuRY6KamvmgQBALAE58ndxM0xuOyJ166zrlm9D-Hs1K9oY-CaMLnkXVwjTkVVOuYVc9xls37oNYSbOTaFcHOQhflG_Z-j1mOxbBkxYyvLC1X2dGn1R2plqrp9yZKZcyNL_LJAc4iL3-L4EpalSRf571FGkSWbG5qIVLzp-J743dq4l7IYgCKSBqtGofbbSytQDkEZR9_ZM"/>
+</div>
+<div class="p-6">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-blue-600 mb-2">
+<i class="fa-solid fa-bolt text-[10px]"></i> Insights
+            </span>
+<h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-3">
+              How Much Does a DUI Lawyer Cost in 2026? ($1,500–$10,000+ Fees)
+            </h3>
+<p class="text-xs text-gray-400">Oct 14, 2026 · 30 min read</p>
+</div>
+</article>
+</div>
+<div class="text-center mt-12">
+<a class="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 transition" href="#">
+          Explore blog <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+</div>
+</section>
+<!-- END: BlogSection -->
+<!-- BEGIN: TemplatesSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20" id="templates">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-regular fa-star text-xs"></i> Most popular
+        </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+          Free Legal Templates
+        </h2>
+<p class="text-base sm:text-lg text-gray-600">
+          Free legal document templates for every need - contracts, letters, and agreements.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Template 1 -->
+<div class="bg-white rounded-3xl p-6 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div class="bg-blue-600 rounded-2xl p-5 mb-5 text-white relative min-h-[160px] flex flex-col justify-between overflow-hidden shadow-inner">
+<span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded w-fit">Template</span>
+<div class="bg-white/95 text-gray-800 p-3 rounded-lg text-[11px] font-mono leading-tight shadow-sm">
+<span class="font-bold text-xs block mb-1">IMMIGRATION SUPPORT LETTER</span>
+              I am writing this letter in official support of the applicant...
+            </div>
+</div>
+<div>
+<span class="text-[11px] font-bold text-blue-600 uppercase tracking-wide">Letters and Notices Templates</span>
+<h3 class="text-base font-bold text-gray-900 mt-1 mb-2">Immigration Support Letter Template: Character Reference + Tips</h3>
+<div class="flex items-center gap-4 text-xs text-gray-400">
+<span><i class="fa-solid fa-star text-amber-400 mr-1"></i> 4.8 Rating</span>
+<span><i class="fa-solid fa-download mr-1"></i> 4,091 Downloads</span>
+</div>
+</div>
+</div>
+<!-- Template 2 -->
+<div class="bg-white rounded-3xl p-6 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div class="bg-blue-600 rounded-2xl p-5 mb-5 text-white relative min-h-[160px] flex flex-col justify-between overflow-hidden shadow-inner">
+<span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded w-fit">Template</span>
+<div class="bg-white/95 text-gray-800 p-3 rounded-lg text-[11px] font-mono leading-tight shadow-sm">
+<span class="font-bold text-xs block mb-1">CAR RENTAL AGREEMENT</span>
+              This agreement defines standard vehicle rental terms, liabilities...
+            </div>
+</div>
+<div>
+<span class="text-[11px] font-bold text-blue-600 uppercase tracking-wide">Lease Agreement</span>
+<h3 class="text-base font-bold text-gray-900 mt-1 mb-2">Car Rental Agreement Template: Rental Rules, Fees &amp; Damage</h3>
+<div class="flex items-center gap-4 text-xs text-gray-400">
+<span><i class="fa-solid fa-star text-amber-400 mr-1"></i> 4.9 Rating</span>
+<span><i class="fa-solid fa-download mr-1"></i> 4,304 Downloads</span>
+</div>
+</div>
+</div>
+<!-- Template 3 -->
+<div class="bg-white rounded-3xl p-6 border border-gray-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+<div class="bg-blue-600 rounded-2xl p-5 mb-5 text-white relative min-h-[160px] flex flex-col justify-between overflow-hidden shadow-inner">
+<span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded w-fit">Template</span>
+<div class="bg-white/95 text-gray-800 p-3 rounded-lg text-[11px] font-mono leading-tight shadow-sm">
+<span class="font-bold text-xs block mb-1">LETTER OF INTENT (LOI)</span>
+              This document establishes mutual commitment regarding future transactions...
+            </div>
+</div>
+<div>
+<span class="text-[11px] font-bold text-blue-600 uppercase tracking-wide">Letters and Notices Templates</span>
+<h3 class="text-base font-bold text-gray-900 mt-1 mb-2">Letter of Intent (LOI) Template: Terms, Timeline &amp; Next Steps</h3>
+<div class="flex items-center gap-4 text-xs text-gray-400">
+<span><i class="fa-solid fa-star text-amber-400 mr-1"></i> 4.9 Rating</span>
+<span><i class="fa-solid fa-download mr-1"></i> 5,307 Downloads</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 transition" href="#">
+          Explore <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+</div>
+</section>
+<!-- END: TemplatesSection -->
+<!-- BEGIN: FAQSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20" id="faq">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- FAQ Title -->
+<div class="lg:col-span-5">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-regular fa-circle-question text-xs"></i> FAQ
+          </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
+            Have a question?
+          </h2>
+<p class="text-base text-gray-600">
+            Browse through our frequently asked topics or reach out to our team anytime.
+          </p>
+</div>
+<!-- FAQ Accordion List -->
+<div class="lg:col-span-7 space-y-4">
+<!-- Accordion 1 -->
+<details class="group bg-white rounded-2xl border border-gray-200 p-6 transition" open="">
+<summary class="flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg">
+<span>What is AI Lawyer?</span>
+<span class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
+<i class="fa-solid fa-plus text-xs"></i>
+</span>
+</summary>
+<div class="mt-4 text-sm text-gray-600 leading-relaxed">
+              AI Lawyer is an advanced legal artificial intelligence platform providing instant legal analysis, document generation, agreement comparison, and simplified legal explanations for consumers, law students, solo lawyers, and legal teams worldwide.
+            </div>
+</details>
+<!-- Accordion 2 -->
+<details class="group bg-white rounded-2xl border border-gray-200 p-6 transition">
+<summary class="flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg">
+<span>Who is your platform for?</span>
+<span class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
+<i class="fa-solid fa-plus text-xs"></i>
+</span>
+</summary>
+<div class="mt-4 text-sm text-gray-600 leading-relaxed">
+              It is built for anyone in need of fast, clear legal insights: individuals reviewing contracts, entrepreneurs launching companies, students analyzing case law, and law practices wanting to automate document review.
+            </div>
+</details>
+<!-- Accordion 3 -->
+<details class="group bg-white rounded-2xl border border-gray-200 p-6 transition">
+<summary class="flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg">
+<span>What countries/languages does it works for?</span>
+<span class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
+<i class="fa-solid fa-plus text-xs"></i>
+</span>
+</summary>
+<div class="mt-4 text-sm text-gray-600 leading-relaxed">
+              AI Lawyer supports jurisdiction-aware analysis across the US, UK, Canada, Australia, EU nations, and over 100+ languages globally.
+            </div>
+</details>
+<!-- Accordion 4 -->
+<details class="group bg-white rounded-2xl border border-gray-200 p-6 transition">
+<summary class="flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg">
+<span>How to start using AI Lawyer?</span>
+<span class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
+<i class="fa-solid fa-plus text-xs"></i>
+</span>
+</summary>
+<div class="mt-4 text-sm text-gray-600 leading-relaxed">
+              Simply click 'Try for Free', sign up in seconds with your email or Google account, and start chatting or uploading legal files immediately.
+            </div>
+</details>
+<!-- Accordion 5 -->
+<details class="group bg-white rounded-2xl border border-gray-200 p-6 transition">
+<summary class="flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg">
+<span>How to get "Students &amp; teachers" discount?</span>
+<span class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
+<i class="fa-solid fa-plus text-xs"></i>
+</span>
+</summary>
+<div class="mt-4 text-sm text-gray-600 leading-relaxed">
+              Register with an active .edu or academic institution email address to automatically unlock special student and faculty pricing tiers.
+            </div>
+</details>
+<!-- Accordion 6 -->
+<details class="group bg-white rounded-2xl border border-gray-200 p-6 transition">
+<summary class="flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg">
+<span>Can I receive a refund if I'm not satisfied?</span>
+<span class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
+<i class="fa-solid fa-plus text-xs"></i>
+</span>
+</summary>
+<div class="mt-4 text-sm text-gray-600 leading-relaxed">
+              Yes, we offer an unconditional money-back guarantee within the initial trial period if our tools do not satisfy your expectations.
+            </div>
+</details>
+</div>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: UseCasesSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider mb-4">
+<i class="fa-solid fa-diagram-project text-xs"></i> Use cases
+        </div>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+          Want more use cases?
+        </h2>
+<p class="text-base sm:text-lg text-gray-600">
+          See how we expand our capabilities to meet all your scenarios.
+        </p>
+</div>
+<!-- Use Case Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-file-contract text-blue-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Create boilerplate clauses</h3>
+<p class="text-xs text-gray-500 leading-normal">Draft standardized standard contract clauses in seconds.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-envelope-open-text text-indigo-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Demand Letter</h3>
+<p class="text-xs text-gray-500 leading-normal">Ask the bot to draft a letter formally requesting payment or resolution.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-shield-halved text-emerald-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Legal compliance</h3>
+<p class="text-xs text-gray-500 leading-normal">We can help you comply with jurisprudence requirements.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-file-signature text-rose-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Termination Letter</h3>
+<p class="text-xs text-gray-500 leading-normal">A written notice to end a contractual agreement.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-people-roof text-amber-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Prompts for family lawyers</h3>
+<p class="text-xs text-gray-500 leading-normal">Stop quick searching for information with custom prompts.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-scale-unbalanced text-purple-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Case Law Finder</h3>
+<p class="text-xs text-gray-500 leading-normal">Find case law matching specific facts and arguments.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-hand-dots text-red-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">Cease and Desist Letter</h3>
+<p class="text-xs text-gray-500 leading-normal">Formal letter when somebody is infringing your rights.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-md transition">
+<i class="fa-solid fa-magnifying-glass-chart text-teal-600 text-lg mb-3 block"></i>
+<h3 class="font-bold text-gray-900 text-sm mb-1">AI-boosted Research laws</h3>
+<p class="text-xs text-gray-500 leading-normal">Ask about laws in a particular country or jurisdiction and receive a summary report.</p>
+</div>
+</div>
+</section>
+<!-- END: UseCasesSection -->
+<!-- BEGIN: FinalCTA -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="bg-[#121316] text-white rounded-[2.5rem] py-20 px-8 sm:px-16 text-center relative overflow-hidden shadow-2xl">
+<!-- Background Blur Accent -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-6">
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            AI Lawyer protects your rights and wallet
+          </h2>
+<div class="pt-2">
+<a class="inline-flex items-center justify-center px-9 py-4 text-base font-bold text-white bg-[#0066FF] hover:bg-blue-600 rounded-full transition-all duration-200 shadow-xl shadow-blue-500/25" href="#">
+              Try for Free
+            </a>
+</div>
+<!-- Trust Checkmarks -->
+<div class="flex flex-wrap items-center justify-center gap-6 text-xs text-gray-400 font-medium pt-4">
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Money back guarantee</span>
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Free Trial</span>
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Cancel anytime</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FinalCTA -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: Footer -->
+<footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-sm text-gray-600">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 pb-12 border-b border-gray-200">
+<!-- Col 1: Brand -->
+<div class="col-span-2">
+<a aria-label="AI Lawyer Home" class="flex items-center gap-2 mb-4" href="#">
+<div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-purple-600 via-indigo-500 to-blue-500 flex items-center justify-center text-white font-bold text-sm">
+            A
+          </div>
+<span class="text-lg font-bold tracking-tight text-gray-900">ai<span class="text-gray-500 font-medium">lawyer</span></span>
+</a>
+<p class="text-xs text-gray-500 max-w-sm mb-4 leading-relaxed">
+          The next-generation LegalTech platform delivering automated legal research, draft agreements, and consumer guidance instantly.
+        </p>
+</div>
+<!-- Col 2: Company -->
+<div>
+<h4 class="font-bold text-gray-900 text-xs uppercase tracking-wider mb-4">Company</h4>
+<ul class="space-y-2.5 text-xs text-gray-500">
+<li><a class="hover:text-black transition" href="#">About</a></li>
+<li><a class="hover:text-black transition" href="#">Contact</a></li>
+<li><a class="hover:text-black transition" href="#">Affiliate</a></li>
+<li><a class="hover:text-black transition" href="#">Blog</a></li>
+</ul>
+</div>
+<!-- Col 3: Learn -->
+<div>
+<h4 class="font-bold text-gray-900 text-xs uppercase tracking-wider mb-4">Learn</h4>
+<ul class="space-y-2.5 text-xs text-gray-500">
+<li><a class="hover:text-black transition" href="#">Templates</a></li>
+<li><a class="hover:text-black transition" href="#">Features</a></li>
+<li><a class="hover:text-black transition" href="#">FAQ</a></li>
+<li><a class="hover:text-black transition" href="#">Tools</a></li>
+<li><a class="hover:text-black transition" href="#">Research</a></li>
+<li><a class="hover:text-black transition" href="#">Changelog</a></li>
+</ul>
+</div>
+<!-- Col 4: Terms -->
+<div>
+<h4 class="font-bold text-gray-900 text-xs uppercase tracking-wider mb-4">Terms</h4>
+<ul class="space-y-2.5 text-xs text-gray-500">
+<li><a class="hover:text-black transition" href="#">Terms of Use</a></li>
+<li><a class="hover:text-black transition" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-black transition" href="#">CC BY-SA 4.0 License</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom subfooter -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+<p>©2026 AI Lawtech Sp. z O.O. All rights reserved.</p>
+<!-- Social & Language picker -->
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 text-gray-400">
+<a aria-label="X / Twitter" class="hover:text-black transition" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+<a aria-label="YouTube" class="hover:text-black transition" href="#"><i class="fa-brands fa-youtube"></i></a>
+<a aria-label="Instagram" class="hover:text-black transition" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Medium" class="hover:text-black transition" href="#"><i class="fa-brands fa-medium"></i></a>
+</div>
+<div class="flex items-center gap-1.5 font-medium text-gray-700 cursor-pointer">
+<i class="fa-solid fa-globe text-xs"></i>
+<span>English</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
