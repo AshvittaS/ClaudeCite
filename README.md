@@ -1,57 +1,205 @@
-# ClauseCite — Reorganized Project
+# ClauseCite — Legal AI Intelligence & Agreement Creator
 
-This archive groups the existing frontend and legal RAG dataset/retrieval project into one root.
+**ClauseCite** is an enterprise-grade Legal AI platform designed for contract analysis, automated legal document drafting, and statutory research with verified case citations. Built specifically for Indian jurisprudence (Central Acts & Tamil Nadu State enactments) and international commercial standards.
 
-## Root layout
+---
+
+## 🌟 Key Features
+
+- **Ask ClauseCite (Live RAG Engine):** Jurisdiction-aware legal research assistant powered by Google Gemini and a hybrid BM25 + dense vector retrieval pipeline across statutory acts (*Indian Contract Act 1872*, *BNSS 2023*, *TNRRRLT Act 2017*, *DPDP Act 2023*, etc.). Provides real case citations, risk ratings, and follow-up inquiries.
+- **Agreement Creator (295+ Templates):** Multi-category automated legal document generator with dynamic variable fill-in and dual-mode markdown paper rendering (Formatted Legal View vs Source Editor):
+  - **Financial Agreements (9 Templates):** Loan & Lending, Promissory Notes & IOUs, Payment Plans & Installments, Revenue Sharing, Debt Settlement, Guarantees, ACH Authorization, Escrow & Collateral, Investment & Equity.
+  - **Commercial & B2B Agreements (60 Templates):** Master Services Agreements, Procurement, Logistics, Vendor, SOWs.
+  - **Non-Disclosure Agreements (10 Templates):** Mutual, Unilateral, Employee, Consultant, M&A Due Diligence.
+  - **Power of Attorney (10 Templates):** General, Special, Banking, Property, Healthcare.
+  - **Lease & Tenancy Agreements (187 Templates):** Commercial, Residential, Vehicle, Industrial space leases.
+- **AI Redline & Document Comparison:** Side-by-side contract difference analysis highlighting uncapped liabilities, unilateral termination rights, and foreign dispute venue shifts with risk scoring and counsel action plans.
+- **Legal Vault & Workspace Management:** Full multi-tenant workspace with case management, document review, and export capabilities.
+
+---
+
+## 📋 Prerequisites
+
+Before running the project, ensure you have the following installed on your system:
+
+| Dependency | Minimum Version | Notes |
+| :--- | :--- | :--- |
+| **Python** | 3.10+ (tested on 3.12 / 3.13) | Backend FastAPI service |
+| **Node.js** | 18+ (tested on 20+) | Frontend Vite + React environment |
+| **npm** or **pnpm** | 9+ | Package manager |
+| **Google Gemini API Key** | — | Free key available from [Google AI Studio](https://aistudio.google.com/) |
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AshvittaS/ClaudeCite.git
+cd ClaudeCite
+```
+
+---
+
+### 2. Backend Setup & Run
+
+Open a terminal in the root directory:
+
+```bash
+# Navigate to backend directory
+cd backend
+
+# Create a Python virtual environment
+python -m venv .venv
+
+# Activate the virtual environment
+# On Windows (PowerShell):
+.venv\Scripts\Activate.ps1
+# On Windows (Command Prompt):
+.venv\Scripts\activate.bat
+# On macOS / Linux:
+source .venv/bin/activate
+
+# Install required backend dependencies
+pip install -r requirements.txt
+
+# Create your local environment configuration
+cp .env.example .env
+```
+
+#### Configure `.env` in `backend/`:
+Open `backend/.env` in your text editor and add your **Gemini API Key**:
+
+```env
+APP_ENV=development
+APP_SECRET_KEY=generate-a-random-secret-key-here
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+LLM_PROVIDER=gemini
+LLM_MODEL=gemini-2.0-flash
+DATABASE_URL=sqlite:///./clausecite.db
+```
+
+*(Note: SQLite is used by default for rapid local development. PostgreSQL is also supported by changing `DATABASE_URL`)*.
+
+#### Start the Backend Server:
+
+```bash
+python run_server.py
+```
+
+The FastAPI backend will start at:
+- **API Server:** `http://127.0.0.1:8000`
+- **Interactive Swagger Docs:** `http://127.0.0.1:8000/docs`
+- **ReDoc:** `http://127.0.0.1:8000/redoc`
+
+---
+
+### 3. Frontend Setup & Run
+
+Open a **new terminal window** in the root directory:
+
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install npm dependencies
+npm install
+
+# Create frontend environment configuration
+cp .env.example .env
+```
+
+Ensure `frontend/.env` points to the backend API:
+
+```env
+VITE_API_BASE_URL=http://localhost:8000/api/v1
+```
+
+#### Start the Frontend Development Server:
+
+```bash
+npm run dev
+```
+
+The application will be running at:
+- **Web App:** `http://localhost:5173` (or `http://localhost:3000`)
+
+---
+
+## 🛠️ Environment Configuration Details
+
+### Backend (`backend/.env`)
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `APP_ENV` | Environment mode (`development` or `production`) | `development` |
+| `APP_SECRET_KEY` | Secret key for JWT session tokens | `change-me-in-production` |
+| `GEMINI_API_KEY` | Google AI Studio API Key for live legal reasoning | `YOUR_GEMINI_API_KEY` |
+| `LLM_MODEL` | Gemini model variant | `gemini-2.0-flash` |
+| `DATABASE_URL` | Database connection string | `sqlite:///./clausecite.db` |
+| `CHROMA_PERSIST_PATH` | Vector store directory | `./chroma_db` |
+| `UPLOAD_DIR` | Directory for uploaded client documents | `./private_uploads` |
+
+### Frontend (`frontend/.env`)
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `VITE_API_BASE_URL` | Backend REST API endpoint prefix | `http://localhost:8000/api/v1` |
+
+---
+
+## 📁 Project Directory Structure
 
 ```text
-ClauseCite/
-├── frontend/                 # Existing React + TypeScript + Vite UI
-├── backend/                  # Create here for FastAPI application
-├── datasets/
-│   └── legal-rag/
-│       ├── data/
-│       │   ├── raw/
-│       │   │   ├── india/    # Indian Acts, statutes, amendment/crosswalk JSON
-│       │   │   └── cuad/     # CUAD contract dataset
-│       │   ├── processed/    # Generated/normalized corpus data
-│       │   └── eval/         # Retrieval/answer evaluation assets
-│       ├── rag/              # Existing retrieval, embedding, answer and Chroma code
-│       ├── scripts/          # Ingestion, validation, evaluation scripts
-│       ├── tests/
-│       ├── PIPELINE.md
-│       └── README.md
-├── docs/
-│   └── REORGANIZATION.md
+ClaudeCite/
+├── backend/                              # FastAPI Python Service
+│   ├── app/
+│   │   ├── ai/                           # LLM clients, RAG adapter, citation verifier
+│   │   ├── api/v1/                       # Endpoints (chats, agreements, compare, auth, etc.)
+│   │   ├── core/                         # Config, security, error handlers
+│   │   ├── db/                           # SQLAlchemy models and session engine
+│   │   ├── document_processing/          # Redline text diffing & parsing
+│   │   ├── schemas/                      # Pydantic validation schemas
+│   │   └── services/                     # Business logic & template loaders
+│   ├── templates/                        # 295+ File-based Indian legal templates (.docx/.md)
+│   ├── requirements.txt                  # Python dependencies
+│   ├── run_server.py                     # Entry point for backend
+│   └── .env.example
+├── frontend/                             # React 19 + TypeScript + Vite UI
+│   ├── public/assets/aistudio/           # Local UI image mockups and branding assets
+│   ├── src/
+│   │   ├── api/                          # Strongly typed API client
+│   │   ├── components/                   # Landing page components & interactive modals
+│   │   │   ├── common/                   # Legal markdown renderer, logos
+│   │   │   ├── dashboard/                # DocGeneratorWorkspace, DocCompare, ChatWorkspace
+│   │   │   └── modals/                   # ChatStudioModal, CompareDocsModal, TemplateModal
+│   │   ├── App.tsx                       # Root view router (Landing <-> SaaS Dashboard)
+│   │   └── main.tsx
+│   ├── package.json
+│   └── vite.config.ts
+├── datasets/                             # Legal corpus (Indian Acts & CUAD dataset)
+├── docs/                                 # Technical architecture & API specifications
+├── .gitignore                            # Strictly excludes secrets, databases & keys
 └── README.md
 ```
 
-## Important boundaries
+---
 
-- `frontend/` contains the existing UI. Its source files were retained in their original relative positions so existing relative imports are not broken.
-- `datasets/legal-rag/data/raw/india/` is the source-of-truth area for statutory JSON files.
-- `datasets/legal-rag/data/raw/cuad/` contains the contract dataset; it is separate from Indian statutes.
-- `datasets/legal-rag/rag/` contains the existing RAG implementation. Integrate it through a backend adapter; do not rebuild or silently replace the existing Chroma collection.
-- `backend/` is intentionally a placeholder for the FastAPI service. Add it when integrating API endpoints and PostgreSQL models.
-- PostgreSQL should store users, workspaces, cases, chats, messages, uploaded-document metadata, analysis jobs and settings. It should not replace ChromaDB as the vector index.
-- User-uploaded contracts should be stored separately from the public legal corpus, with private file storage and their own document/chunk metadata.
-- Do not commit API keys, uploaded private contracts, generated Chroma persistence data, or environment files containing secrets.
+## 🧪 Building for Production
 
-## Frontend current structure
+To produce an optimized production build of the frontend:
 
-The frontend currently has:
-- `src/App.tsx`, `src/main.tsx`, `src/index.css`
-- `src/components/` for landing-page components, modals, common components, and dashboard workspaces
-- `src/components/dashboard/` for chat, document review, comparison, generation, cases, vault/files and settings
-- `src/data/testUserData.ts` for mock/demo data
+```bash
+cd frontend
+npm run build
+```
 
-The frontend is deliberately not split into new feature directories in this archive because moving component files without updating every TypeScript import can break the current build. A safe next step is to extract API calls into `src/services/` and replace `testUserData.ts` with backend data, then move feature components gradually with import updates.
+The output bundle will be generated in `frontend/dist/` ready to be served by any static host or reverse-proxied via NGINX/Caddy.
 
-## Recommended next steps
+---
 
-1. Verify frontend build with `cd frontend && npm install && npm run build`.
-2. Inspect `datasets/legal-rag/rag/config.py` and `rag/build_chroma.py` to identify the existing Chroma persistence path and collection name.
-3. Keep `all-MiniLM-L6-v2` as the embedding model if it matches the collection used to build the existing vectors.
-4. Implement `backend/app/ai/rag_adapter.py` to call the existing retrieval functions.
-5. Add FastAPI endpoints and PostgreSQL persistence in `backend/`; frontend calls should go through `VITE_API_BASE_URL`.
-6. Run corpus validation and retrieval tests before re-indexing. Re-index only deliberately, after backing up the existing collection.
+## 🔒 Security & Privacy Notice
+
+- All confidential user files, `.env` API keys, database credentials, and local SQLite/Chroma databases are strictly configured in `.gitignore` and are **never** committed or pushed to public repositories.
+- ClauseCite AI provides automated research and contract drafting assistance; always review legal documentation with a licensed attorney in your jurisdiction prior to execution.
