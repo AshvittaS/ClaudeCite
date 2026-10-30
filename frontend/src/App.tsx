@@ -11,7 +11,6 @@ import BlogSection from './components/BlogSection.tsx';
 import TemplatesSection from './components/TemplatesSection.tsx';
 import FAQSection from './components/FAQSection.tsx';
 import UseCasesSection from './components/UseCasesSection.tsx';
-import Footer from './components/Footer.tsx';
 
 // Full AI Lawyer Pro Dashboard
 import DashboardLayout from './components/dashboard/DashboardLayout.tsx';
@@ -153,13 +152,6 @@ export default function App() {
           onSelectUseCase={(key) => setUseCaseModal({ isOpen: true, key })}
         />
       </main>
-
-      {/* Footer */}
-      <Footer
-        onOpenAuth={(mode) => setAuthModal({ isOpen: true, mode })}
-        onOpenTemplate={(key) => openTemplate(key)}
-        onOpenUseCase={(key) => setUseCaseModal({ isOpen: true, key })}
-      />
 
       {/* Outcrowd Floating Quick Access Pill Bar */}
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden sm:flex items-center gap-1.5 p-1.5 bg-[#121316]/90 backdrop-blur-xl rounded-full border border-white/10 shadow-2xl">
