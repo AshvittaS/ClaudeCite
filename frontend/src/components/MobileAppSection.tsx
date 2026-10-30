@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Apple, Smartphone, Sparkles, Scale, BookOpen, Check, Shield } from 'lucide-react';
+import { Apple, Smartphone, Sparkles, Scale, BookOpen, Check, Shield, FileText } from 'lucide-react';
 
 export default function MobileAppSection() {
   return (
